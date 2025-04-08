@@ -4,17 +4,17 @@ const loyaltyFactItems = [
   {
     id: 1,
     value: "32%",
-    description: "Wzrost retencji klientów",
+    description: "Przewidywany wzrost retencji klientów",
   },
   {
     id: 2,
     value: "27%",
-    description: "Wzrost średniej wartości zamówienia",
+    description: "Przewidywany wzrost wartości zamówienia",
   },
   {
     id: 3,
-    value: "5000+",
-    description: "Aktywnych programów lojalnościowych",
+    value: "99.9%",
+    description: "Niezawodność naszej platformy",
   },
 ];
 
@@ -36,7 +36,7 @@ export default function Facts() {
               </h2>
               <p className="fs-6 xl:fs-5 text-dark dark:text-white text-opacity-70">
                 Nasza aplikacja lojalnościowa została zaprojektowana, aby uprościć zarządzanie 
-                programem lojalnościowym i maksymalizować jego efektywność.
+                programem lojalnościowym i przygotować Twój biznes na sukces od pierwszego dnia.
               </p>
             </div>
             <div

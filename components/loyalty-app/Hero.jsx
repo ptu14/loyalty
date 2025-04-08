@@ -75,7 +75,7 @@ export default function Hero() {
                   <Image
                     className="ltr:d-block rtl:d-none"
                     alt="aplikacja-lojalnościowa-demo"
-                    src="/assets/images/template/hero-mockup.png"
+                    src="/assets/images/mock.png"
                     width="1492"
                     height="1250"
                   />

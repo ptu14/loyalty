@@ -16,7 +16,7 @@ export default function Cta() {
             >
               <h2 className="h3 lg:h2 m-0">Rozpocznij 30-dniowy okres próbny za darmo.</h2>
               <p className="fs-6 md:fs-5 xl:fs-4 text-dark dark:text-white text-opacity-70">
-                Dołącz do ponad 2500+ firm już korzystających z naszego programu lojalnościowego.
+                Bądź jednym z pierwszych, którzy skorzystają z naszego innowacyjnego programu lojalnościowego.
               </p>
               <div className="vstack sm:hstack justify-center gap-1 lg:gap-2 mt-1 lg:mt-2 flex-sm-column">
                 <a

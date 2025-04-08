@@ -63,8 +63,8 @@ export default function Features() {
                 Program lojalnościowy, który zwiększa sprzedaż
               </h2>
               <p className="fs-6 xl:fs-5 text-dark dark:text-white text-opacity-70">
-                Dołącz do tysięcy zadowolonych firm i zwiększ retencję klientów. Zaufało nam już ponad 
-                2500 biznesów różnej wielkości.
+                Wykorzystaj sprawdzone mechanizmy budowania lojalności klientów i zwiększ retencję.
+                Nasza platforma jest gotowa, by rozwijać się razem z Twoim biznesem.
               </p>
             </div>
             <div
