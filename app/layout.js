@@ -13,7 +13,7 @@ import Cart from "@/components/common/Cart";
 import { useEffect } from "react";
 import anime from "animejs";
 import { usePathname } from "next/navigation";
-import MobileMenu from "@/components/headers/component/MobileMenu";
+import MobileMenu from "@/components/common/MobileMenu";
 import BacktoTop from "@/components/common/BacktoTop";
 import { ParallaxProvider } from "react-scroll-parallax";
 import ContactModal from "@/components/modals/ContactModal";

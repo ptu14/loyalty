@@ -1,29 +1,50 @@
+"use client";
 import { tiers3 } from "@/data/pricing";
+import { useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 
 export default function Pricing() {
+  const [isYearly, setIsYearly] = useState(false);
   return (
-    <div
-      id="pricing_tiers"
-      className="pricing-tiers section panel overflow-hidden"
-    >
+    <div id="cennik" className="hero-header section panel overflow-hidden">
       <div className="section-outer panel py-6 xl:py-9">
         <div className="container sm:max-w-lg xl:max-w-xl">
           <div className="section-inner panel">
-            <div className="panel vstack gap-4 sm:gap-6 xl:gap-8">
-              <div
-                className="heading panel max-w-550px mx-auto text-center"
-                data-anime="onview: -100; targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: anime.stagger(100, {start: 200});"
+            <div
+              className="panel vstack items-center gap-2 xl:gap-3 mb-4 sm:mb-8 xl:mb-9 max-w-700px mx-auto text-center"
+              data-anime="targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: anime.stagger(100, {start: 200});"
+            >
+              <h2 className="h3 lg:h2 xl:h1 m-0">
+                 <span className="text-primary dark:text-secondary">Prosty</span>, skalowalny cennik
+              </h2>
+              <p className="fs-6 xl:fs-5 text-dark dark:text-white text-opacity-70">
+                Wygodnie zrezygnuj kiedy chcesz w abonamnecie miesięcznym lub oszczędzaj w abonamencie rocznym.
+              </p>
+              <ul
+                className="uc-switcher-nav nav-x gap-0 p-narrow border rounded-2 fs-7 fw-medium"
+                data-uc-switcher="connect: .pricing-switcher;"
               >
-                <h2 className="title h3 lg:h2 xl:h1">
-                  Simple, scalable pricing.
-                </h2>
-                <p className="fs-6 xl:fs-5 text-dark dark:text-white text-opacity-70">
-                  No extra charges. No hidden fees.
-                </p>
-              </div>
-              <div className="content panel">
+                <li className={!isYearly ? "uc-active" : ""}>
+                  <a
+                    onClick={() => setIsYearly(false)}
+                    className="text-none w-128px cstack p-1"
+                  >
+                    Miesięcznie
+                  </a>
+                </li>
+                <li className={isYearly ? "uc-active" : ""}>
+                  <a
+                    onClick={() => setIsYearly(true)}
+                    className="text-none w-128px cstack p-1"
+                  >
+                    Rocznie
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div className="uc-switcher pricing-switcher mt-4">
+              <div className="uc-active">
                 <div
                   className="row child-cols-12 sm:child-cols-6 xl:child-cols-4 col-match justify-center g-2 lg:g-4"
                   data-anime="onview: -100; targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: anime.stagger(100, {start: 400});"
@@ -47,7 +68,7 @@ export default function Pricing() {
                         <div className="panel">
                           <div className="panel vstack gap-narrow">
                             <h5 className="title h3 sm:h2 m-0 dark:text-white">
-                              {tier.price}
+                              {isYearly ? tier.yearlyPrice : tier.price}
                             </h5>
                             <span className="fs-7 opacity-70">
                               {tier.priceDetails}
@@ -72,12 +93,12 @@ export default function Pricing() {
                         <div className="panel">
                           <div className="panel vstack gap-2">
                             <span className="fs-6 fw-bold dark:text-white">
-                              {tier.title === "Essentials"
-                                ? "Key features:"
-                                : `Everything in ${
-                                    tier.title === "Business"
-                                      ? "Essentials"
-                                      : "Business"
+                              {tier.title === "Poznajmy się"
+                                ? "Co dostajesz:"
+                                : `Wszystko co w ${
+                                    tier.title === "Podstawowy"
+                                      ? "Poznajmy się"
+                                      : "Podstawowy"
                                   }, plus:`}
                             </span>
                             {tier.features.map((feature, idx) => (
@@ -93,13 +114,13 @@ export default function Pricing() {
                   ))}
                 </div>
               </div>
-              <p
-                className="text-center text-gray-900 dark:text-white text-opacity-70"
-                data-anime="onview: -100; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: 200;"
-              >
-                Prices exclude any applicable taxes.
-              </p>
             </div>
+            <p
+              className="text-center text-gray-900 dark:text-white text-opacity-70 mt-2 sm:mt-4 xl:mt-4"
+              data-anime="onview: -100; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: 0;"
+            >
+              Podane ceny są cenami brutto.
+            </p>
           </div>
         </div>
       </div>

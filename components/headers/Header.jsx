@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
-import Nav from "./component/Nav";
+import Nav2 from "./component/Nav2";
 import Image from "next/image";
 import { openMobileMenu } from "@/utlis/toggleMobileMenu";
 
@@ -86,7 +86,7 @@ export default function Header3() {
                 </Link>
               </div>
               <ul className="uc-navbar-nav gap-3 xl:gap-4 d-none lg:d-flex fw-medium ltr:ms-2 ltr:xl:ms-4 rtl:me-2 rtl:xl:me-4">
-                <Nav />
+                <Nav2 />
               </ul>
             </div>
             <div className="uc-navbar-right">

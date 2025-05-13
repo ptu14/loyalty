@@ -9,6 +9,9 @@ export default function Nav2() {
   const pathname = usePathname();
   return (
     <>
+      <li>
+        <Link href={`#cennik`}>Cennik</Link>
+      </li>
       <li className="has-dd-menu">
         <a href="#" role="button" aria-haspopup="true">
           Features{" "}
@@ -360,7 +363,7 @@ export default function Nav2() {
         </div>
       </li>
       <li>
-        <Link href={`/page-pricing`}>Pricing</Link>
+        <Link href={`#cennik`}>Cennik</Link>
       </li>
       <li>
         <a

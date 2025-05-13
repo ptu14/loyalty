@@ -1,33 +1,15 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
-import Nav from "./component/Nav";
+import Nav2 from "@/components/common/Nav.jsx";
 import Image from "next/image";
 import { openMobileMenu } from "@/utlis/toggleMobileMenu";
+import { openContactModal } from "@/utlis/toggleContactModal";
 
 export default function Header3() {
-  const [prevScrollPos, setPrevScrollPos] = useState(0);
-  const [scrollingUp, setScrollingUp] = useState(false);
-
-  useEffect(() => {
-    setPrevScrollPos(window.pageYOffset);
-    const handleScroll = () => {
-      const currentScrollPos = window.pageYOffset;
-      const isScrollingUp = currentScrollPos < prevScrollPos;
-
-      setScrollingUp(currentScrollPos <= 80 ? false : isScrollingUp);
-      setPrevScrollPos(currentScrollPos);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [prevScrollPos]);
-
   const elementRef = useRef(null);
   const [isDDOpen, setIsDDOpen] = useState(false);
+  
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (
@@ -49,15 +31,10 @@ export default function Header3() {
   return (
     <header
       style={{ "--uc-nav-height": "80px !important" }}
-      className={`uc-header header-default uc-navbar-sticky-wrap z-999 uc-sticky ${
-        scrollingUp ? " uc-sticky-below uc-sticky-fixed headerFixed" : ""
-      }`}
-      data-uc-sticky="start: 100vh; show-on-up: true; animation: uc-animation-slide-top; sel-target: .uc-navbar-container; cls-active: uc-navbar-sticky; cls-inactive: uc-navbar-transparent; end: !*;"
+      className="uc-header header-default uc-navbar-sticky-wrap z-999 uc-sticky uc-sticky-fixed headerFixed"
     >
       <nav
-        className={`uc-navbar-container uc-navbar-float ft-tertiary z-1 ${
-          scrollingUp ? "uc-navbar-sticky" : "uc-navbar-transparent"
-        } `}
+        className="uc-navbar-container uc-navbar-float ft-tertiary z-1 uc-navbar-sticky"
         data-anime="translateY: [-40, 0]; opacity: [0, 1]; easing: easeOutExpo; duration: 750; delay: 0;"
       >
         <div className="container max-w-xl">
@@ -86,19 +63,18 @@ export default function Header3() {
                 </Link>
               </div>
               <ul className="uc-navbar-nav gap-3 xl:gap-4 d-none lg:d-flex fw-medium ltr:ms-2 ltr:xl:ms-4 rtl:me-2 rtl:xl:me-4">
-                <Nav />
+                <Nav2 />
               </ul>
             </div>
             <div className="uc-navbar-right">
               <ul className="uc-navbar-nav gap-3 xl:gap-4 d-none lg:d-flex fw-medium ltr:ms-2 ltr:xl:ms-4 rtl:me-2 rtl:xl:me-4">
                 <li ref={elementRef}>
-                  <a
-                    onClick={() => setIsDDOpen((pre) => !pre)}
-                    role="button"
-                    aria-haspopup="true"
+                  <Link
+                    href={`/kontakt`}
+                   
                   >
-                    Request a demo
-                  </a>
+                    Kontakt
+                  </Link>
                   <div
                     className={`uc-navbar-dropdown p-3 w-300px ft-primary text-unset fs-6 fw-normal p-0 hide-scrollbar rounded-2 overflow-hidden uc-drop ${
                       isDDOpen ? "uc-open" : ""
@@ -168,12 +144,14 @@ export default function Header3() {
                   </div>
                 </li>
               </ul>
-              <Link
+              <a
                 className="btn btn-sm btn-primary rounded-default text-white text-none d-none lg:d-inline-flex"
-                href={`/page-pricing`}
+                onClick={openContactModal}
+                role="button"
+                aria-haspopup="true"
               >
-                Start free trial
-              </Link>
+                Darmowe demo
+              </a>
               <a
                 className="d-block lg:d-none uc-icon uc-navbar-toggle-icon"
                 onClick={openMobileMenu}

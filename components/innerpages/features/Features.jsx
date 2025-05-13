@@ -24,7 +24,7 @@ export default function Features() {
                               src={feature.videoSrc}
                               width={780}
                               height={728}
-                              alt={feature.altText}
+                              alt={feature.imgAlt}
                               autoPlay
                               loop
                               muted
@@ -36,7 +36,7 @@ export default function Features() {
                               src={feature.imgSrc}
                               width={390}
                               height={364}
-                              alt={feature.altText}
+                              alt={feature.imgAlt}
                               className="rounded-2 d-none sm:d-block uc-margin-auto"
                             />
                           )}

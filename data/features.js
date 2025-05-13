@@ -30,62 +30,193 @@ export const panelData = [
 
 export const features = [
   {
-    id: 4,
-    imgSrc: "/assets/images/template/feature-01.svg",
-    imgAlt: "Share tools quickly and confidently in minutes",
-    title: "Share tools quickly and confidently in minutes",
+    id: 1,
+    imgSrc: "/assets/images/features/aplications.png",
+    imgAlt: "Aplikacja iOS i Android",
+    title: "Aplikacja iOS i Android",
     description:
-      "This powerful tool eliminates the need to leave Salesforce to get things done as I can create a custom proposal with dynamic pricing tables. You can also customize your own dynamic versions.",
+      "Jeden panel, dwie platformy. Docieraj do klientów bez względu na platformę, z której korzystają. Wygodnie zarządzaj programem lojalnościowym z jednego miejsca.",
+    longDescription:
+      "Nasza aplikacja mobilna działa zarówno na systemie iOS, jak i Android, co pozwala dotrzeć do pełnego spektrum użytkowników smartfonów. Dzięki jednemu panelowi administracyjnemu możesz z łatwością zarządzać całym programem lojalnościowym, niezależnie od urządzenia, z którego korzystają Twoi klienci. Aktualizacje, komunikaty czy zmiany w nagrodach wdrażasz w czasie rzeczywistym na obu platformach.",
+    linkText: "Dowiedz się więcej",
+    linkHref: "/funkcjonalnosci#feature-1",
+  },
+  {
+    id: 2,
+    imgSrc: "/assets/images/features/earnburn.png",
+    imgAlt: "Earn and burn",
+    title: "Earn and burn!",
+    description:
+      "Pozwól klientom zdobywać punkty za interakcje z Twoją marką i wymieniać je na nagrody. Twórz akcje za które nagradzasz klientów punktami oraz zarządzaj nagrodami w intuicyjnym panelu.",
+    longDescription:
+      "Mechanizm earn and burn (zdobywaj i spalaj) pozwala klientom zdobywać punkty za interakcje z Twoją marką i wymieniać je na nagrody. Interakcją może być dowolne zdarzenie – zakup, rezerwacja, zapis do newslettera, czy wypełnienie ankiety. Twórz własne akcje, za które nagradzasz klientów punktami, oraz zarządzaj nagrodami w intuicyjnym panelu administracyjnym. Możesz zdefiniować własny przelicznik punktowy, np. 1 punkt za każde wydane 1 zł, a dla klientów w wyższym progu lojalnościowym (np. Gold) – 2 punkty za każde 1 zł. Dodatkowo, wprowadzaj sezonowe akcje promujące zdobywanie punktów, np. punkty x2 z okazji Dnia Dziecka, Walentynek lub Black Friday",
+    linkText: "Dowiedz się więcej",
+    linkHref: "/funkcjonalnosci#feature-2",
+  },
+  {
+    id: 3,
+    imgSrc: "/assets/images/features/communication.png",
+    imgAlt: "Komunikacja",
+    videoSrc: "/assets/images/features/communication2.webm",
+    title: "Personalizowana komunikacja",
+    description:
+      "Komunikuj się z klientami, wysyłając im wiadomości push, email, sms i WhatsApp o promocjach i nagrodach. Twórz personalizowane treści, automatyzuj komunikację i planuj kampanie w intuicyjnym panelu.",
+    longDescription:
+      "Zbuduj trwałą relację z klientami poprzez spersonalizowaną komunikację w wielu kanałach: push, e-mail, SMS czy WhatsApp. Wszystkie komnikaty mogą być w pełni personalizowane (możesz użyć dowolnych danych takich jak imię, ulubiony produkt, ilośc brakujących punktów do najbliżeszj promocji i więcej). Twórz wiadomości dopasowane do indywidualnych preferencji i zachowań użytkowników w intycujcyjnym bulderze drag&drop. Dzięki rozbudowanej automatyzacji i planowaniu kampanii w jednym miejscu, Twoje działania marketingowe będą nie tylko skuteczne, ale i oszczędne czasowo.",
+    linkText: "Dowiedz się więcej",
+    linkHref: "/funkcjonalnosci#feature-3",
+  },
+  {
+    id: 4,
+    imgSrc: "/assets/images/features/synerise_ma.png",
+    videoSrc: "/assets/images/features/automation2.webm",
+    imgAlt: "Marketing automation",
+    title: "Marketing automation",
+    description:
+      "Automatyzuj swoją komunikacje w dedykowanym panelu Synerise - najbardziej zawansowannej platformie na rynku na której swoje programy lojalnościowe budują największe marki w Polsce, takie jak CCC, Żabka czy Sizeer.",
+    longDescription:
+    "Automatyzacja marketingu w pozwala tworzyć złożone scenariusze komunikacji oparte na zachowaniach użytkowników, czasie, lokalizacji czy historii zakupów. Wszystko odbywa się w intuicyjnym, no-code’owym panelu, który nie wymaga znajomości programowania. Ścieżki użytkownika tworzysz za pomocą wygodnego edytora typu drag & drop, dzięki czemu kampanie można budować szybko, efektywnie i w pełni samodzielnie.",
+    linkText: "Dowiedz się więcej",
+    linkHref: "https://www.synerise.com/products/loyalty"
   },
   {
     id: 5,
-    imgSrc: "/assets/images/template/feature-02.svg",
-    imgAlt: "Connect every part of your entire business",
-    title: "Connect every part of your entire business",
+    imgSrc: "/assets/images/features/synerise_dashboard.png",
+    videoSrc: "/assets/images/features/analytics.webm",
+    imgAlt: "Analityka",
+    title: "Analityka",
     description:
-      "Keep data consistent, with native CRM integrations that streamline your entire Tool workflow.",
-    linkText: "See all integrations",
-    linkHref: "#",
+      "Analizuj wyniki Twojego programu lojalnościowego na dedykowanych dashboardach. Śledź aktywność klientów, ich preferencje i zachowanie.",
+    longDescription:
+      "Dzięki zaawansowanej analityce możesz monitorować skuteczność działań lojalnościowych w czasie rzeczywistym. Dedykowane dashboardy prezentują dane o aktywności klientów, ich zachowaniach zakupowych i preferencjach. To pozwala podejmować trafne decyzje biznesowe i optymalizować działania marketingowe. Korzystaj z predefiniowanych dashbordów lub buduj własne.",
+    linkText: "Dowiedz się więcej",
+    linkHref: "/funkcjonalnosci#feature-5",
   },
   {
     id: 6,
-    imgSrc: "/assets/images/template/feature-03.svg",
-    imgAlt: "Maintain compliance and control your apps",
-    title: "Maintain compliance and control your apps",
+    imgSrc: "/assets/images/features/synerise_segment.png",
+    imgAlt: "Segmentacja",
+    title: "Segmentacja",
     description:
-      "Improve security and trust with built-in legally binding e-Signatures. Create pre-approved templates, content blocks and lock all legal information to prevent costly mistakes.",
+      "Segmentuj swoich klientów na podstawie ich preferencji, aktywności i zachowania. Twórz grupy klientów, które otrzymają specjalne promocje i nagrody.",
+    longDescription:
+      "Zaawansowana segmentacja pozwala grupować klientów według ich aktywności, historii zakupów, preferencji i wielu innych kryteriów. Dzięki temu możesz kierować oferty, promocje i komunikaty do odpowiednich odbiorców, zwiększając efektywność kampanii i poziom zaangażowania użytkowników.",
+    linkText: "Dowiedz się więcej",
+    linkHref: "/funkcjonalnosci#feature-4",
   },
+  {
+    id: 7,
+    imgSrc: "/assets/images/features/ab_testing.png",
+    videoSrc: "/assets/images/features/abtests2.webm",
+    imgAlt: "Testy A/B",
+    title: "Wbudowane testy A/B",
+    description:
+      "Optymalizuj swoje kampanie lojalnościowe dzięki testom A/B dostępnym bezpośrednio w platformie.",
+    longDescription:
+      "Testy A/B to potężne narzędzie do podejmowania trafnych decyzji marketingowych. W panelu możesz testować różne warianty wiadomości, nagród czy scenariuszy automatyzacji, bez potrzeby korzystania z zewnętrznych narzędzi. Wyniki testów prezentowane są w przejrzystym panelu, co pozwala szybko wybrać najlepiej działające rozwiązanie i wdrożyć je w całej kampanii.",
+    linkText: "Dowiedz się więcej",
+    linkHref: "/funkcjonalnosci#feature-7"
+  },
+  {
+    id: 8,
+    imgSrc: "/assets/images/features/inapp.webm",
+    videoSrc: "/assets/images/features/inapp.webm",
+    imgAlt: "Edytor treści",
+    title: "Edytor treści drag & drop",
+    description:
+      "Zarządzaj treścią aplikacji mobilnej bez znajomości programowania - za pomocą prostego edytora typu drag & drop.",
+    longDescription:
+      "Dodawaj i aktualizuj treści w aplikacji lojalnościowej całkowicie samodzielnie. Intuicyjny edytor typu drag & drop pozwala tworzyć banery i komunikaty bez potrzeby angażowania zespołu deweloperskiego. To idealne rozwiązanie dla zespołów marketingu i biznesu, które chcą szybko reagować na zmiany i aktualizować aplikację w czasie rzeczywistym.",
+    linkText: "Dowiedz się więcej",
+    linkHref: "/funkcjonalnosci#feature-8"
+  }
 ];
 
 export const features2 = [
   {
-    icon: "unicon-document",
-    title: "Proposals",
+    icon: "unicon-wallet",
+    title: "Earn!",
     description:
-      "Share Tools in minutes with pre-built, customizable templates.",
-    backgroundColor: "bg-white dark:bg-gray-800",
-  },
-  {
-    icon: "unicon-model",
-    title: "Quotes",
-    description:
-      "Find out in real time when they’re opened, viewed and signed.",
-    backgroundColor: "bg-primary text-white",
-  },
-  {
-    icon: "unicon-task-approved",
-    title: "Contracts",
-    description:
-      "Use our native CRM integrations to pull customer data into your Tools fast.",
+      "Przyznawaj punkty za dowolne akcje, np. zakup czy rezerwację.",
     backgroundColor: "bg-white dark:bg-gray-800",
   },
   {
     icon: "unicon-touch-interaction",
-    title: "eSignatures",
+    title: "Burn!",
     description:
-      "Keep your data secure with our legally-binding e-Signature software.",
+      "Wymiaj zebrane punkty na nagrody.",
     backgroundColor: "bg-white dark:bg-gray-800",
   },
+  {
+    icon: "unicon-user",
+    title: "Program poleceń",
+    description:
+      "Stwórz porogram poleceń i nagradzaj klientów za polecanie Twoich usług znajomym.",
+    backgroundColor: "bg-white dark:bg-gray-800",
+  },
+  {
+    icon: "unicon-model",
+    title: "Urodziny",
+    description:
+      "Nagradzaj klientów w ich urodziny, oferując im specjalne promocje.",
+    backgroundColor: "bg-white dark:bg-gray-800",
+  },
+  {
+    icon: "unicon-add",
+    title: "Akcje sezonowe",
+    description:
+      "Mnóż lub dodawaj punkty w określonych okresach lub za okreslone akcje.",
+    backgroundColor: "bg-white dark:bg-gray-800",
+  },
+  {
+    icon: "unicon-email",
+    title: "Informuj o brakującej liczbie punktów",
+    description:
+      "Komunikuj liczbe punktów do najbliżeszj nagrody zachęcając klientów do wizyty.",
+    backgroundColor: "bg-white dark:bg-gray-800",
+  },
+  {
+    icon: "unicon-time",
+    title: "Happy hours",
+    description:
+      "Angażuj klientów w promocje w określonych godzinach, np. kiedy ruch jest mniejszy.",
+    backgroundColor: "bg-white dark:bg-gray-800",
+  },
+  {
+    icon: "unicon-checkmark",
+    title: "Nagradzaj za zgody marketingowe",
+    description:
+      "Ziękasz ilośc punktów styku z klientem oferując punkty za zgody marketingowe.",
+    backgroundColor: "bg-white dark:bg-gray-800",
+  },
+  {
+    icon: "unicon-currency",
+    title: "Pierwszy zakup",
+    description:
+      "Zachęć nowych klientów do działania, nagradzając ich za pierwszy zakup.",
+    backgroundColor: "bg-white dark:bg-gray-800",
+  },
+  {
+    icon: "unicon-checkbox-checked",
+    title: "Twórz zadania",
+    description:
+      "Twórz zadania (np. 3 zakupy w tygodniu) i nagradzaj ich wykonanie dodatkowymi punktami.",
+    backgroundColor: "bg-white dark:bg-gray-800",
+  },
+  {
+    icon: "unicon-trophy",
+    title: "Poziomy lojalności",
+    description:
+      "Wprowadź poziomy (np. Srebrny, Złoty, Platynowy) z rosnącymi korzyściami.",
+    backgroundColor: "bg-white dark:bg-gray-800",
+  },
+  {
+    icon: "unicon-document-alt",
+    title: "Quiz lub ankieta",
+    description:
+      "Zbieraj dane i edukuj klientów, oferując punkty za udział w quizie lub ankiecie.",
+    backgroundColor: "bg-white dark:bg-gray-800",
+  }
 ];
 
 export const features3 = [
@@ -95,7 +226,7 @@ export const features3 = [
     altText: "Share tools quickly and confidently in minutes",
     step: "01.",
     title: "Share tools quickly and confidently in minutes",
-    description: `This powerful tool eliminates the need to leave Salesforce to get things done as I can create a custom proposal with dynamic pricing tables. You can also customize your own dynamic versions.`,
+    description: `This powerful tool eliminates the need to leave Salesforce to get things done as I can create a custom proposal with dynamic pricing tables. You can also customize your own dynamic versions. This powerful tool eliminates the need to leave Salesforce to get things done as I can create a custom proposal with dynamic pricing tables. You can also customize your own dynamic versionsThis powerful tool eliminates the need to leave Salesforce to get things done as I can create a custom proposal with dynamic pricing tables. You can also customize your own dynamic versions`,
     testimonial: {
       quote: `“Most of our time used to be taken up by administrative work whereas now we can focus on building out programs to help our employees.”`,
       imgSrc: "/assets/images/avatars/01.png",
@@ -188,6 +319,104 @@ export const features4 = [
     description:
       "Collect them instantly right from your contract, while increasing your close rate by 36%.",
   },
+];
+
+export const implementationSteps = [
+  {
+    id: 1,
+    imgSrc: "/assets/images/template/feature-01.svg",
+    altText: "Wywiad z klientem",
+    step: "Krok 1",
+    title: "Wywiad z klientem",
+    description: `Rozpoczynamy od rozmowy. Podczas wywiadu zbieramy Twoje potrzeby biznesowe, oczekiwania względem aplikacji oraz niezbędne materiały graficzne, takie jak logo czy kolory firmowe. Omawiamy też planowane funkcje, integracje i scenariusze użycia. Na tym etapie szacujemy czas i zakres wdrożenia oraz doradzamy najlepsze rozwiązania, dopasowane do Twojego modelu działania.`
+  },
+  {
+    id: 2,
+    imgSrc: "/assets/images/template/feature-02.svg",
+    altText: "Connect every part of your entire business",
+    step: "Krok 2",
+    title: "Przygotowanie aplikacji",
+    description: `Na podstawie zebranych informacji przygotowujemy dla Ciebie spersonalizowaną wersję aplikacji. Wkrótce otrzymujesz dostęp do wersji testowej, w której możesz na bieżąco sprawdzać, jak działają zaplanowane funkcje i scenariusze. To idealny moment, aby wprowadzić ewentualne poprawki przed oficjalnym startem.`,
+  },
+  {
+    id: 3,
+    imgSrc: "/assets/images/template/feature-03.svg",
+    altText: "Maintain compliance and control your apps",
+    step: "Krok 3",
+    title: "Szkolenie załogi",
+    description: `Twoi pracownicy to klucz do sukcesu aplikacji - dlatego organizujemy dla nich praktyczne szkolenia z obsługi narzędzia. Przygotowujemy także zestaw odpowiedzi na najczęściej zadawane pytania, który pomoże w codziennej pracy. To również doskonały czas na przygotowanie stanowisk sprzedażowych do promowania aplikacjitakich jak materiały marketingowe, plakaty, ulotki i inne wsparcie wizualne.`,
+  },
+  {
+    id: 4,
+    imgSrc: "/assets/images/template/feature-04.svg",
+    altText: "Review quickly and confidently",
+    step: "Krok 4.",
+    title: "Wdrożenie produkcyjne",
+    description: `Czas na wielki finał! Publikujemy Twoją aplikację w Google Play i App Store. Od tego momentu klienci mogą ją pobierać i korzystać z programu lojalnościowego. Wspieramy Cię w działaniach promocyjnych - zarówno w lokalu, jak i w mediach społecznościowych - aby świat dowiedział się, że właśnie wystartowała Twoja aplikacja.`
+  },
+  {
+    id: 5,
+    imgSrc: "/assets/images/template/feature-04.svg",
+    altText: "Review quickly and confidently",
+    step: "Krok 5.",
+    title: "Zarządzanie aplikacją",
+    description: `Po wdrożeniu masz pełną kontrolę nad treściami w aplikacji – bez potrzeby znajomości programowania. Z poziomu intuicyjnej platformy możesz edytować aktualności, dodawać nowe nagrody, a także planować i wysyłać kampanie push, e-mailowe czy SMS-owe. Dzięki temu Twoja aplikacja zawsze pozostaje aktualna i angażująca dla klientów.`
+  }
+];
+
+export const howItWorksApplication = [
+{
+  id: 1,
+  imgSrc: "/assets/images/template/feature-01.svg",
+  altText: "Panel dla obsługi",
+  step: "Krok 1",
+  title: "Aplikacja dla obsługi",
+  description: "Otrzymujesz dedykowaną aplikację, którą możesz zainstalować na dowolnym smartfonie z Androidem lub iOS. To narzędzie, z którego korzystają Twoi pracownicy – mogą przyznawać punkty, realizować promocje i sprawdzać historię konta klienta."
+},
+{
+  id: 2,
+  imgSrc: "/assets/images/template/feature-02.svg",
+  altText: "Naliczanie punktów",
+  step: "Krok 2",
+  title: "Naliczanie punktów",
+  description: "Każdy klient posiada indywidualny kod QR, który identyfikuje jego konto w programie. Podczas zakupów pracownik skanuje ten kod za pomocą aplikacji. System weryfikuje ważność i aktywność konta użytkownika. Następnie z poziomu aplikacji wybierana jest odpowiednia liczba punktów do przyznania - można skorzystać z wcześniej zdefiniowanych akcji (np. 10 punktów za każde 10 zł) lub wprowadzić wartość manualnie. Po zatwierdzeniu, punkty są natychmiast przypisywane do konta klienta. Dodatkowo klient może otrzymać powiadomienie push z informacją o przyznanych punktach."
+},
+{
+  id: 3,
+  imgSrc: "/assets/images/template/feature-03.svg",
+  altText: "Odbiór nagród",
+  step: "Krok 3",
+  title: "Realizacja nagród i promocji",
+  description: "Klient sam aktywuje nagrodę w swojej aplikacji – jeśli ma wystarczającą liczbę punktów, zostaną one od razu odjęte. Pracownik skanuje kod QR nagrody i aplikacja potwierdza jej ważność. Następnie 'spala' promocję – klient otrzymuje rabat lub nagrodę. Jeśli nagroda nie zostanie wykorzystana, klient może ją dezaktywować i odzyskać punkty."
+}
+];
+
+export const howItWorksPOS = [
+  {
+    id: 1,
+    imgSrc: "/assets/images/template/feature-01.svg",
+    altText: "POS integration preparation",
+    step: "Krok 1",
+    title: "Integracja z systemem POS",
+    description: `Na tym etapie sprawdzamy, czy Twój system POS pozwala na integrację z naszą aplikacją lojalnościową. W zależności od systemu, z którego korzystasz, może być potrzebna pomoc techniczna osoby mającej dostęp do ustawień systemu - np. administratora lub dostawcy oprogramowania. Integracja polega na połączeniu Twojego POS-a z aplikacją tak, aby możliwe było odczytywanie kodów QR, naliczanie punktów i realizacja nagród. Każdy przypadek traktujemy indywidualnie, dlatego przed wdrożeniem przygotowujemy wycenę oraz szczegółowy plan działania.`,
+  },
+  {
+    id: 2,
+    imgSrc: "/assets/images/template/feature-02.svg",
+    altText: "Automatic points system",
+    step: "Krok 2",
+    title: "Naliczanie punktów",
+    description: `Po integracji każdy klient otrzymuje swój unikalny kod QR, który przechowuje w aplikacji mobilnej. Podczas zakupów pracownik sklepu skanuje ten kod za pomocą czytnika połączonego z systemem POS. System automatycznie sprawdza, czy kod jest poprawny i aktywny, a następnie przyznaje odpowiednią liczbę punktów - zgodnie z wcześniej ustalonym przelicznikiem, np. 10 punktów za każde 10 zł wydane. Punkty są przypisywane od razu do konta klienta, a on sam może otrzymać powiadomienie push z potwierdzeniem. Cały proces jest szybki i nie wymaga dodatkowej obsługi ze strony pracowników.`,
+  },
+  {
+    id: 3,
+    imgSrc: "/assets/images/template/feature-03.svg",
+    altText: "Reward redemption",
+    step: "Krok 3",
+    title: "Odbiór nagród",
+    description: `Gdy klient zbierze odpowiednią liczbę punktów, może samodzielnie aktywować wybraną nagrodę w swojej aplikacji. Po aktywacji generowany jest kod QR, który pracownik sklepu skanuje przy kasie - dokładnie tak, jak w przypadku punktów. System POS odczytuje kod, automatycznie „nabija” nagrodę i uwzględnia ją w transakcji, np. jako rabat lub darmowy produkt. Po realizacji nagroda zostaje oznaczona jako zużyta. Jeśli klient z jakiegoś powodu nie skorzysta z nagrody, ma możliwość jej dezaktywacji - wtedy punkty wracają na jego konto. Wszystko odbywa się bez potrzeby ręcznego zatwierdzania przez obsługę.`,
+  }
+   
 ];
 
 export const featureItems = [
