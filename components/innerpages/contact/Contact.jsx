@@ -1,7 +1,60 @@
 "use client";
 import Image from "next/image";
+import { useState } from "react";
 
 export default function Contact1() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: ""
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState(null);
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData(prevData => ({
+      ...prevData,
+      [name]: value
+    }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    
+    setIsSubmitting(true);
+    setSubmitStatus(null);
+    
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+      
+      const data = await response.json();
+      
+      if (response.ok) {
+        setSubmitStatus({ success: true, message: "Wiadomość została wysłana. Skontaktujemy się z Tobą wkrótce." });
+        setFormData({
+          name: "",
+          email: "",
+          subject: "",
+          message: ""
+        });
+      } else {
+        setSubmitStatus({ success: false, message: data.error || "Wystąpił błąd. Proszę spróbować ponownie." });
+      }
+    } catch (error) {
+      setSubmitStatus({ success: false, message: "Nie udało się połączyć z serwerem. Sprawdź swoje połączenie z internetem." });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <div id="hero_header" className="hero-header section panel overflow-hidden">
       <div
@@ -99,47 +152,66 @@ export default function Contact1() {
                 </div>
                 <div className="order-0 lg:order-1">
                   <form
-                    onSubmit={(e) => e.preventDefault()}
+                    onSubmit={handleSubmit}
                     className="vstack gap-2 p-3 sm:p-6 xl:p-8"
                   >
                     <p className="fs-6 text-dark dark:text-white text-opacity-70 mb-2">
                       Masz pytania lub sugestie? Wypełnij formularz poniżej,
                       a odpowiemy w ciągu 24 godzin.
                     </p>
+                    
+                    {submitStatus && (
+                      <div className={`alert ${submitStatus.success ? 'alert-success' : 'alert-danger'}`}>
+                        {submitStatus.message}
+                      </div>
+                    )}
+                    
                     <div className="row child-cols-12 sm:child-cols-6 g-2">
                       <div>
                         <input
                           className="form-control h-48px w-full bg-white dark:border-white dark:bg-opacity-10 dark:border-opacity-0 dark:text-white"
                           type="text"
+                          name="name"
                           placeholder="Imię"
                           required
+                          value={formData.name}
+                          onChange={handleChange}
                         />
                       </div>
                       <div>
                         <input
                           className="form-control h-48px w-full bg-white dark:border-white dark:bg-opacity-10 dark:border-opacity-0 dark:text-white"
                           type="email"
+                          name="email"
                           placeholder="Email"
                           required
+                          value={formData.email}
+                          onChange={handleChange}
                         />
                       </div>
                     </div>
                     <input
                       className="form-control h-48px w-full bg-white dark:border-white dark:bg-opacity-10 dark:border-opacity-0 dark:text-white"
                       type="text"
+                      name="subject"
                       placeholder="Tytuł"
+                      value={formData.subject}
+                      onChange={handleChange}
                     />
                     <textarea
                       className="form-control min-h-150px w-full bg-white dark:border-white dark:bg-opacity-10 dark:border-opacity-0 dark:text-white"
                       placeholder="Twoja wiadomość..."
+                      name="message"
                       required
-                      defaultValue={""}
+                      value={formData.message}
+                      onChange={handleChange}
                     />
                     <button
                       className="btn btn-primary btn-md text-white mt-2"
                       type="submit"
+                      disabled={isSubmitting}
                     >
-                      Wyślij
+                      {isSubmitting ? "Wysyłanie..." : "Wyślij"}
                     </button>
                     <p className="text-center">
                       Lub wyslij wiadomość na{" "}
