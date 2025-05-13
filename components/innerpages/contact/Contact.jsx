@@ -166,19 +166,17 @@ export default function Contact1() {
                       </div>
                     )}
                     
-                    <div className="row child-cols-12 sm:child-cols-6 g-2">
-                      <div>
+
                         <input
                           className="form-control h-48px w-full bg-white dark:border-white dark:bg-opacity-10 dark:border-opacity-0 dark:text-white"
                           type="text"
                           name="name"
-                          placeholder="Imię"
+                          placeholder="Imię i nazwisko..."
                           required
                           value={formData.name}
                           onChange={handleChange}
                         />
-                      </div>
-                      <div>
+
                         <input
                           className="form-control h-48px w-full bg-white dark:border-white dark:bg-opacity-10 dark:border-opacity-0 dark:text-white"
                           type="email"
@@ -188,13 +186,13 @@ export default function Contact1() {
                           value={formData.email}
                           onChange={handleChange}
                         />
-                      </div>
-                    </div>
+
+                    
                     <input
                       className="form-control h-48px w-full bg-white dark:border-white dark:bg-opacity-10 dark:border-opacity-0 dark:text-white"
                       type="tel"
                       name="phone"
-                      placeholder="Telefon"
+                      placeholder="Telefon..."
                       value={formData.phone}
                       onChange={handleChange}
                     />
@@ -215,8 +213,8 @@ export default function Contact1() {
                     </button>
                     <p className="text-center">
                       Lub wyslij wiadomość na{" "}
-                      <a className="uc-link" href="mailto:support@loyster.pl">
-                        support@loyster.pl
+                      <a className="uc-link" href="mailto:kontakt@loyster.pl">
+                        kontakt@loyster.pl
                       </a>
                     </p>
                   </form>
