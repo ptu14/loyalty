@@ -1,5 +1,6 @@
 "use client";
 import Context from "@/context/Context";
+import { Analytics } from "@vercel/analytics/next";
 import "../public/assets/css/main.scss";
 import "swiper/css/virtual";
 import "swiper/css";
@@ -115,6 +116,7 @@ export default function RootLayout({ children }) {
           <SearchModal />
           <Cart />
           <BacktoTop />
+          <Analytics />
         </Context>
       </body>
     </html>

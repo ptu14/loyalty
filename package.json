@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@vercel/analytics": "^1.5.0",
     "animejs": "^3.2.2",
     "imagesloaded": "^5.0.0",
     "isotope-layout": "^3.0.6",
