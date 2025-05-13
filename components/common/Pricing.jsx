@@ -8,7 +8,7 @@ export default function Pricing() {
   const [isYearly, setIsYearly] = useState(false);
   return (
     <div id="cennik" className="hero-header section panel overflow-hidden">
-      <div className="section-outer panel py-6 xl:py-9">
+      <div className="section-outer panel py-9 xl:py-9">
         <div className="container sm:max-w-lg xl:max-w-xl">
           <div className="section-inner panel">
             <div

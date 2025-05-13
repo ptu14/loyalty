@@ -29,7 +29,7 @@ export const menuItems = [
           },
           {
             href: "/wdrozenie",
-            label: "wdrozenie",
+            label: "Wdrożenie",
           },
           {
             href: "/jak-to-dziala",

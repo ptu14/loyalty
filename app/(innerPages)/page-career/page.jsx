@@ -8,10 +8,8 @@ import Feedback from "@/components/homes/home-2/Feedback";
 import Brands from "@/components/innerpages/Brands";
 import Blogs from "@/components/homes/home-2/Blogs";
 export const metadata = {
-  title:
-    "Career || Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
-  description:
-    "Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
+  title: "Kariera | Loyster - Dołącz do zespołu ekspertów od programów lojalnościowych",
+  description: "Sprawdź aktualne oferty pracy w Loyster. Dołącz do zespołu specjalistów tworzących innowacyjne rozwiązania lojalnościowe dla biznesu.",
 };
 export default function CareerPage() {
   return (

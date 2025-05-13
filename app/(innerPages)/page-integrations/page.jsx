@@ -8,10 +8,8 @@ import Brands from "@/components/common/Brands2";
 import Cta from "@/components/innerpages/features/Cta";
 import Integrations from "@/components/innerpages/Integrations";
 export const metadata = {
-  title:
-    "Integrations || Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
-  description:
-    "Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
+  title: "Integracje | Loyster - Kompleksowe integracje z systemami biznesowymi",
+  description: "Odkryj możliwości integracji aplikacji lojalnościowej Loyster z Twoimi systemami biznesowymi. Płynna współpraca z popularnymi platformami i narzędziami.",
 };
 export default function IntegrationPage() {
   return (

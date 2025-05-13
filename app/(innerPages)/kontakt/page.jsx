@@ -4,10 +4,8 @@ import Footer from "@/components/common/Footer";
 import Contact from "@/components/innerpages/contact/Contact";
 import Faq from "@/components/common/Faq";
 export const metadata = {
-  title:
-    "Contact 1 || Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
-  description:
-    "Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
+  title: "Kontakt | Loyster - Aplikacje lojalnościowe dla Twojego biznesu",
+  description: "Skontaktuj się z nami, aby dowiedzieć się więcej o aplikacjach lojalnościowych Loyster i jak mogą pomóc w rozwoju Twojego biznesu.",
 };
 export default function ContactPage() {
   return (

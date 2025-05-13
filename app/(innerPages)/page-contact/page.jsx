@@ -7,10 +7,8 @@ import Faq from "@/components/homes/home-2/Faq";
 import Brands from "@/components/common/Brands2";
 import Blogs from "@/components/homes/home-2/Blogs";
 export const metadata = {
-  title:
-    "Contact 1 || Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
-  description:
-    "Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
+  title: "Kontakt | Loyster - Zbuduj własny program lojalnościowy",
+  description: "Skontaktuj się z zespołem Loyster, aby omówić swoje potrzeby związane z programem lojalnościowym. Jesteśmy gotowi pomóc Ci osiągnąć sukces.",
 };
 export default function ContactPage() {
   return (

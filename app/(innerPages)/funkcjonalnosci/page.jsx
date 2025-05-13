@@ -5,10 +5,8 @@ import Hero from "@/components/innerpages/features/Hero";
 import Faq from "@/components/common/Faq";
 import Cta from "@/components/innerpages/features/Cta";
 export const metadata = {
-  title:
-    "Features || Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
-  description:
-    "Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
+  title: "Funkcjonalności | Loyster - Tworzenie aplikacji lojalnościowych dla Twojego biznesu",
+  description: "Odkryj wszystkie funkcjonalności Loyster - kompleksowego narzędzia do tworzenia i zarządzania programami lojalnościowymi dla Twojej firmy.",
 };
 export default function FeaturesPage() {
   return (
@@ -20,8 +18,6 @@ export default function FeaturesPage() {
           <Features />
           <Faq />
           <div className="pt-6 xl:pt-9"></div>
-          
-          <Cta />
         </div>
         <Footer />
       </div>

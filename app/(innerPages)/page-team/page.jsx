@@ -5,10 +5,8 @@ import Cta2 from "@/components/innerpages/Cta2";
 import Faq from "@/components/innerpages/Faq";
 import Team from "@/components/innerpages/Team";
 export const metadata = {
-  title:
-    "Team || Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
-  description:
-    "Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
+  title: "Zespół | Loyster - Eksperci w dziedzinie programów lojalnościowych",
+  description: "Poznaj zespół Loyster - specjalistów, którzy pomogą Ci stworzyć skuteczny program lojalnościowy dla Twojego biznesu.",
 };
 export default function TeamPage() {
   return (

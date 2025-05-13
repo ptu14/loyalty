@@ -7,10 +7,8 @@ import Feedback from "@/components/homes/home-2/Feedback";
 import Brands from "@/components/innerpages/Brands";
 import { jobListings } from "@/data/career";
 export const metadata = {
-  title:
-    "Career Details || Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
-  description:
-    "Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
+  title: "Szczegóły oferty pracy | Loyster - Dołącz do zespołu ekspertów programów lojalnościowych",
+  description: "Zapoznaj się ze szczegółami oferty pracy w Loyster. Dołącz do zespołu tworzącego innowacyjne rozwiązania lojalnościowe dla biznesu.",
 };
 export default async function CareerDetailsPage(props) {
   const params = await props.params;

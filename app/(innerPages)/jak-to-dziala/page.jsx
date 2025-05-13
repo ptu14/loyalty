@@ -4,10 +4,8 @@ import Hero from "@/components/innerpages/HowItWorks/Hero";
 import React from "react";
 import Footer from "@/components/common/Footer";
 export const metadata = {
-  title:
-    "Home 3 || Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
-  description:
-    "Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
+  title: "Jak to działa | Loyster - Profesjonalne aplikacje lojalnościowe",
+  description: "Dowiedz się, jak działa Loyster i jak nasza platforma może pomóc Ci stworzyć skuteczny program lojalnościowy dla Twoich klientów.",
 };
 export default function HomePage3() {
   return (

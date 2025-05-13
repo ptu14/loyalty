@@ -75,7 +75,7 @@ export const features = [
     description:
       "Automatyzuj swoją komunikacje w dedykowanym panelu Synerise - najbardziej zawansowannej platformie na rynku na której swoje programy lojalnościowe budują największe marki w Polsce, takie jak CCC, Żabka czy Sizeer.",
     longDescription:
-    "Automatyzacja marketingu w pozwala tworzyć złożone scenariusze komunikacji oparte na zachowaniach użytkowników, czasie, lokalizacji czy historii zakupów. Wszystko odbywa się w intuicyjnym, no-code’owym panelu, który nie wymaga znajomości programowania. Ścieżki użytkownika tworzysz za pomocą wygodnego edytora typu drag & drop, dzięki czemu kampanie można budować szybko, efektywnie i w pełni samodzielnie.",
+    "Automatyzacja marketingu pozwala tworzyć złożone scenariusze komunikacji oparte na zachowaniach użytkowników, czasie, lokalizacji czy historii zakupów. Wszystko odbywa się w intuicyjnym, no-code’owym panelu, który nie wymaga znajomości programowania. Ścieżki użytkownika tworzysz za pomocą wygodnego edytora typu drag & drop, dzięki czemu kampanie można budować szybko, efektywnie i w pełni samodzielnie.",
     linkText: "Dowiedz się więcej",
     linkHref: "https://www.synerise.com/products/loyalty"
   },

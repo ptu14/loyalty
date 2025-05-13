@@ -1,13 +1,11 @@
 import Header from "@/components/common/Header";
-
+import Hero from "@/components/innerpages/features/Hero";
 import Footer from "@/components/common/Footer";
 import Faq from "@/components/common/Faq";
 import Pricing from "@/components/common/Pricing";
 export const metadata = {
-  title:
-    "Cennik",
-  description:
-    "Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
+  title: "Cennik | Loyster - Elastyczne plany cenowe dla aplikacji lojalnościowych",
+  description: "Zapoznaj się z ofertą cenową Loyster. Wybierz plan idealnie dopasowany do potrzeb i możliwości Twojego biznesu.",
 };
 export default function PricingPage() {
   return (
