@@ -6,7 +6,7 @@ export default function Contact1() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    subject: "",
+    phone: "",
     message: ""
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -42,7 +42,7 @@ export default function Contact1() {
         setFormData({
           name: "",
           email: "",
-          subject: "",
+          phone: "",
           message: ""
         });
       } else {
@@ -183,7 +183,7 @@ export default function Contact1() {
                           className="form-control h-48px w-full bg-white dark:border-white dark:bg-opacity-10 dark:border-opacity-0 dark:text-white"
                           type="email"
                           name="email"
-                          placeholder="Email"
+                          placeholder="Email*"
                           required
                           value={formData.email}
                           onChange={handleChange}
@@ -192,10 +192,10 @@ export default function Contact1() {
                     </div>
                     <input
                       className="form-control h-48px w-full bg-white dark:border-white dark:bg-opacity-10 dark:border-opacity-0 dark:text-white"
-                      type="text"
-                      name="subject"
-                      placeholder="Tytuł"
-                      value={formData.subject}
+                      type="tel"
+                      name="phone"
+                      placeholder="Telefon"
+                      value={formData.phone}
                       onChange={handleChange}
                     />
                     <textarea

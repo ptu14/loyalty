@@ -10,10 +10,8 @@ export default function ContactModal() {
   const containerRef = useRef(null);
   const [formData, setFormData] = useState({
     name: "",
-    lastName: "",
     email: "",
     phone: "",
-    company: "",
     message: ""
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -29,10 +27,10 @@ export default function ContactModal() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    
+
     setIsSubmitting(true);
     setSubmitStatus(null);
-    
+
     try {
       const response = await fetch('/api/contact', {
         method: 'POST',
@@ -40,27 +38,25 @@ export default function ContactModal() {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          name: `${formData.name} ${formData.lastName}`,
+          name: `${formData.name}`,
           email: formData.email,
-          subject: `Prośba o demo od ${formData.company}`,
+          subject: `Prośba o demo od ${formData.name}`,
           message: `
-Telefon: ${formData.phone}
-Firma: ${formData.company}
+Imię i nazwisko: ${formData.name}
+          Telefon: ${formData.phone}
 Wiadomość: ${formData.message || "Brak dodatkowej wiadomości"}
           `
         }),
       });
-      
+
       const data = await response.json();
-      
+
       if (response.ok) {
         setSubmitStatus({ success: true, message: "Wiadomość została wysłana. Skontaktujemy się z Tobą wkrótce." });
         setFormData({
           name: "",
-          lastName: "",
           email: "",
           phone: "",
-          company: "",
           message: ""
         });
       } else {
@@ -131,7 +127,7 @@ Wiadomość: ${formData.message || "Brak dodatkowej wiadomości"}
                       {submitStatus.message}
                     </div>
                   )}
-                  
+
                   <div
                     className="vstack lg:hstack gap-2"
                     style={{ flexDirection: "row" }}
@@ -142,17 +138,7 @@ Wiadomość: ${formData.message || "Brak dodatkowej wiadomości"}
                       name="name"
                       value={formData.name}
                       onChange={handleChange}
-                      placeholder="Imię*"
-                      required
-                    />
-                    <input
-                      className="form-control h-48px w-100 md:w-1/2 bg-white dark:border-white dark:text-dark"
-                      type="text"
-                      name="lastName"
-                      value={formData.lastName}
-                      onChange={handleChange}
-                      placeholder="Nazwisko*"
-                      required
+                      placeholder="Imię i nazwisko"
                     />
                   </div>
                   <div
@@ -168,24 +154,14 @@ Wiadomość: ${formData.message || "Brak dodatkowej wiadomości"}
                       placeholder="Email*"
                       required
                     />
-                    <input
-                      className="form-control h-48px w-100 md:w-1/2 rtl:text-end bg-white dark:border-white dark:text-dark"
-                      type="tel"
-                      name="phone"
-                      value={formData.phone}
-                      onChange={handleChange}
-                      placeholder="Numer telefonu*"
-                      required
-                    />
                   </div>
                   <input
-                    className="form-control h-48px w-full bg-white dark:border-white dark:text-dark"
-                    type="text"
-                    name="company"
-                    value={formData.company}
+                    className="form-control h-48px w-100 md:w-1/2 rtl:text-end bg-white dark:border-white dark:text-dark"
+                    type="tel"
+                    name="phone"
+                    value={formData.phone}
                     onChange={handleChange}
-                    placeholder="Nazwa firmy*"
-                    required
+                    placeholder="Numer telefonu"
                   />
                   <textarea
                     className="form-control min-h-150px w-full bg-white dark:border-white dark:text-dark"
@@ -202,7 +178,7 @@ Wiadomość: ${formData.message || "Brak dodatkowej wiadomości"}
                     {isSubmitting ? "Wysyłanie..." : "Zaplanuj demo"}
                   </button>
                   <p className="fs-7 opacity-70 mt-2 text-center">
-                    Dopasujemy prezentację do Twoich potrzeb i odpowiemy na wszystkie pytania. Przygotuj się do zobaczenia, jak to działa!
+                    Dopasujemy prezentację do Twoich potrzeb i odpowiemy na wszystkie pytania. Pokażemy Ci jak to działa!
                   </p>
                 </form>
               </div>

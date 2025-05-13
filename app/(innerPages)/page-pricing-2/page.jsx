@@ -9,8 +9,10 @@ import Pricing2 from "@/components/innerpages/Pricing2";
 import PricingCompare from "@/components/innerpages/PricingCompare";
 import React from "react";
 export const metadata = {
-  title: "Cennik | Loyster - Porównanie planów dla aplikacji lojalnościowych",
-  description: "Porównaj plany cenowe Loyster i wybierz najlepszą opcję dla Twojego biznesu. Przejrzyste ceny i elastyczne pakiety programów lojalnościowych.",
+  title:
+    "Pricing 02 || Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
+  description:
+    "Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
 };
 export default function page() {
   return (
