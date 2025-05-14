@@ -82,18 +82,25 @@ export default function MobileMenu() {
         style={{ maxWidth: 876 }}
       >
         <header className="uc-offcanvas-header hstack justify-between items-center pb-2 bg-white dark:bg-gray-900">
-          <div className="uc-logo">
+          <div className="uc-logo text-dark dark:text-white">
             <Link
               href={`/`}
               className="h5 text-none text-gray-900 dark:text-white"
             >
               <Image
-                className="w-32px"
-                alt="Lexend"
-                src="/assets/images/common/logo-mark.svg"
-                width="34"
-                height="34"
+                className="dark:d-none"
+                alt="Loyster"
+                src="/assets/images/common/logo-light-2.svg"
+                width="117"
+                height="40"
               />
+              <Image
+                    className="d-none dark:d-block"
+                    alt="Lexend"
+                    src="/assets/images/common/logo-dark-2.svg"
+                    width="117"
+                    height="40"
+                  />
             </Link>
           </div>
           <button

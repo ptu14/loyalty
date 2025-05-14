@@ -19,7 +19,7 @@ export default function KeyFeatures() {
       id="scenariusze"
       className="key-features section panel overflow-hidden bg-secondary dark:bg-gray-800"
     >
-      <div className="section-outer panel py-6 xl:py-9">
+      <div className="section-outer panel py-9 xl:py-9">
         <div className="container sm:max-w-lg xl:max-w-xl">
           <div className="section-inner panel">
             <div
