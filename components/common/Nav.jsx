@@ -19,7 +19,7 @@ export default function Nav2() {
         <Link href={`/#scenariusze`}>Scenariusze</Link>
       </li>
       <li className="has-dd-menu" style={{ position: "relative" }}>
-        <a href="/#faq" role="button" aria-haspopup="true">
+        <a href="/faq" role="button" aria-haspopup="true">
           FAQ{" "}
           <span
             data-uc-navbar-parent-icon=""

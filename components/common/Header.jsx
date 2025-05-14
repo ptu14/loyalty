@@ -48,15 +48,15 @@ export default function Header3() {
                 >
                   <Image
                     className="dark:d-none"
-                    alt="Lexend"
-                    src="/assets/images/common/logo-light.svg"
+                    alt="Loyster"
+                    src="assets/images/common/logo-light-2.svg"
                     width="117"
                     height="40"
                   />
                   <Image
                     className="d-none dark:d-block"
                     alt="Lexend"
-                    src="/assets/images/common/logo-dark.svg"
+                    src="/assets/images/common/logo-dark-2.svg"
                     width="117"
                     height="40"
                   />

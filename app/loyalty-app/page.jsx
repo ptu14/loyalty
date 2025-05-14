@@ -6,6 +6,7 @@ import Pricing from "@/components/common/Pricing";
 import Header from "@/components/common/Header";
 import KeyFeatures from "@/components/loyalty-app/KeyFeatures";
 import Footer from "@/components/common/Footer";
+
 export default function LoyaltyApp() {
   return (
     <>

@@ -20,7 +20,7 @@ export const menuItems = [
     subItems: [
       
           {
-            href: "/#faq",
+            href: "/faq",
             label: "FAQ",
           },
           {
