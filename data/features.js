@@ -81,6 +81,19 @@ export const features = [
   },
   {
     id: 5,
+    imgSrc: "/assets/images/features/crm.png",
+    videoSrc: "/assets/images/features/crm.webm",
+    imgAlt: "CRM",
+    title: "CRM",
+    description:
+    "Buduj trwałe relacje z klientami dzięki zaawansowanemu CRM. Zarządzaj danymi, segmentuj odbiorców i personalizuj komunikację.",
+  longDescription:
+    "Moduł CRM umożliwia kompleksowe zarządzanie relacjami z klientami. Gromadź i aktualizuj dane kontaktowe, historię interakcji oraz preferencje zakupowe. Twórz precyzyjne segmenty odbiorców i dostosowuj komunikację do ich potrzeb i zachowań. Dzięki integracji z innymi funkcjami platformy możesz planować skuteczne kampanie marketingowe, analizować ich efekty i budować lojalność w oparciu o pełny obraz klienta.",
+    linkText: "Dowiedz się więcej",
+    linkHref: "/funkcjonalnosci#feature-5",
+  },
+  {
+    id: 6,
     imgSrc: "/assets/images/features/synerise_dashboard.png",
     videoSrc: "/assets/images/features/analytics.webm",
     imgAlt: "Analityka",
@@ -90,10 +103,10 @@ export const features = [
     longDescription:
       "Dzięki zaawansowanej analityce możesz monitorować skuteczność działań lojalnościowych w czasie rzeczywistym. Dedykowane dashboardy prezentują dane o aktywności klientów, ich zachowaniach zakupowych i preferencjach. To pozwala podejmować trafne decyzje biznesowe i optymalizować działania marketingowe. Korzystaj z predefiniowanych dashbordów lub buduj własne.",
     linkText: "Dowiedz się więcej",
-    linkHref: "/funkcjonalnosci#feature-5",
+    linkHref: "/funkcjonalnosci#feature-6",
   },
   {
-    id: 6,
+    id: 7,
     imgSrc: "/assets/images/features/synerise_segment.png",
     imgAlt: "Segmentacja",
     title: "Segmentacja",
@@ -105,7 +118,7 @@ export const features = [
     linkHref: "/funkcjonalnosci#feature-4",
   },
   {
-    id: 7,
+    id: 8,
     imgSrc: "/assets/images/features/ab_testing.png",
     videoSrc: "/assets/images/features/abtests2.webm",
     imgAlt: "Testy A/B",
@@ -118,7 +131,7 @@ export const features = [
     linkHref: "/funkcjonalnosci#feature-7"
   },
   {
-    id: 8,
+    id: 9,
     imgSrc: "/assets/images/features/inapp.webm",
     videoSrc: "/assets/images/features/inapp.webm",
     imgAlt: "Edytor treści",
@@ -127,6 +140,18 @@ export const features = [
       "Zarządzaj treścią aplikacji mobilnej bez znajomości programowania - za pomocą prostego edytora typu drag & drop.",
     longDescription:
       "Dodawaj i aktualizuj treści w aplikacji lojalnościowej całkowicie samodzielnie. Intuicyjny edytor typu drag & drop pozwala tworzyć banery i komunikaty bez potrzeby angażowania zespołu deweloperskiego. To idealne rozwiązanie dla zespołów marketingu i biznesu, które chcą szybko reagować na zmiany i aktualizować aplikację w czasie rzeczywistym.",
+    linkText: "Dowiedz się więcej",
+    linkHref: "/funkcjonalnosci#feature-9"
+  },
+  {
+    id: 10,
+    imgSrc: "/assets/images/features/vouchers.png",
+    imgAlt: "Kupony",
+    title: "Kupony",
+    description:
+    "Nagradzaj klientów unikalnymi kuponami po spełnieniu określonych warunków. Zwiększaj zaangażowanie i sprzedaż.",
+  longDescription:
+    "Funkcjonalność kuponów pozwala automatycznie przypisywać klientom unikalne kody alfanumeryczne w odpowiedzi na określone zdarzenia lub spełnienie zdefiniowanych warunków – np. zakup konkretnego produktu, osiągnięcie progu punktowego lub udział w kampanii. Kupony mogą być jednorazowe, personalizowane i ograniczone czasowo. Dzięki tej funkcji łatwo zwiększysz motywację klientów do ponownych zakupów oraz wesprzesz działania promocyjne i lojalnościowe.",  
     linkText: "Dowiedz się więcej",
     linkHref: "/funkcjonalnosci#feature-8"
   }
@@ -204,7 +229,7 @@ export const features2 = [
     backgroundColor: "bg-white dark:bg-gray-800",
   },
   {
-    icon: "unicon-trophy",
+    icon: "unicon-star",
     title: "Poziomy lojalności",
     description:
       "Wprowadź poziomy (np. Srebrny, Złoty, Platynowy) z rosnącymi korzyściami.",
@@ -216,7 +241,58 @@ export const features2 = [
     description:
       "Zbieraj dane i edukuj klientów, oferując punkty za udział w quizie lub ankiecie.",
     backgroundColor: "bg-white dark:bg-gray-800",
+    premium: true,
+  },
+  {
+    icon: "unicon-trophy",
+    title: "Loterie",
+    description:
+      "Organizuj loterie (np. koło fortuny) i nagradzaj losowymi nagrodami.",
+    backgroundColor: "bg-white dark:bg-gray-800",
+  },
+  {
+    icon: "unicon-share",
+    title: "Transferuj punkty pomiędzy użytkownikami",
+    description:
+      "Pozwól na transferer punktów pomiędzy użytkownikami w ramach programu lojalnościowego.",
+    backgroundColor: "bg-white dark:bg-gray-800",
+  },
+  {
+    icon: "unicon-warning",
+    title: "Wygaszaj punkty",
+    description:
+      "Zaplanuj wygaszenie w mniej aktywnych okresach (np. poza sezonem), aby zachęcić do ich wykorzystania i zwiększenia aktywność w tym czasie.",
+    backgroundColor: "bg-white dark:bg-gray-800",
+  },
+  {
+    icon: "unicon-time",
+    title: "Nagradzaj powroty",
+    description:
+      "Przyznawaj dodatkowe punkty jeżeli użytkownik nie zrobił żadnej interakcji np. w ciągu 30 dni.",
+    backgroundColor: "bg-white dark:bg-gray-800",
+  },
+  {
+    icon: "unicon-location",
+    title: "Promuj nowe lokalizacje",
+    description:
+      "Przyznawaj dodatkowe punkty za odwiedziny w nowym punkcie.",
+    backgroundColor: "bg-white dark:bg-gray-800",
+  },
+  {
+    icon: "unicon-layers",
+    title: "Hot strike!",
+    description:
+      "Nagradzaj użytkownika rosnącą liczbą punktów za regularne zakupy, np. jeśli dokonuje ich w odstępach nieprzekraczających 7 dni.",
+    backgroundColor: "bg-white dark:bg-gray-800",
+  },
+  {
+    icon: "unicon-email",
+    title: "Punkty za komunikację",
+    description:
+      "Nagradzaj punktami za okres (np. dzień lub miesiąc) z aktywną zgodą marketingową.",
+    backgroundColor: "bg-white dark:bg-gray-800",
   }
+  
 ];
 
 export const features3 = [

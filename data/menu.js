@@ -24,10 +24,6 @@ export const menuItems = [
             label: "FAQ",
           },
           {
-            href: "/#scenariusze",
-            label: "Scenariusze",
-          },
-          {
             href: "/wdrozenie",
             label: "Wdrożenie",
           },
