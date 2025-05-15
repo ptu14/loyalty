@@ -121,7 +121,7 @@ export default function Contact1() {
                             Numer kontaktowy:
                           </p>
                           <p className="fs-6 xl:fs-5 fw-light mt-0">
-                            505 205 940
+                            <a href="tel:+48505205940">+48 505 205 940</a>
                           </p>
                           <p className="fs-5 xl:fs-4 fw-medium mb-0">
                             Dane rejestrowe:
@@ -134,7 +134,7 @@ export default function Contact1() {
                             Adres:
                           </p>
                           <p className="fs-6 xl:fs-5 fw-light mt-0">
-                            ul. Anny Szwed-Śniadowskiej 42<br />
+                            ul. Anny Szwed-Śniadowskiej 42/6<br />
                             30-389 Kraków
                           </p>
                           <div className="vstack gap-0 mt-2">
