@@ -19,7 +19,7 @@ export default function Footer2() {
                         <img
                           className=" text-primary"
                           alt="Lexend"
-                          src="/assets/images/common/logo-dark-2.svg"
+                          src="/assets/images/logo-dark.svg"
                         />
                       </Link>
                       <p>

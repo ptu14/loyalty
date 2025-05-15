@@ -56,7 +56,7 @@ export default function Header3() {
                   <Image
                     className="d-none dark:d-block"
                     alt="Lexend"
-                    src="/assets/images/common/logo-dark-2.svg"
+                    src="/assets/images/logo-dark.svg"
                     width="117"
                     height="40"
                   />

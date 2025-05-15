@@ -90,14 +90,14 @@ export default function MobileMenu() {
               <Image
                 className="dark:d-none"
                 alt="Loyster"
-                src="/assets/images/common/logo-light-2.svg"
+                src="/assets/images/logo.svg"
                 width="117"
                 height="40"
               />
               <Image
                     className="d-none dark:d-block"
                     alt="Lexend"
-                    src="/assets/images/common/logo-dark-2.svg"
+                    src="/assets/images/logo-dark.svg"
                     width="117"
                     height="40"
                   />
