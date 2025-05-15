@@ -5,7 +5,6 @@ import React, { useState } from "react";
 export default function KeyFeatures() {
   const [showAll, setShowAll] = useState(false);
   const displayedFeatures = showAll ? features2 : features2.slice(0, 8);
-  console.log(displayedFeatures);
   const handleToggle = (e) => {
     e.preventDefault();
     setShowAll(!showAll);
