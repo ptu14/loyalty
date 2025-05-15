@@ -73,11 +73,11 @@ export default function Features() {
                 className="uc-link fw-bold d-inline-flex items-center gap-narrow"
                 style={{
                   transform: "translateY(0.0097341px)",
-                  opacity: "0.999797",
+                  opacity: "1",
                 }}
               >
-                <span>Sprawdź {features.length - 6} {features.length - 6 <=  4 ? "pozostałe" : "pozostałych"} funkcjonalności</span>
-                <i className="icon icon-1 unicon-arrow-right rtl:rotate-180" />
+                <span className={'d-inline-flex items-center gap-1'}>Sprawdź {features.length - 6} {features.length - 6 <= 4 ? "pozostałe" : "pozostałych"} funkcjonalności                 <i
+                    className="icon icon-1 unicon-arrow-right rtl:rotate-180"/></span>
               </Link>
             </div>
           </div>

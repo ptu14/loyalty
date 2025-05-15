@@ -67,12 +67,12 @@ export default function KeyFeatures() {
                       onClick={handleToggle}
                       className="uc-link fw-bold d-inline-flex items-center gap-narrow text-primary hover:text-primary-dark transition-colors"
                     >
-                      <span>
-                        {showAll 
-                          ? "Pokaż mniej scenariuszy" 
-                          : `Sprawdź pozostałe ${features2.length - 8} ${features2.length - 8 <= 4 ? "scenariusze" : "scenariuszy"}`}
+                      <span className={'d-inline-flex items-center gap-1'}>
+                        {showAll
+                            ? "Pokaż mniej scenariuszy"
+                            : `Sprawdź pozostałe ${features2.length - 8} ${features2.length - 8 <= 4 ? "scenariusze" : "scenariuszy"}`}
+                        <i className={`icon icon-1 unicon-arrow-${showAll ? 'up' : 'right'} rtl:rotate-180`}/>
                       </span>
-                      <i className={`icon icon-1 unicon-arrow-${showAll ? 'up' : 'right'} rtl:rotate-180`} />
                     </a>
                   </div>
                 )}

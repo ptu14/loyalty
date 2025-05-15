@@ -28,7 +28,7 @@ export default function Hero() {
                     Prosto, intuicyjnie, bez kodowania.
                     
                   </p>
-                  <div className="vstack sm:hstack justify-center gap-1 lg:gap-2 mt-1 sm:mt-2 flex-sm-column fdr">
+                  <div className="vstack sm:hstack justify-center lg:justify-start gap-1 lg:gap-2 mt-1 sm:mt-2 flex-sm-column fdr">
                     <a
                       onClick={openContactModal}
                       className="btn btn-md lg:btn-lg btn-primary text-white"
