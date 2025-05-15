@@ -153,8 +153,21 @@ export const features = [
   longDescription:
     "Funkcjonalność kuponów pozwala automatycznie przypisywać klientom unikalne kody alfanumeryczne w odpowiedzi na określone zdarzenia lub spełnienie zdefiniowanych warunków – np. zakup konkretnego produktu, osiągnięcie progu punktowego lub udział w kampanii. Kupony mogą być jednorazowe, personalizowane i ograniczone czasowo. Dzięki tej funkcji łatwo zwiększysz motywację klientów do ponownych zakupów oraz wesprzesz działania promocyjne i lojalnościowe.",  
     linkText: "Dowiedz się więcej",
-    linkHref: "/funkcjonalnosci#feature-8"
+    linkHref: "/funkcjonalnosci#feature-10"
+  },
+  {
+    id: 11,
+    imgSrc: "/assets/images/template/feature-02.svg",
+    imgAlt: "Integracje",
+    title: "Integracje z systemami zewnętrznymi",
+    description:
+      "Łącz się z systemami CRM, ERP, komunikatorami i innymi narzędziami, aby automatyzować procesy i wymianę danych.",
+    longDescription:
+      "Funkcjonalność integracji pozwala na bezproblemowe połączenie z zewnętrznymi systemami - takimi jak CRM, ERP, komunikatory czy platformy automatyzujące procesy. Dzięki temu możliwa jest automatyczna wymiana danych, synchronizacja informacji w czasie rzeczywistym i budowa spójnych scenariuszy operacyjnych i marketingowych. Integracje wspierają lepsze zarządzanie relacjami z klientami, usprawniają działania wewnętrzne i zwiększają efektywność całej organizacji.",
+    linkText: "Dowiedz się więcej",
+    linkHref: "/funkcjonalnosci#feature-11"
   }
+  
 ];
 
 export const features2 = [
