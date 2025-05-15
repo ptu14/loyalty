@@ -16,10 +16,10 @@
 @include meta.load-css("theme/theme-six.min.purge.scss");
 
 .badge-premium {
-  color: #065f46;
+  color: #fff;
   padding-block: 0.25rem;
   padding-inline: 0.75rem;
-  background-color: #d1fae5;
+  background-color: #065f46;
   position: absolute;
   z-index: 1;
   inset-inline-end: -8px;

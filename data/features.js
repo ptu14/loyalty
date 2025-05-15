@@ -192,6 +192,7 @@ export const features2 = [
     description:
       "Mnóż lub dodawaj punkty w określonych okresach lub za okreslone akcje.",
     backgroundColor: "bg-white dark:bg-gray-800",
+    premium: true
   },
   {
     icon: "unicon-email",
@@ -227,6 +228,7 @@ export const features2 = [
     description:
       "Twórz zadania (np. 3 zakupy w tygodniu) i nagradzaj ich wykonanie dodatkowymi punktami.",
     backgroundColor: "bg-white dark:bg-gray-800",
+    premium: true,
   },
   {
     icon: "unicon-star",
@@ -234,6 +236,7 @@ export const features2 = [
     description:
       "Wprowadź poziomy (np. Srebrny, Złoty, Platynowy) z rosnącymi korzyściami.",
     backgroundColor: "bg-white dark:bg-gray-800",
+    premium: true
   },
   {
     icon: "unicon-document-alt",
@@ -249,6 +252,7 @@ export const features2 = [
     description:
       "Organizuj loterie (np. koło fortuny) i nagradzaj losowymi nagrodami.",
     backgroundColor: "bg-white dark:bg-gray-800",
+    premium: true
   },
   {
     icon: "unicon-share",
@@ -256,6 +260,7 @@ export const features2 = [
     description:
       "Pozwól na transferer punktów pomiędzy użytkownikami w ramach programu lojalnościowego.",
     backgroundColor: "bg-white dark:bg-gray-800",
+    premium:true
   },
   {
     icon: "unicon-warning",
@@ -263,6 +268,7 @@ export const features2 = [
     description:
       "Zaplanuj wygaszenie w mniej aktywnych okresach (np. poza sezonem), aby zachęcić do ich wykorzystania i zwiększenia aktywność w tym czasie.",
     backgroundColor: "bg-white dark:bg-gray-800",
+    premium:true
   },
   {
     icon: "unicon-time",
@@ -284,6 +290,7 @@ export const features2 = [
     description:
       "Nagradzaj użytkownika rosnącą liczbą punktów za regularne zakupy, np. jeśli dokonuje ich w odstępach nieprzekraczających 7 dni.",
     backgroundColor: "bg-white dark:bg-gray-800",
+    premium:true
   },
   {
     icon: "unicon-email",
