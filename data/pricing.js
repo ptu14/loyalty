@@ -191,6 +191,7 @@ export const tiers3 = [
       "Aplikacja Android i iOS w Twojej kolorystyce i z Twoim logo",
       "Regulamin aplikacji i programu lojalnościowego",
       "Do 1000 użytkowników",
+      "Dostęp do podstawowych scenariuszy",
       "Do 5 nagród",
       "Do 5 automatyzacji",
       "Nielimitowana liczba wiadomości push oraz email",
@@ -202,7 +203,7 @@ export const tiers3 = [
     isPopular: false,
   },
   {
-    title: "Podstawowy",
+    title: "Premium",
     description: "Wszystko czego potrzebujesz żeby zbudować skuteczny program lojalnościowy.",
     price: "1000 PLN",
     yearlyPrice: "900 PLN",
@@ -213,8 +214,9 @@ export const tiers3 = [
       "Nielimitowana liczba użytkowników",
       "Nielimiotwana liczba nagród",
       "Nielimitowana liczba automatyzacji",
+      "Dostęp do sceanriuszy premium",
       "Customowe dashboard moniutorujący wyniki",
-      "Wsparcie online / telefoniczne"
+      "Dedykowane wsparcie"
     ],
     isPopular: true,
   },
@@ -228,7 +230,8 @@ export const tiers3 = [
     linkSubtext: "Odpowiedź w ciągu 24 godzin",
     features: [
       "Dedykowana, specjalnie zaprojektowana aplikacja Android i iOS",
-      "Dedykowany opiekun"
+      "Dedykowany opiekun",
+      "Połączenie z narzedziami 3rd party"
     ],
     isPopular: false,
   },

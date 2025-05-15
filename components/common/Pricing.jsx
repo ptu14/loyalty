@@ -3,6 +3,7 @@ import { tiers3 } from "@/data/pricing";
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { openContactModal } from "@/utlis/toggleContactModal";
 
 export default function Pricing() {
   const [isYearly, setIsYearly] = useState(false);
@@ -54,7 +55,7 @@ export default function Pricing() {
                       <div className="tier panel vstack gap-2 xl:gap-4 px-3 py-4 sm:p-4 lg:p-6 rounded lg:rounded-2 bg-secondary dark:bg-gray-800">
                         {tier.isPopular && (
                           <span className="position-absolute top-0 ltr:end-0 rtl:start-0 m-2 d-inline-flex py-narrow px-1 bg-primary rounded-1 text-white fs-7 fw-medium">
-                            Popular
+                            Polecany
                           </span>
                         )}
                         <div className="panel">
@@ -74,8 +75,8 @@ export default function Pricing() {
                               {tier.priceDetails}
                             </span>
                             <div className="vstack gap-1 justify-center text-center mt-3">
-                              <Link
-                                href={`/sign-up`}
+                              <a
+                                onClick={() => openContactModal()}
                                 className={`btn btn-md sm:btn-sm lg:btn-md ${
                                   tier.title === "Enterprise"
                                     ? "btn-dark"
@@ -83,7 +84,7 @@ export default function Pricing() {
                                 } text-white`}
                               >
                                 {tier.linkText}
-                              </Link>
+                              </a>
                               <span className="fs-7 opacity-70 min-h-24px">
                                 {tier.linkSubtext}
                               </span>
@@ -96,9 +97,9 @@ export default function Pricing() {
                               {tier.title === "Poznajmy się"
                                 ? "Co dostajesz:"
                                 : `Wszystko co w ${
-                                    tier.title === "Podstawowy"
+                                    tier.title === "Premium"
                                       ? "Poznajmy się"
-                                      : "Podstawowy"
+                                      : "Premium"
                                   }, plus:`}
                             </span>
                             {tier.features.map((feature, idx) => (
