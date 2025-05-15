@@ -49,7 +49,7 @@ export default function Header3() {
                   <Image
                     className="dark:d-none"
                     alt="Loyster"
-                    src="assets/images/common/logo-light-2.svg"
+                    src="assets/images/logo.svg"
                     width="117"
                     height="40"
                   />

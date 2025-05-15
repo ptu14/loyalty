@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#12715b">
+  <defs>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="480" y1="-760" x2="480" y2="-200" id="gradient-0" gradientTransform="matrix(0.698759, -0.715357, 1.711297, 1.67159, 962.019206, 666.851091)">
+      <stop offset="0" style="stop-color: rgb(100% 100% 100%)"/>
+      <stop offset="1" style="stop-color: rgb(19, 113, 91);"/>
+    </linearGradient>
+  </defs>
+  <rect x="78.045" y="-882.09" width="805.48" height="805.48" style="stroke: rgb(0, 0, 0); fill: rgb(19, 113, 91);" rx="122.008" ry="122.008"/>
+  <path d="M 700 -580 L 700 -700 L 580 -700 L 580 -580 L 700 -580 Z M 380 -580 L 380 -700 L 260 -700 L 260 -580 L 380 -580 Z M 380 -260 L 380 -380 L 260 -380 L 260 -260 L 380 -260 Z M 440 -760 L 440 -520 L 200 -520 L 200 -760 L 440 -760 Z M 440 -440 L 440 -200 L 200 -200 L 200 -440 L 440 -440 Z M 760 -760 L 760 -520 L 520 -520 L 520 -760 L 760 -760 Z M 520 -440 L 580 -440 L 580 -380 L 520 -380 L 520 -440 Z M 580 -380 L 640 -380 L 640 -320 L 580 -320 L 580 -380 Z M 520 -320 L 580 -320 L 580 -260 L 520 -260 L 520 -320 Z M 580 -260 L 640 -260 L 640 -200 L 580 -200 L 580 -260 Z M 640 -320 L 700 -320 L 700 -260 L 640 -260 L 640 -320 Z M 700 -260 L 760 -260 L 760 -200 L 700 -200 L 700 -260 Z" style="fill: url(&quot;#gradient-0&quot;);"/>
+  <path d="M 640 -440 L 700 -440 L 700 -380 L 640 -380 L 640 -440 Z"/>
+  <path d="M 700 -380 L 760 -380 L 760 -320 L 700 -320 L 700 -380 Z"/>
+</svg>
