@@ -43,9 +43,9 @@ export default function Footer2() {
                   <div className="panel vstack items-start gap-1 text-xs">
                     <h5 className="text-sm font-medium mb-1">Kontakt</h5>
                     <p>"Loyster" jest usługą firmy "Devexpert Mateusz Daniluk" </p>
-                    <p>Numer kontaktowy: 505 205 940</p>
+                    <p>Telefon: <a href='tel:+48505205940'>+ 48 505 205 940</a></p>
+                    <p>E-mail: <a href='mailto:kontakt@loyster.pl'>kontakt@loyster.pl</a></p>
                     <p>NIP: 9222976031<br/>REGON: 524393301</p>
-                    <p>ul. Anny Szwed-Śniadowskiej 42, 30-389 Kraków</p>
                   </div>
                 </div>
               </div>
