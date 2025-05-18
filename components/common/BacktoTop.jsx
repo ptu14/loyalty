@@ -4,7 +4,7 @@ import { useContextElement } from "@/context/Context";
 import { useEffect, useState } from "react";
 
 export default function BacktoTop() {
-  const { isDark, handleToggle } = useContextElement();
+  const { isDark, handleToggle, themeMode } = useContextElement();
 
   const [isVisible, setIsVisible] = useState(false);
 
@@ -27,6 +27,16 @@ export default function BacktoTop() {
     };
   }, []);
 
+  // Inicjalizacja tooltipów Bootstrap
+  useEffect(() => {
+    // Sprawdź czy Bootstrap jest dostępny
+    if (typeof bootstrap !== 'undefined') {
+      // Inicjalizuj wszystkie tooltips
+      const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+      [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+    }
+  }, []);
+
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -42,7 +52,16 @@ export default function BacktoTop() {
     >
       <div
         className="darkmode-trigger cstack w-40px h-40px rounded-circle text-none bg-gray-100 dark:bg-gray-700 dark:text-white"
-        data-darkmode-toggle=""
+        data-darkmode-toggle={themeMode}
+        data-bs-toggle="tooltip"
+        data-bs-placement="left"
+        title={
+          themeMode === "light" 
+            ? "Aktualnie: Tryb jasny - Kliknij, aby przełączyć na tryb ciemny" 
+            : themeMode === "dark" 
+              ? "Aktualnie: Tryb ciemny - Kliknij, aby przełączyć na tryb systemowy" 
+              : "Aktualnie: Tryb systemowy - Kliknij, aby przełączyć na tryb jasny"
+        }
       >
         <label className="switch">
           <span className="sr-only">Dark mode toggle</span>

@@ -75,36 +75,77 @@ export default function Context({ children }) {
   }, [wishList]);
 
   const [isDark, setisDark] = useState(true);
+  const [themeMode, setThemeMode] = useState("system");
+  
   const toggleDark = (value) => {
+    console.log('dasdasdadsad', value)
     if (value) {
       document.documentElement.classList.add("uc-dark");
     } else {
       document.documentElement.classList.remove("uc-dark");
     }
   };
+  
   useEffect(() => {
+    const getThemeMode = () => {
+      const value = localStorage.getItem("themeMode");
+      return value || "system";
+    };
+    
     const getBooleanValue = (key) => {
       const value = localStorage.getItem(key);
-      return value ? JSON.parse(value) : false; // Default to false if the value is not found
+      return value ? JSON.parse(value) : null;
     };
-    // for default dark mode
-    // const savedValue = getBooleanValue("isDark") ? getBooleanValue("isDark") : true;
-
-    //for default light mode
-    const savedValue = getBooleanValue("isDark");
-
-    toggleDark(savedValue);
-    setisDark(savedValue);
+    
+    const prefersDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    console.log('eeeel', prefersDarkMode)
+    
+    const savedThemeMode = getThemeMode();
+    setThemeMode(savedThemeMode);
+    
+    if (savedThemeMode === "system") {
+      toggleDark(prefersDarkMode);
+      setisDark(prefersDarkMode);
+    } else {
+      const darkMode = savedThemeMode === "dark";
+      toggleDark(darkMode);
+      setisDark(darkMode);
+    }
+    
+    const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+    const handleSystemThemeChange = (e) => {
+      if (getThemeMode() === "system") {
+        toggleDark(e.matches);
+        setisDark(e.matches);
+      }
+    };
+    
+    darkModeMediaQuery.addEventListener('change', handleSystemThemeChange);
+    
+    return () => {
+      darkModeMediaQuery.removeEventListener('change', handleSystemThemeChange);
+    };
   }, []);
 
   const handleToggle = () => {
-    const saveBooleanValue = (key, value) => {
-      localStorage.setItem(key, JSON.stringify(value));
-    };
-    const newValue = !isDark;
-    setisDark(newValue);
-    saveBooleanValue("isDark", newValue);
-    toggleDark(newValue);
+    let newThemeMode;
+    if (themeMode === "light") {
+      newThemeMode = "dark";
+      setisDark(true);
+      toggleDark(true);
+    } else if (themeMode === "dark") {
+      newThemeMode = "system";
+      const systemDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+      setisDark(systemDark);
+      toggleDark(systemDark);
+    } else {
+      newThemeMode = "light";
+      setisDark(false);
+      toggleDark(false);
+    }
+    
+    setThemeMode(newThemeMode);
+    localStorage.setItem("themeMode", newThemeMode);
   };
 
   const contextElement = {
@@ -120,6 +161,7 @@ export default function Context({ children }) {
     setQuickViewItem,
     isDark,
     handleToggle,
+    themeMode,
   };
 
   useEffect(() => {

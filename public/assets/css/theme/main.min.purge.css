@@ -2156,6 +2156,9 @@ img.image-hover-revealer {
   z-index: 1;
   color: currentColor;
 }
+[data-darkmode-toggle="system"] .switch > .slider:before {
+  content: "\e9c8";
+}
 [data-darkmode-toggle] .switch > input {
   opacity: 0;
   width: 0;
