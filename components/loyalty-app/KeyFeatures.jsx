@@ -36,7 +36,8 @@ export default function KeyFeatures() {
                   {displayedFeatures.map((feature, index) => (
                       <div key={index}>
                         <div
-                            className={`position-relative feature-item panel p-4 rounded-2 hover:bg-primary dark:text-white hover:text-white hover:scale-105 duration-150 transition-all ${feature.backgroundColor}`}
+                            className="position-relative feature-item panel p-4 rounded-2 hover:bg-primary dark:text-white hover:text-white hover:scale-105 duration-150 transition-all
+                            bg-white dark:bg-gray-700"
                         >
                           {feature.premium && <div className="badge-premium">Premium</div>}
                           <div className="vstack panel min-h-250px">

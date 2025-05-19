@@ -9,7 +9,7 @@ export default function FaqShortcut() {
       id="integrations"
       className="integrations section panel overflow-hidden"
     >
-      <div className="section-outer panel py-9 xl:py-9 bg-secondary dark:bg-primary dark:text-white">
+      <div className="section-outer panel py-9 xl:py-9 bg-secondary dark:bg-gray-800 dark:text-white">
         <div className="container max-w-lg">
           <div className="section-inner panel">
             <div
@@ -32,7 +32,7 @@ export default function FaqShortcut() {
                   <div key={index}>
                     <Link
                       href={shortcut.link || "/page-integrations"}
-                      className="feature-item panel vstack justify-between gap-4 p-3 rounded lg:rounded-2 bg-white text-dark hover:bg-primary hover:text-white hover:scale-105 duration-150 transition-all block"
+                      className="feature-item panel vstack justify-between gap-4 p-3 rounded lg:rounded-2 bg-white text-dark dark:bg-gray-700 dark:text-white hover:bg-primary hover:text-white hover:scale-105 duration-150 transition-all block"
                     >
                       <div className="vstack gap-3">
                         <div className="hstack justify-between items-center">

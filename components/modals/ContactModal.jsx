@@ -133,7 +133,7 @@ Wiadomość: ${formData.message || "Brak dodatkowej wiadomości"}
                     style={{ flexDirection: "row" }}
                   >
                     <input
-                      className="form-control h-48px w-100 md:w-full bg-white dark:border-white dark:text-dark"
+                      className="form-control h-48px w-100 md:w-full bg-white dark:border-white dark:bg-opacity-10 dark:border-opacity-0 dark:text-white"
                       type="text"
                       name="name"
                       value={formData.name}
@@ -146,7 +146,7 @@ Wiadomość: ${formData.message || "Brak dodatkowej wiadomości"}
                     style={{ flexDirection: "row" }}
                   >
                     <input
-                      className="form-control h-48px w-100 md:w-full bg-white dark:border-white dark:text-dark"
+                      className="form-control h-48px w-100 md:w-full bg-white dark:border-white dark:bg-opacity-10 dark:border-opacity-0 dark:text-white"
                       type="email"
                       name="email"
                       value={formData.email}
@@ -156,7 +156,7 @@ Wiadomość: ${formData.message || "Brak dodatkowej wiadomości"}
                     />
                   </div>
                   <input
-                    className="form-control h-48px w-100 md:w-full rtl:text-end bg-white dark:border-white dark:text-dark"
+                    className="form-control h-48px w-100 md:w-full rtl:text-end bg-white dark:border-white dark:bg-opacity-10 dark:border-opacity-0 dark:text-white"
                     type="tel"
                     name="phone"
                     value={formData.phone}
@@ -164,7 +164,7 @@ Wiadomość: ${formData.message || "Brak dodatkowej wiadomości"}
                     placeholder="Numer telefonu..."
                   />
                   <textarea
-                    className="form-control min-h-150px w-full bg-white dark:border-white dark:text-dark"
+                    className="form-control min-h-150px w-full bg-white dark:border-white dark:bg-opacity-10 dark:border-opacity-0 dark:text-white"
                     name="message"
                     value={formData.message}
                     onChange={handleChange}

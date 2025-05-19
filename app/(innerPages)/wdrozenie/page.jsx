@@ -2,6 +2,7 @@ import Header from "@/components/common/Header";
 import Features from "@/components/innerpages/implementation/Features";
 import Hero from "@/components/innerpages/implementation/Hero";
 import React from "react";
+import Faq from "@/components/common/Faq";
 import Footer from "@/components/common/Footer";
 export const metadata = {
   title: "Wdrożenie | Loyster - Kompleksowe wdrożenie aplikacji lojalnościowej",
@@ -14,7 +15,7 @@ export default function HomePage3() {
         <Header />
         <Hero />
         <Features />
-        
+        <Faq />
       </div>
       <Footer />
     </>

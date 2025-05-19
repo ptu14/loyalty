@@ -1,6 +1,7 @@
 import Header from "@/components/common/Header";
 import Features from "@/components/innerpages/HowItWorks/Features";
 import Hero from "@/components/innerpages/HowItWorks/Hero";
+import Faq from "@/components/common/Faq";
 import React from "react";
 import Footer from "@/components/common/Footer";
 export const metadata = {
@@ -14,7 +15,7 @@ export default function HomePage3() {
         <Header />
         <Hero />
         <Features />
-        
+        <Faq />
       </div>
       <Footer />
     </>
