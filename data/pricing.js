@@ -185,8 +185,8 @@ export const tiers3 = [
     price: "400 PLN",
     yearlyPrice: "350 PLN",
     priceDetails: "Za miesiąc + 500 PLN jednorazowo za setup",
-    linkText: "Wypróbuj za darmo",
-    linkSubtext: "Darmowy miesiąc",
+    linkText: "Darmowe demo",
+    linkSubtext: "Odpowiedź w ciągu 24 godzin",
     features: [
       "Aplikacja Android i iOS w Twojej kolorystyce i z Twoim logo",
       "Regulamin aplikacji i programu lojalnościowego",
@@ -197,8 +197,8 @@ export const tiers3 = [
       "Nielimitowana liczba wiadomości push oraz email",
       "0.17 PLN za SMS",
       "Wygodny builder wiadomości push/email/sms",
-      "Support email",
-      "Domyślny dashboard monitorujący wyniki"
+      "Domyślny dashboard monitorujący wyniki",
+      "Wsparcie techniczne"
     ],
     isPopular: false,
   },
@@ -208,8 +208,8 @@ export const tiers3 = [
     price: "1000 PLN",
     yearlyPrice: "900 PLN",
     priceDetails: "Za miesiąc + 500 PLN jednorazowo za setup",
-    linkText: "Wypróbuj za darmo",
-    linkSubtext: "Darmowy miesiąc",
+    linkText: "Darmowe demo",
+    linkSubtext: "Odpowiedź w ciągu 24 godzin",
     features: [
       "Nielimitowana liczba użytkowników",
       "Nielimitowana liczba nagród",
