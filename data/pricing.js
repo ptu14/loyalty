@@ -198,7 +198,7 @@ export const tiers3 = [
       "0.17 PLN za SMS",
       "Wygodny builder wiadomości push/email/sms",
       "Support email",
-      "Domyślny dashboard moniutorujący wyniki"
+      "Domyślny dashboard monitorujący wyniki"
     ],
     isPopular: false,
   },
@@ -212,10 +212,10 @@ export const tiers3 = [
     linkSubtext: "Darmowy miesiąc",
     features: [
       "Nielimitowana liczba użytkowników",
-      "Nielimiotwana liczba nagród",
+      "Nielimitowana liczba nagród",
       "Nielimitowana liczba automatyzacji",
-      "Dostęp do sceanriuszy premium",
-      "Customowe dashboard moniutorujący wyniki",
+      "Dostęp do scenariuszy premium",
+      "Customowe dashboardy monitorujące wyniki",
       "Dedykowane wsparcie"
     ],
     isPopular: true,

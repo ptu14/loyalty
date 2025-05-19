@@ -203,7 +203,7 @@ export const features2 = [
     icon: "unicon-add",
     title: "Akcje sezonowe",
     description:
-      "Mnóż lub dodawaj punkty w określonych okresach lub za okreslone akcje.",
+      "Mnóż lub dodawaj punkty w określonych okresach lub za określone akcje.",
     backgroundColor: "bg-white dark:bg-gray-800",
     premium: true
   },
@@ -211,7 +211,7 @@ export const features2 = [
     icon: "unicon-email",
     title: "Informuj o brakującej liczbie punktów",
     description:
-      "Komunikuj liczbe punktów do najbliżeszj nagrody zachęcając klientów do wizyty.",
+      "Komunikuj liczbę punktów do najbliższej nagrody zachęcając klientów do wizyty.",
     backgroundColor: "bg-white dark:bg-gray-800",
   },
   {

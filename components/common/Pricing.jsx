@@ -120,7 +120,7 @@ export default function Pricing() {
               className="text-center text-gray-900 dark:text-white text-opacity-70 mt-2 sm:mt-4 xl:mt-4"
               data-anime="onview: -100; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: 0;"
             >
-              Podane ceny są cenami brutto.
+              Podane ceny są cenami netto do których należy doliczyć VAT.
             </p>
           </div>
         </div>
