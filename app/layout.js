@@ -105,7 +105,7 @@ export default function RootLayout({ children }) {
   }, [pathname]);
 
   return (
-    <html lang="en" dir="ltr">
+    <html lang="pl" dir="ltr">
       <body>
         {" "}
         <Context>
