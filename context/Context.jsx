@@ -78,7 +78,6 @@ export default function Context({ children }) {
   const [themeMode, setThemeMode] = useState("system");
   
   const toggleDark = (value) => {
-    console.log('dasdasdadsad', value)
     if (value) {
       document.documentElement.classList.add("uc-dark");
     } else {
@@ -98,7 +97,7 @@ export default function Context({ children }) {
     };
     
     const prefersDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-    console.log('eeeel', prefersDarkMode)
+  
     
     const savedThemeMode = getThemeMode();
     setThemeMode(savedThemeMode);
