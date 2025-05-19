@@ -62,7 +62,7 @@ export const features = [
     description:
       "Komunikuj się z klientami, wysyłając im wiadomości push, email, sms i WhatsApp o promocjach i nagrodach. Twórz personalizowane treści, automatyzuj komunikację i planuj kampanie w intuicyjnym panelu.",
     longDescription:
-      "Zbuduj trwałą relację z klientami poprzez spersonalizowaną komunikację w wielu kanałach: push, e-mail, SMS czy WhatsApp. Wszystkie komnikaty mogą być w pełni personalizowane (możesz użyć dowolnych danych takich jak imię, ulubiony produkt, ilośc brakujących punktów do najbliżeszj promocji i więcej). Twórz wiadomości dopasowane do indywidualnych preferencji i zachowań użytkowników w intycujcyjnym bulderze drag&drop. Dzięki rozbudowanej automatyzacji i planowaniu kampanii w jednym miejscu, Twoje działania marketingowe będą nie tylko skuteczne, ale i oszczędne czasowo.",
+      "Zbuduj trwałą relację z klientami poprzez spersonalizowaną komunikację w wielu kanałach: push, e-mail, SMS czy WhatsApp. Wszystkie komunikaty mogą być w pełni personalizowane (możesz użyć dowolnych danych takich jak imię, ulubiony produkt, ilość brakujących punktów do najbliższej promocji i więcej). Twórz wiadomości dopasowane do indywidualnych preferencji i zachowań użytkowników w intuicyjnym builderze drag&drop. Dzięki rozbudowanej automatyzacji i planowaniu kampanii w jednym miejscu, Twoje działania marketingowe będą nie tylko skuteczne, ale i oszczędne czasowo.",
     linkText: "Dowiedz się więcej",
     linkHref: "/funkcjonalnosci#feature-3",
   },
@@ -73,9 +73,9 @@ export const features = [
     imgAlt: "Marketing automation",
     title: "Marketing automation",
     description:
-      "Automatyzuj swoją komunikacje w dedykowanym panelu Synerise - najbardziej zawansowannej platformie na rynku na której swoje programy lojalnościowe budują największe marki w Polsce, takie jak CCC, Żabka czy Sizeer.",
+      "Automatyzuj swoją komunikację w dedykowanym panelu Synerise - najbardziej zaawansowanej platformie na rynku na której swoje programy lojalnościowe budują największe marki w Polsce, takie jak CCC, Żabka czy Sizeer.",
     longDescription:
-    "Automatyzacja marketingu pozwala tworzyć złożone scenariusze komunikacji oparte na zachowaniach użytkowników, czasie, lokalizacji czy historii zakupów. Wszystko odbywa się w intuicyjnym, no-code’owym panelu, który nie wymaga znajomości programowania. Ścieżki użytkownika tworzysz za pomocą wygodnego edytora typu drag & drop, dzięki czemu kampanie można budować szybko, efektywnie i w pełni samodzielnie.",
+    "Automatyzacja marketingu pozwala tworzyć złożone scenariusze komunikacji oparte na zachowaniach użytkowników, czasie, lokalizacji czy historii zakupów. Wszystko odbywa się w intuicyjnym, no-code'owym panelu, który nie wymaga znajomości programowania. Ścieżki użytkownika tworzysz za pomocą wygodnego edytora typu drag & drop, dzięki czemu kampanie można budować szybko, efektywnie i w pełni samodzielnie.",
     linkText: "Dowiedz się więcej",
     linkHref: "https://www.synerise.com/products/loyalty"
   },
@@ -189,7 +189,7 @@ export const features2 = [
     icon: "unicon-user",
     title: "Program poleceń",
     description:
-      "Stwórz porogram poleceń i nagradzaj klientów za polecanie Twoich usług znajomym.",
+      "Stwórz program poleceń i nagradzaj klientów za polecanie Twoich usług znajomym.",
     backgroundColor: "bg-white dark:bg-gray-800",
   },
   {
@@ -225,7 +225,7 @@ export const features2 = [
     icon: "unicon-checkmark",
     title: "Nagradzaj za zgody marketingowe",
     description:
-      "Ziękasz ilośc punktów styku z klientem oferując punkty za zgody marketingowe.",
+      "Zwiększ ilośc punktów styku z klientem oferując punkty za zgody marketingowe.",
     backgroundColor: "bg-white dark:bg-gray-800",
   },
   {
@@ -271,7 +271,7 @@ export const features2 = [
     icon: "unicon-share",
     title: "Transferuj punkty pomiędzy użytkownikami",
     description:
-      "Pozwól na transferer punktów pomiędzy użytkownikami w ramach programu lojalnościowego.",
+      "Pozwól na transfer punktów pomiędzy użytkownikami w ramach programu lojalnościowego.",
     backgroundColor: "bg-white dark:bg-gray-800",
     premium:true
   },
@@ -510,7 +510,7 @@ export const howItWorksPOS = [
     altText: "Reward redemption",
     step: "Krok 3",
     title: "Odbiór nagród",
-    description: `Gdy klient zbierze odpowiednią liczbę punktów, może samodzielnie aktywować wybraną nagrodę w swojej aplikacji. Po aktywacji generowany jest kod QR, który pracownik sklepu skanuje przy kasie - dokładnie tak, jak w przypadku punktów. System POS odczytuje kod, automatycznie „nabija” nagrodę i uwzględnia ją w transakcji, np. jako rabat lub darmowy produkt. Po realizacji nagroda zostaje oznaczona jako zużyta. Jeśli klient z jakiegoś powodu nie skorzysta z nagrody, ma możliwość jej dezaktywacji - wtedy punkty wracają na jego konto. Wszystko odbywa się bez potrzeby ręcznego zatwierdzania przez obsługę.`,
+    description: `Gdy klient zbierze odpowiednią liczbę punktów, może samodzielnie aktywować wybraną nagrodę w swojej aplikacji. Po aktywacji generowany jest kod QR, który pracownik sklepu skanuje przy kasie - dokładnie tak, jak w przypadku punktów. System POS odczytuje kod, automatycznie "nabija" nagrodę i uwzględnia ją w transakcji, np. jako rabat lub darmowy produkt. Po realizacji nagroda zostaje oznaczona jako zużyta. Jeśli klient z jakiegoś powodu nie skorzysta z nagrody, ma możliwość jej dezaktywacji - wtedy punkty wracają na jego konto. Wszystko odbywa się bez potrzeby ręcznego zatwierdzania przez obsługę.`,
   }
    
 ];
