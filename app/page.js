@@ -12,9 +12,9 @@ export const metadata = {
     siteName: 'Loyster',
     images: [
       {
-        url: '/assets/images/logo.svg',
-        width: 117,
-        height: 40,
+        url: '/assets/images/og.png',
+        width: 640,
+        height: 427,
         alt: 'Logo Loyster',
       }
     ],
