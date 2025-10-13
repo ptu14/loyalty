@@ -7,6 +7,9 @@ import Cta from "@/components/innerpages/features/Cta";
 export const metadata = {
   title: "Funkcjonalności | Loyster - Tworzenie aplikacji lojalnościowych dla Twojego biznesu",
   description: "Odkryj wszystkie funkcjonalności Loyster - kompleksowego narzędzia do tworzenia i zarządzania programami lojalnościowymi dla Twojej firmy.",
+  icons: {
+    icon: 'assets/images/loyster.svg',
+  },
 };
 export default function FeaturesPage() {
   return (

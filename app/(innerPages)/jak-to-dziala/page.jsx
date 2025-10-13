@@ -7,6 +7,9 @@ import Footer from "@/components/common/Footer";
 export const metadata = {
   title: "Jak to działa | Loyster - Profesjonalne aplikacje lojalnościowe",
   description: "Dowiedz się, jak działa Loyster i jak nasza platforma może pomóc Ci stworzyć skuteczny program lojalnościowy dla Twoich klientów.",
+  icons: {
+    icon: 'assets/images/loyster.svg',
+  },
 };
 export default function HomePage3() {
   return (

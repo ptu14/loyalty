@@ -9,6 +9,9 @@ import Blogs from "@/components/homes/home-2/Blogs";
 export const metadata = {
   title: "Kontakt | Loyster - Zbuduj własny program lojalnościowy",
   description: "Skontaktuj się z zespołem Loyster, aby omówić swoje potrzeby związane z programem lojalnościowym. Jesteśmy gotowi pomóc Ci osiągnąć sukces.",
+  icons: {
+    icon: 'assets/images/loyster.svg',
+  },
 };
 export default function ContactPage() {
   return (

@@ -10,6 +10,9 @@ import Blogs from "@/components/homes/home-2/Blogs";
 export const metadata = {
   title: "Kariera | Loyster - Dołącz do zespołu ekspertów od programów lojalnościowych",
   description: "Sprawdź aktualne oferty pracy w Loyster. Dołącz do zespołu specjalistów tworzących innowacyjne rozwiązania lojalnościowe dla biznesu.",
+  icons: {
+    icon: 'assets/images/loyster.svg',
+  },
 };
 export default function CareerPage() {
   return (

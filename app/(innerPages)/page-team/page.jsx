@@ -7,6 +7,9 @@ import Team from "@/components/innerpages/Team";
 export const metadata = {
   title: "Zespół | Loyster - Eksperci w dziedzinie programów lojalnościowych",
   description: "Poznaj zespół Loyster - specjalistów, którzy pomogą Ci stworzyć skuteczny program lojalnościowy dla Twojego biznesu.",
+  icons: {
+    icon: 'assets/images/loyster.svg',
+  },
 };
 export default function TeamPage() {
   return (

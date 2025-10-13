@@ -9,6 +9,9 @@ import { jobListings } from "@/data/career";
 export const metadata = {
   title: "Szczegóły oferty pracy | Loyster - Dołącz do zespołu ekspertów programów lojalnościowych",
   description: "Zapoznaj się ze szczegółami oferty pracy w Loyster. Dołącz do zespołu tworzącego innowacyjne rozwiązania lojalnościowe dla biznesu.",
+  icons: {
+    icon: 'assets/images/loyster.svg',
+  },
 };
 export default async function CareerDetailsPage(props) {
   const params = await props.params;

@@ -7,6 +7,9 @@ import Footer from "@/components/common/Footer";
 export const metadata = {
   title: "Wdrożenie | Loyster - Kompleksowe wdrożenie aplikacji lojalnościowej",
   description: "Sprawdź, jak przebiega proces wdrożenia aplikacji lojalnościowej Loyster. Profesjonalne wsparcie na każdym etapie implementacji.",
+  icons: {
+    icon: 'assets/images/loyster.svg',
+  },
 };
 export default function HomePage3() {
   return (

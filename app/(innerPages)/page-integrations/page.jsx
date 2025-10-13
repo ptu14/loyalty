@@ -10,6 +10,9 @@ import Integrations from "@/components/innerpages/Integrations";
 export const metadata = {
   title: "Integracje | Loyster - Kompleksowe integracje z systemami biznesowymi",
   description: "Odkryj możliwości integracji aplikacji lojalnościowej Loyster z Twoimi systemami biznesowymi. Płynna współpraca z popularnymi platformami i narzędziami.",
+  icons: {
+    icon: 'assets/images/loyster.svg',
+  },
 };
 export default function IntegrationPage() {
   return (

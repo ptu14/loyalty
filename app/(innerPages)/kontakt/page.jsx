@@ -6,6 +6,9 @@ import Faq from "@/components/common/Faq";
 export const metadata = {
   title: "Kontakt | Loyster - Aplikacje lojalnościowe dla Twojego biznesu",
   description: "Skontaktuj się z nami, aby dowiedzieć się więcej o aplikacjach lojalnościowych Loyster i jak mogą pomóc w rozwoju Twojego biznesu.",
+  icons: {
+    icon: 'assets/images/loyster.svg',
+  },
 };
 export default function ContactPage() {
   return (

@@ -9,6 +9,9 @@ import ContactLinks2 from "@/components/innerpages/ContactLinks2";
 export const metadata = {
   title: "Kontakt alternatywny | Loyster - Programy lojalnościowe dla firm",
   description: "Alternatywne metody kontaktu z zespołem Loyster. Uzyskaj pomoc w stworzeniu skutecznego programu lojalnościowego dla Twojej firmy.",
+  icons: {
+    icon: 'assets/images/loyster.svg',
+  },
 };
 export default function ContactPage2() {
   return (

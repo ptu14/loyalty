@@ -13,6 +13,9 @@ export const metadata = {
     "Pricing 02 || Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
   description:
     "Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
+  icons: {
+    icon: 'assets/images/loyster.svg',
+  },
 };
 export default function page() {
   return (
