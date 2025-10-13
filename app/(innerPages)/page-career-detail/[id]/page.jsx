@@ -12,6 +12,22 @@ export const metadata = {
   icons: {
     icon: 'assets/images/loyster.svg',
   },
+  openGraph: {
+    title: "Szczegóły oferty pracy | Loyster - Dołącz do zespołu ekspertów programów lojalnościowych",
+    description: "Zapoznaj się ze szczegółami oferty pracy w Loyster. Dołącz do zespołu tworzącego innowacyjne rozwiązania lojalnościowe dla biznesu.",
+    url: 'https://www.loyster.pl/',
+    siteName: 'Loyster',
+    images: [
+      {
+        url: '/assets/images/og.png',
+        width: 640,
+        height: 427,
+        alt: 'Logo Loyster',
+      }
+    ],
+    locale: 'pl_PL',
+    type: 'website',
+  }
 };
 export default async function CareerDetailsPage(props) {
   const params = await props.params;

@@ -10,6 +10,22 @@ export const metadata = {
   icons: {
     icon: 'assets/images/loyster.svg',
   },
+  openGraph: {
+    title: "Zespół | Loyster - Eksperci w dziedzinie programów lojalnościowych",
+    description: "Poznaj zespół Loyster - specjalistów, którzy pomogą Ci stworzyć skuteczny program lojalnościowy dla Twojego biznesu.",
+    url: 'https://www.loyster.pl/',
+    siteName: 'Loyster',
+    images: [
+      {
+        url: '/assets/images/og.png',
+        width: 640,
+        height: 427,
+        alt: 'Logo Loyster',
+      }
+    ],
+    locale: 'pl_PL',
+    type: 'website',
+  }
 };
 export default function TeamPage() {
   return (

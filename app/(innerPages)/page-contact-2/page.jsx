@@ -12,6 +12,22 @@ export const metadata = {
   icons: {
     icon: 'assets/images/loyster.svg',
   },
+  openGraph: {
+    title: "Kontakt alternatywny | Loyster - Programy lojalnościowe dla firm",
+    description: "Alternatywne metody kontaktu z zespołem Loyster. Uzyskaj pomoc w stworzeniu skutecznego programu lojalnościowego dla Twojej firmy.",
+    url: 'https://www.loyster.pl/',
+    siteName: 'Loyster',
+    images: [
+      {
+        url: '/assets/images/og.png',
+        width: 640,
+        height: 427,
+        alt: 'Logo Loyster',
+      }
+    ],
+    locale: 'pl_PL',
+    type: 'website',
+  }
 };
 export default function ContactPage2() {
   return (

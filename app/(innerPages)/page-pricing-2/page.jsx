@@ -9,13 +9,27 @@ import Pricing2 from "@/components/innerpages/Pricing2";
 import PricingCompare from "@/components/innerpages/PricingCompare";
 import React from "react";
 export const metadata = {
-  title:
-    "Pricing 02 || Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
-  description:
-    "Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
+  title: "Cennik | Loyster - Elastyczne plany cenowe dla aplikacji lojalnościowych",
+  description: "Zapoznaj się z ofertą cenową Loyster. Wybierz plan idealnie dopasowany do potrzeb i możliwości Twojego biznesu.",
   icons: {
     icon: 'assets/images/loyster.svg',
   },
+  openGraph: {
+    title: "Cennik | Loyster - Elastyczne plany cenowe dla aplikacji lojalnościowych",
+    description: "Zapoznaj się z ofertą cenową Loyster. Wybierz plan idealnie dopasowany do potrzeb i możliwości Twojego biznesu.",
+    url: 'https://www.loyster.pl/',
+    siteName: 'Loyster',
+    images: [
+      {
+        url: '/assets/images/og.png',
+        width: 640,
+        height: 427,
+        alt: 'Logo Loyster',
+      }
+    ],
+    locale: 'pl_PL',
+    type: 'website',
+  }
 };
 export default function page() {
   return (

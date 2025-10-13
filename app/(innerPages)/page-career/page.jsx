@@ -13,6 +13,22 @@ export const metadata = {
   icons: {
     icon: 'assets/images/loyster.svg',
   },
+  openGraph: {
+    title: "Kariera | Loyster - Dołącz do zespołu ekspertów od programów lojalnościowych",
+    description: "Sprawdź aktualne oferty pracy w Loyster. Dołącz do zespołu specjalistów tworzących innowacyjne rozwiązania lojalnościowe dla biznesu.",
+    url: 'https://www.loyster.pl/',
+    siteName: 'Loyster',
+    images: [
+      {
+        url: '/assets/images/og.png',
+        width: 640,
+        height: 427,
+        alt: 'Logo Loyster',
+      }
+    ],
+    locale: 'pl_PL',
+    type: 'website',
+  }
 };
 export default function CareerPage() {
   return (

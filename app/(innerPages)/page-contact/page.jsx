@@ -12,6 +12,22 @@ export const metadata = {
   icons: {
     icon: 'assets/images/loyster.svg',
   },
+  openGraph: {
+    title: "Kontakt | Loyster - Zbuduj własny program lojalnościowy",
+    description: "Skontaktuj się z zespołem Loyster, aby omówić swoje potrzeby związane z programem lojalnościowym. Jesteśmy gotowi pomóc Ci osiągnąć sukces.",
+    url: 'https://www.loyster.pl/',
+    siteName: 'Loyster',
+    images: [
+      {
+        url: '/assets/images/og.png',
+        width: 640,
+        height: 427,
+        alt: 'Logo Loyster',
+      }
+    ],
+    locale: 'pl_PL',
+    type: 'website',
+  }
 };
 export default function ContactPage() {
   return (

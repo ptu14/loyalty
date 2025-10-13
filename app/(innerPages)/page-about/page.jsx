@@ -10,13 +10,27 @@ import Timeline from "@/components/homes/home-1/Timeline";
 import Team from "@/components/homes/home-1/Team";
 import Cta from "@/components/innerpages/Cta";
 export const metadata = {
-  title:
-    "About || Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
-  description:
-    "Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
+  title: "O nas | Loyster - Tworzymy innowacyjne programy lojalnościowe",
+  description: "Poznaj historię i misję Loyster. Dowiedz się, jak pomagamy firmom budować silne relacje z klientami poprzez skuteczne programy lojalnościowe.",
   icons: {
     icon: 'assets/images/loyster.svg',
   },
+  openGraph: {
+    title: "O nas | Loyster - Tworzymy innowacyjne programy lojalnościowe",
+    description: "Poznaj historię i misję Loyster. Dowiedz się, jak pomagamy firmom budować silne relacje z klientami poprzez skuteczne programy lojalnościowe.",
+    url: 'https://www.loyster.pl/',
+    siteName: 'Loyster',
+    images: [
+      {
+        url: '/assets/images/og.png',
+        width: 640,
+        height: 427,
+        alt: 'Logo Loyster',
+      }
+    ],
+    locale: 'pl_PL',
+    type: 'website',
+  }
 };
 export default function AboutPage() {
   return (

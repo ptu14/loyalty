@@ -10,6 +10,22 @@ export const metadata = {
   icons: {
     icon: 'assets/images/loyster.svg',
   },
+  openGraph: {
+    title: "Funkcjonalności | Loyster - Tworzenie aplikacji lojalnościowych dla Twojego biznesu",
+    description: "Odkryj wszystkie funkcjonalności Loyster - kompleksowego narzędzia do tworzenia i zarządzania programami lojalnościowymi dla Twojej firmy.",
+    url: 'https://www.loyster.pl/',
+    siteName: 'Loyster',
+    images: [
+      {
+        url: '/assets/images/og.png',
+        width: 640,
+        height: 427,
+        alt: 'Logo Loyster',
+      }
+    ],
+    locale: 'pl_PL',
+    type: 'website',
+  }
 };
 export default function FeaturesPage() {
   return (

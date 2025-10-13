@@ -10,6 +10,22 @@ export const metadata = {
   icons: {
     icon: 'assets/images/loyster.svg',
   },
+  openGraph: {
+    title: "Jak to działa | Loyster - Profesjonalne aplikacje lojalnościowe",
+    description: "Dowiedz się, jak działa Loyster i jak nasza platforma może pomóc Ci stworzyć skuteczny program lojalnościowy dla Twoich klientów.",
+    url: 'https://www.loyster.pl/',
+    siteName: 'Loyster',
+    images: [
+      {
+        url: '/assets/images/og.png',
+        width: 640,
+        height: 427,
+        alt: 'Logo Loyster',
+      }
+    ],
+    locale: 'pl_PL',
+    type: 'website',
+  }
 };
 export default function HomePage3() {
   return (
