@@ -6,7 +6,7 @@ import Pricing from "@/components/common/Pricing";
 export const metadata = {
   title: "Cennik | Loyster - Elastyczne plany cenowe dla aplikacji lojalnościowych",
   description: "Zapoznaj się z ofertą cenową Loyster. Wybierz plan idealnie dopasowany do potrzeb i możliwości Twojego biznesu.",
-  penGraph: {
+  openGraph: {
     title: "Cennik | Loyster - Elastyczne plany cenowe dla aplikacji lojalnościowych",
     description: "Zapoznaj się z ofertą cenową Loyster. Wybierz plan idealnie dopasowany do potrzeb i możliwości Twojego biznesu.",
     url: 'https://www.loyster.pl/',
