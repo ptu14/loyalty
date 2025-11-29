@@ -232,7 +232,7 @@ export default function UserPanel() {
                                             <div className="hstack justify-content-between align-items-center">
                                                 <div className="vstack gap-1">
                                                     <span className="fs-7 fw-medium text-dark">
-                                                        Subskrypcja SMS <span className="d-inline-flex px-1 bg-primary dark:bg-primary text-white dark:text-white -rotate-1 lg:-rotate-2 rounded-1 lg:rounded-1-5">
+                                                        Subskrypcja SMS<span className="d-inline-flex px-1 bg-primary dark:bg-primary text-white dark:text-white -rotate-1 lg:-rotate-2 rounded-1 lg:rounded-1-5">
                                                             + 25 pkt.
                                                         </span>
                                                     </span>
