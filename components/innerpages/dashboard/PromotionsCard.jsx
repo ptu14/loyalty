@@ -55,7 +55,7 @@ export default function PromotionsCard() {
                 >
                   <div className="vstack gap-2">
                     <h2 className="title h3 lg:h2 xl:h1 m-0">
-                      Questy
+                      Zadania
                     </h2>
                   </div>
                 </div>
