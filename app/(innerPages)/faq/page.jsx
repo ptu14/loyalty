@@ -5,15 +5,19 @@ import Contact from "@/components/innerpages/contact/Contact";
 import Faq from "@/components/common/Faq";
 import FaqShortcut from "@/components/innerpages/faq/Faqshortcut";
 export const metadata = {
-  title: "Kontakt | Loyster - Aplikacje lojalnościowe dla Twojego biznesu",
-  description: "Skontaktuj się z nami, aby dowiedzieć się więcej o aplikacjach lojalnościowych Loyster i jak mogą pomóc w rozwoju Twojego biznesu.",
+  title: "FAQ | Loyster - Najczęściej zadawane pytania",
+  description: "Odpowiedzi na najczęstsze pytania o Loyster. Jak zacząć? Ile kosztuje? Jakie integracje są dostępne? Znajdź odpowiedź lub skontaktuj się z nami.",
+  keywords: ["FAQ program lojalnościowy", "pytania aplikacja lojalnościowa", "pomoc Loyster"],
   icons: {
     icon: 'assets/images/loyster.svg',
   },
+  alternates: {
+    canonical: 'https://www.loyster.pl/faq',
+  },
   openGraph: {
-    title: "Kontakt | Loyster - Aplikacje lojalnościowe dla Twojego biznesu",
-    description: "Skontaktuj się z nami, aby dowiedzieć się więcej o aplikacjach lojalnościowych Loyster i jak mogą pomóc w rozwoju Twojego biznesu.",
-    url: 'https://www.loyster.pl/',
+    title: "FAQ | Loyster - Najczęściej zadawane pytania",
+    description: "Odpowiedzi na najczęstsze pytania o Loyster. Jak zacząć? Ile kosztuje? Jakie integracje są dostępne? Znajdź odpowiedź lub skontaktuj się z nami.",
+    url: 'https://www.loyster.pl/faq',
     siteName: 'Loyster',
     images: [
       {

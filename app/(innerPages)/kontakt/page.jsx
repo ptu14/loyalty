@@ -5,14 +5,18 @@ import Contact from "@/components/innerpages/contact/Contact";
 import Faq from "@/components/common/Faq";
 export const metadata = {
   title: "Kontakt | Loyster - Aplikacje lojalnościowe dla Twojego biznesu",
-  description: "Skontaktuj się z nami, aby dowiedzieć się więcej o aplikacjach lojalnościowych Loyster i jak mogą pomóc w rozwoju Twojego biznesu.",
+  description: "Skontaktuj się z Loyster - bezpłatna konsultacja i demo. Odpowiadamy w ciągu 24h. Telefon, email lub formularz kontaktowy. Porozmawiaj z ekspertem.",
+  keywords: ["kontakt Loyster", "demo aplikacji lojalnościowej", "konsultacja program lojalnościowy"],
   icons: {
     icon: 'assets/images/loyster.svg',
   },
+  alternates: {
+    canonical: 'https://www.loyster.pl/kontakt',
+  },
   openGraph: {
     title: "Kontakt | Loyster - Aplikacje lojalnościowe dla Twojego biznesu",
-    description: "Skontaktuj się z nami, aby dowiedzieć się więcej o aplikacjach lojalnościowych Loyster i jak mogą pomóc w rozwoju Twojego biznesu.",
-    url: 'https://www.loyster.pl/',
+    description: "Skontaktuj się z Loyster - bezpłatna konsultacja i demo. Odpowiadamy w ciągu 24h. Telefon, email lub formularz kontaktowy. Porozmawiaj z ekspertem.",
+    url: 'https://www.loyster.pl/kontakt',
     siteName: 'Loyster',
     images: [
       {

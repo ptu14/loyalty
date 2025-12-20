@@ -15,6 +15,10 @@ export const metadata = {
     "Home 3 || Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
   description:
     "Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
+  robots: {
+    index: false,
+    follow: false,
+  },
 };
 export default function HomePage3() {
   return (

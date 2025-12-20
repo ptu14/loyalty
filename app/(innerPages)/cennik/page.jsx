@@ -5,14 +5,18 @@ import Faq from "@/components/common/Faq";
 import Pricing from "@/components/common/Pricing";
 export const metadata = {
   title: "Cennik | Loyster - Elastyczne plany cenowe dla aplikacji lojalnościowych",
-  description: "Zapoznaj się z ofertą cenową Loyster. Wybierz plan idealnie dopasowany do potrzeb i możliwości Twojego biznesu.",
+  description: "Cennik Loyster - pakiety Start, Pro i Enterprise. Bez ukrytych kosztów, bezpłatny okres próbny. Porównaj funkcje i wybierz idealny plan dla swojego biznesu.",
+  keywords: ["cennik aplikacji lojalnościowej", "program lojalnościowy cena", "loyalty app pricing"],
   icons: {
     icon: 'assets/images/loyster.svg',
   },
+  alternates: {
+    canonical: 'https://www.loyster.pl/cennik',
+  },
   openGraph: {
     title: "Cennik | Loyster - Elastyczne plany cenowe dla aplikacji lojalnościowych",
-    description: "Zapoznaj się z ofertą cenową Loyster. Wybierz plan idealnie dopasowany do potrzeb i możliwości Twojego biznesu.",
-    url: 'https://www.loyster.pl/',
+    description: "Cennik Loyster - pakiety Start, Pro i Enterprise. Bez ukrytych kosztów, bezpłatny okres próbny. Porównaj funkcje i wybierz idealny plan dla swojego biznesu.",
+    url: 'https://www.loyster.pl/cennik',
     siteName: 'Loyster',
     images: [
       {

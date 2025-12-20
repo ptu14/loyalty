@@ -18,6 +18,10 @@ export const metadata = {
     "Rtl Home Page || Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
   description:
     "Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
+  robots: {
+    index: false,
+    follow: false,
+  },
 };
 export default function HomePageRtl() {
   return (

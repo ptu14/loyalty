@@ -6,14 +6,18 @@ import Faq from "@/components/common/Faq";
 import Footer from "@/components/common/Footer";
 export const metadata = {
   title: "Wdrożenie | Loyster - Kompleksowe wdrożenie aplikacji lojalnościowej",
-  description: "Sprawdź, jak przebiega proces wdrożenia aplikacji lojalnościowej Loyster. Profesjonalne wsparcie na każdym etapie implementacji.",
+  description: "Wdrożenie Loyster w 7 dni. Pełne wsparcie techniczne, szkolenie dla zespołu, import danych klientów. Profesjonalne wdrożenie programu lojalnościowego bez stresu.",
+  keywords: ["wdrożenie aplikacji lojalnościowej", "implementacja programu lojalnościowego", "szkolenie loyalty"],
   icons: {
     icon: 'assets/images/loyster.svg',
   },
+  alternates: {
+    canonical: 'https://www.loyster.pl/wdrozenie',
+  },
   openGraph: {
     title: "Wdrożenie | Loyster - Kompleksowe wdrożenie aplikacji lojalnościowej",
-    description: "Sprawdź, jak przebiega proces wdrożenia aplikacji lojalnościowej Loyster. Profesjonalne wsparcie na każdym etapie implementacji.",
-    url: 'https://www.loyster.pl/',
+    description: "Wdrożenie Loyster w 7 dni. Pełne wsparcie techniczne, szkolenie dla zespołu, import danych klientów. Profesjonalne wdrożenie programu lojalnościowego bez stresu.",
+    url: 'https://www.loyster.pl/wdrozenie',
     siteName: 'Loyster',
     images: [
       {

@@ -6,14 +6,18 @@ import Faq from "@/components/common/Faq";
 import Cta from "@/components/innerpages/features/Cta";
 export const metadata = {
   title: "Funkcjonalności | Loyster - Tworzenie aplikacji lojalnościowych dla Twojego biznesu",
-  description: "Odkryj wszystkie funkcjonalności Loyster - kompleksowego narzędzia do tworzenia i zarządzania programami lojalnościowymi dla Twojej firmy.",
+  description: "Funkcje Loyster: system punktowy, nagrody i promocje, powiadomienia push, SMS marketing, analityka klientów, integracje z POS. Zobacz pełną listę możliwości.",
+  keywords: ["funkcje aplikacji lojalnościowej", "powiadomienia push", "system punktowy", "analityka klientów", "loyalty features"],
   icons: {
     icon: 'assets/images/loyster.svg',
   },
+  alternates: {
+    canonical: 'https://www.loyster.pl/funkcjonalnosci',
+  },
   openGraph: {
     title: "Funkcjonalności | Loyster - Tworzenie aplikacji lojalnościowych dla Twojego biznesu",
-    description: "Odkryj wszystkie funkcjonalności Loyster - kompleksowego narzędzia do tworzenia i zarządzania programami lojalnościowymi dla Twojej firmy.",
-    url: 'https://www.loyster.pl/',
+    description: "Funkcje Loyster: system punktowy, nagrody i promocje, powiadomienia push, SMS marketing, analityka klientów, integracje z POS. Zobacz pełną listę możliwości.",
+    url: 'https://www.loyster.pl/funkcjonalnosci',
     siteName: 'Loyster',
     images: [
       {

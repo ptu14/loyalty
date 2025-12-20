@@ -6,14 +6,18 @@ import React from "react";
 import Footer from "@/components/common/Footer";
 export const metadata = {
   title: "Jak to działa | Loyster - Profesjonalne aplikacje lojalnościowe",
-  description: "Dowiedz się, jak działa Loyster i jak nasza platforma może pomóc Ci stworzyć skuteczny program lojalnościowy dla Twoich klientów.",
+  description: "Jak działa Loyster? 3 proste kroki: konfiguracja, integracja, start. Wdrożenie w 7 dni z pełnym wsparciem technicznym. Zobacz demo i przekonaj się sam.",
+  keywords: ["jak działa program lojalnościowy", "wdrożenie aplikacji lojalnościowej", "loyalty app demo"],
   icons: {
     icon: 'assets/images/loyster.svg',
   },
+  alternates: {
+    canonical: 'https://www.loyster.pl/jak-to-dziala',
+  },
   openGraph: {
     title: "Jak to działa | Loyster - Profesjonalne aplikacje lojalnościowe",
-    description: "Dowiedz się, jak działa Loyster i jak nasza platforma może pomóc Ci stworzyć skuteczny program lojalnościowy dla Twoich klientów.",
-    url: 'https://www.loyster.pl/',
+    description: "Jak działa Loyster? 3 proste kroki: konfiguracja, integracja, start. Wdrożenie w 7 dni z pełnym wsparciem technicznym. Zobacz demo i przekonaj się sam.",
+    url: 'https://www.loyster.pl/jak-to-dziala',
     siteName: 'Loyster',
     images: [
       {
