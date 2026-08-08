@@ -1,0 +1,429 @@
+.hero {
+  padding: 120px 0 72px;
+  background: var(--bs-secondary);
+}
+
+.heroInner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 850px;
+  margin: 0 auto;
+  gap: 20px;
+  text-align: center;
+}
+
+.eyebrow {
+  color: var(--bs-primary);
+  font-size: 13px;
+  font-weight: 750;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.accent {
+  color: var(--bs-primary);
+}
+
+.heroLead {
+  max-width: 720px;
+  margin: 0;
+  color: rgba(17, 24, 39, 0.68);
+  font-size: 20px;
+  line-height: 1.55;
+}
+
+.heroActions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.secondaryButton {
+  border: 1px solid rgba(17, 24, 39, 0.2);
+  color: var(--bs-gray-900);
+}
+
+.tracksSection {
+  padding: 80px 0;
+  background: #fff;
+}
+
+.sectionHeading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 720px;
+  margin: 0 auto 44px;
+  gap: 10px;
+  text-align: center;
+}
+
+.sectionHeading p,
+.trackHeader p,
+.trackSteps p,
+.cooperationIntro p,
+.afterBox p,
+.ctaBox p {
+  margin: 0;
+  color: rgba(17, 24, 39, 0.66);
+  line-height: 1.55;
+}
+
+.tracksGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  align-items: start;
+}
+
+.trackCard {
+  display: flex;
+  flex-direction: column;
+  min-height: 690px;
+  padding: 30px;
+  border: 1px solid rgba(17, 24, 39, 0.12);
+  border-radius: 22px;
+  background: #fff;
+}
+
+.trackCardFeatured {
+  border: 2px solid var(--bs-primary);
+  background: var(--bs-secondary);
+}
+
+.trackHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid rgba(17, 24, 39, 0.1);
+}
+
+.trackLabel,
+.featuredLabel,
+.cooperationLabel {
+  display: inline-flex;
+  width: fit-content;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(17, 24, 39, 0.07);
+  color: rgba(17, 24, 39, 0.72);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.featuredLabel {
+  background: rgba(24, 133, 107, 0.11);
+  color: var(--bs-primary);
+}
+
+.trackSteps {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin: 0;
+  padding: 12px 0 0;
+  list-style: none;
+}
+
+.trackSteps li {
+  display: grid;
+  grid-template-columns: 38px minmax(0, 1fr);
+  gap: 14px;
+  padding: 18px 0;
+}
+
+.stepNumber {
+  color: var(--bs-primary);
+  font-size: 13px;
+  font-weight: 750;
+}
+
+.trackSteps p {
+  margin-top: 6px;
+  font-size: 15px;
+}
+
+.trackLink,
+.afterLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  width: fit-content;
+  margin-top: auto;
+  padding-top: 24px;
+  color: var(--bs-primary);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.trackLink:hover,
+.afterLink:hover {
+  color: var(--bs-primary);
+  text-decoration: underline;
+}
+
+.timingNote {
+  margin: 22px 0 0;
+  color: rgba(17, 24, 39, 0.58);
+  font-size: 14px;
+  text-align: center;
+}
+
+.cooperationSection {
+  padding: 80px 0;
+  background: var(--bs-secondary);
+}
+
+.cooperationLayout {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.72fr) minmax(0, 1.28fr);
+  gap: 64px;
+  align-items: start;
+}
+
+.cooperationIntro {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.cooperationCards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.cooperationCard {
+  padding: 26px;
+  border: 1px solid rgba(17, 24, 39, 0.1);
+  border-radius: 18px;
+  background: #fff;
+}
+
+.cooperationCard h3 {
+  margin-top: 18px !important;
+}
+
+.cooperationCard ul {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 20px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.cooperationCard li {
+  display: grid;
+  grid-template-columns: 18px minmax(0, 1fr);
+  gap: 9px;
+  color: rgba(17, 24, 39, 0.7);
+  line-height: 1.45;
+}
+
+.cooperationCard li i {
+  margin-top: 3px;
+  color: var(--bs-primary);
+}
+
+.afterSection,
+.ctaSection {
+  padding: 80px 0 0;
+  background: #fff;
+}
+
+.afterBox,
+.ctaBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 48px;
+  padding: 42px 46px;
+  border: 1px solid rgba(17, 24, 39, 0.14);
+  border-radius: 24px;
+  background: #fff;
+}
+
+.afterBox > div,
+.ctaBox > div {
+  display: flex;
+  flex-direction: column;
+  max-width: 720px;
+  gap: 12px;
+}
+
+.afterLink {
+  flex: 0 0 auto;
+  margin: 0;
+  padding: 0;
+}
+
+.ctaSection {
+  padding-bottom: 80px;
+}
+
+.ctaBox {
+  border-color: transparent;
+  background: var(--bs-secondary);
+}
+
+.ctaBox button {
+  flex: 0 0 auto;
+}
+
+:global(.uc-dark) .hero,
+:global(.uc-dark) .cooperationSection,
+:global(.uc-dark) .ctaBox {
+  background: var(--bs-gray-800);
+}
+
+:global(.uc-dark) .tracksSection,
+:global(.uc-dark) .afterSection,
+:global(.uc-dark) .ctaSection {
+  background: var(--bs-gray-900);
+}
+
+:global(.uc-dark) .accent,
+:global(.uc-dark) .eyebrow,
+:global(.uc-dark) .stepNumber,
+:global(.uc-dark) .featuredLabel,
+:global(.uc-dark) .trackLink,
+:global(.uc-dark) .afterLink {
+  color: var(--bs-secondary);
+}
+
+:global(.uc-dark) .heroLead,
+:global(.uc-dark) .sectionHeading p,
+:global(.uc-dark) .trackHeader p,
+:global(.uc-dark) .trackSteps p,
+:global(.uc-dark) .cooperationIntro p,
+:global(.uc-dark) .afterBox p,
+:global(.uc-dark) .ctaBox p,
+:global(.uc-dark) .timingNote {
+  color: rgba(255, 255, 255, 0.66);
+}
+
+:global(.uc-dark) .secondaryButton {
+  border-color: rgba(255, 255, 255, 0.22);
+  color: #fff;
+}
+
+:global(.uc-dark) .trackCard,
+:global(.uc-dark) .cooperationCard,
+:global(.uc-dark) .afterBox {
+  border-color: var(--bs-gray-700);
+  background: var(--bs-gray-800);
+  color: #fff;
+}
+
+:global(.uc-dark) .trackCardFeatured {
+  border-color: var(--bs-secondary);
+}
+
+:global(.uc-dark) .trackHeader {
+  border-color: var(--bs-gray-700);
+}
+
+:global(.uc-dark) .trackLabel,
+:global(.uc-dark) .cooperationLabel {
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.76);
+}
+
+:global(.uc-dark) .featuredLabel {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+:global(.uc-dark) .cooperationCard li {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+:global(.uc-dark) .cooperationCard li i {
+  color: var(--bs-secondary);
+}
+
+:global(.uc-dark) .trackLink:hover,
+:global(.uc-dark) .afterLink:hover {
+  color: var(--bs-secondary);
+}
+
+@media (max-width: 991px) {
+  .trackCard {
+    min-height: 730px;
+  }
+
+  .cooperationLayout {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .afterBox,
+  .ctaBox {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 28px;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero {
+    padding: 96px 0 48px;
+  }
+
+  .heroInner {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .heroLead {
+    font-size: 17px;
+  }
+
+  .heroActions,
+  .heroActions > * {
+    width: 100%;
+  }
+
+  .tracksSection,
+  .cooperationSection {
+    padding: 56px 0;
+  }
+
+  .sectionHeading {
+    align-items: flex-start;
+    margin-bottom: 30px;
+    text-align: left;
+  }
+
+  .tracksGrid,
+  .cooperationCards {
+    grid-template-columns: 1fr;
+  }
+
+  .trackCard {
+    min-height: 0;
+    padding: 24px;
+  }
+
+  .afterSection,
+  .ctaSection {
+    padding-top: 56px;
+  }
+
+  .afterBox,
+  .ctaBox {
+    padding: 28px 24px;
+  }
+
+  .afterLink,
+  .ctaBox button {
+    width: 100%;
+  }
+
+  .ctaSection {
+    padding-bottom: 56px;
+  }
+}

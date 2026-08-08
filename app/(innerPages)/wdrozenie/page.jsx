@@ -5,9 +5,9 @@ import React from "react";
 import Faq from "@/components/common/Faq";
 import Footer from "@/components/common/Footer";
 export const metadata = {
-  title: "Wdrożenie | Loyster - Kompleksowe wdrożenie aplikacji lojalnościowej",
-  description: "Wdrożenie Loyster w 7 dni. Pełne wsparcie techniczne, szkolenie dla zespołu, import danych klientów. Profesjonalne wdrożenie programu lojalnościowego bez stresu.",
-  keywords: ["wdrożenie aplikacji lojalnościowej", "implementacja programu lojalnościowego", "szkolenie loyalty"],
+  title: "Wdrożenie programu lojalnościowego | Loyster",
+  description: "Zobacz, jak wygląda wdrożenie Loyster. Zacznij od cyfrowej karty lojalnościowej albo uruchom program z własną aplikacją.",
+  keywords: ["wdrożenie programu lojalnościowego", "cyfrowa karta lojalnościowa", "wdrożenie aplikacji lojalnościowej"],
   icons: {
     icon: 'assets/images/loyster.svg',
   },
@@ -15,8 +15,8 @@ export const metadata = {
     canonical: 'https://www.loyster.pl/wdrozenie',
   },
   openGraph: {
-    title: "Wdrożenie | Loyster - Kompleksowe wdrożenie aplikacji lojalnościowej",
-    description: "Wdrożenie Loyster w 7 dni. Pełne wsparcie techniczne, szkolenie dla zespołu, import danych klientów. Profesjonalne wdrożenie programu lojalnościowego bez stresu.",
+    title: "Wdrożenie programu lojalnościowego | Loyster",
+    description: "Dwie ścieżki wdrożenia Loyster: prosty start z cyfrową kartą albo pełne doświadczenie we własnej aplikacji.",
     url: 'https://www.loyster.pl/wdrozenie',
     siteName: 'Loyster',
     images: [
@@ -36,9 +36,11 @@ export default function HomePage3() {
     <>
       <div className="page-wrapper uni-body panel bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-200 overflow-x-hidden bp-xs bp-sm bp-md bp-lg bp-xl bp-xxl dom-ready">
         <Header />
-        <Hero />
-        <Features />
-        <Faq />
+        <main>
+          <Hero />
+          <Features />
+          <Faq />
+        </main>
       </div>
       <Footer />
     </>
