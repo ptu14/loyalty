@@ -3,6 +3,52 @@ import Link from "next/link";
 import React from "react";
 import Image from "next/image";
 
+const homepageFeatureContent = [
+  {
+    id: 2,
+    title: "Punkty i nagrody",
+    description:
+      "Ustalaj zasady zdobywania punktów lub pieczątek i nagradzaj klientów za zakupy, wizyty i inne aktywności.",
+  },
+  {
+    id: 3,
+    title: "Komunikacja z klientami",
+    description:
+      "Informuj o punktach, nagrodach i promocjach w kanałach dostępnych w wybranym pakiecie.",
+  },
+  {
+    id: 4,
+    title: "Automatyzacje i scenariusze",
+    description:
+      "Uruchamiaj powitania, akcje urodzinowe, happy hours i inne scenariusze, które zachęcają klientów do powrotu.",
+  },
+  {
+    id: 5,
+    title: "Dane klientów w jednym miejscu",
+    description:
+      "Poznawaj swoich klientów, porządkuj informacje o ich aktywności i twórz dopasowane grupy odbiorców.",
+  },
+  {
+    id: 6,
+    title: "Wyniki programu",
+    description:
+      "Sprawdzaj aktywność klientów i skuteczność programu na czytelnych dashboardach.",
+  },
+  {
+    id: 1,
+    title: "Własna aplikacja",
+    description:
+      "Rozszerz program o aplikację iOS i Android, gdy potrzebujesz więcej miejsca na komunikację i doświadczenie swojej marki.",
+  },
+];
+
+const homepageFeatures = homepageFeatureContent.map((content) => ({
+  ...features.find((feature) => feature.id === content.id),
+  ...content,
+  linkText: "Dowiedz się więcej",
+  linkHref: "/funkcjonalnosci#feature-" + content.id,
+}));
+
 export default function Features() {
   return (
     <div
@@ -17,16 +63,19 @@ export default function Features() {
               data-anime="targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: anime.stagger(100, {start: 200});"
             >
               <h2 className="h3 lg:h2 xl:h1 m-0">
-                Wygodne rozwiązania dla <span className="text-primary dark:text-secondary">
-                      budowania lojalności.
-                    </span>
+                Wszystko, czego potrzebujesz{" "}
+                <span className="text-primary dark:text-secondary">
+                  w jednym miejscu.
+                </span>
               </h2>
               <p className="fs-6 xl:fs-5 text-dark dark:text-white text-opacity-70">
-                Wszystko w jednym miejscu, wygodnie i intuicyjne. <br/> Zarządzaj programem lojalnościowym, komunikacją i analityką w dedykowanym panelu.
+                Zarządzaj punktami, nagrodami, komunikacją i wynikami w jednym
+                panelu — niezależnie od tego, czy klienci korzystają z cyfrowej
+                karty, czy aplikacji.
               </p>
             </div>
             <div className="row child-cols-12 sm:child-cols-6 xl:child-cols-4 col-match justify-center g-2 lg:g-4">
-              {features.slice(0, 6).map((feature, index) => (
+              {homepageFeatures.map((feature, index) => (
                 <div key={index}>
                   <div
                     className="feature-item panel px-3 lg:px-4 py-4 rounded-2 bg-secondary dark:bg-gray-800"

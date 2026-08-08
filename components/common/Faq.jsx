@@ -15,13 +15,10 @@ export default function Faq() {
               style={{ transform: "translateY(0px)", opacity: 1 }}
             >
               <h2 className="h4 sm:h3 lg:h2 m-0 text-center">
-                Najczęściej zadawane pytania (FAQ):
+                Najczęściej zadawane pytania
               </h2>
               <div className="panel">
-                <ul
-                  className="gap-1 uc-accordion"
-                  data-uc-accordion="targets: > li;"
-                >
+                <ul className="gap-1 uc-accordion">
                   <Accordion parentClass="panel p-3 lg:p-4 rounded-1-5 lg:rounded-2 bg-secondary dark:bg-gray-800" />
                 </ul>
               </div>

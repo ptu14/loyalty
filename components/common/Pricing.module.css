@@ -1,0 +1,36 @@
+.tierAnchor {
+  scroll-margin-top: 96px;
+}
+
+.enterprise {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 220px;
+  gap: 32px;
+  align-items: center;
+}
+
+.enterpriseAction {
+  width: 220px;
+  justify-self: end;
+}
+
+.enterpriseButton {
+  width: 100%;
+}
+
+@media (max-width: 991px) {
+  .enterprise {
+    grid-template-columns: 1fr;
+  }
+
+  .enterpriseAction {
+    width: min(100%, 320px);
+    justify-self: start;
+  }
+}
+
+@media (max-width: 640px) {
+  .enterpriseAction {
+    width: 100%;
+  }
+}

@@ -1,0 +1,196 @@
+.hero {
+  padding: 120px 0 72px;
+  background: var(--bs-secondary);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.82fr) minmax(420px, 1.18fr);
+  gap: 72px;
+  align-items: center;
+}
+
+.accent {
+  color: var(--bs-primary);
+}
+
+.lead,
+.offerDescription {
+  color: rgba(17, 24, 39, 0.68);
+}
+
+.leadStrong {
+  color: var(--bs-gray-900);
+}
+
+.secondaryButton {
+  border: 1px solid rgba(17, 24, 39, 0.18);
+  color: #111827;
+}
+
+.secondaryButton:hover {
+  border-color: rgba(17, 24, 39, 0.4);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+}
+
+.offerStack {
+  display: grid;
+  gap: 16px;
+}
+
+.offer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 28px;
+  border: 1px solid rgba(17, 24, 39, 0.12);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.76);
+  color: #111827;
+  text-decoration: none;
+  transition: transform 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
+}
+
+.offer:hover {
+  border-color: rgba(24, 126, 100, 0.55);
+  color: #111827;
+  transform: translateY(-2px);
+  box-shadow: 0 16px 38px rgba(17, 24, 39, 0.08);
+}
+
+.offerPrimary {
+  border: 2px solid var(--bs-primary);
+  background: #fff;
+  box-shadow: 0 18px 42px rgba(24, 126, 100, 0.08);
+}
+
+.label,
+.labelPrimary {
+  display: inline-flex;
+  width: fit-content;
+  padding: 5px 10px;
+  border-radius: 999px;
+  background: rgba(17, 24, 39, 0.07);
+  color: #374151;
+  font-size: 0.72rem;
+  font-weight: 750;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.labelPrimary {
+  background: rgba(24, 126, 100, 0.1);
+  color: var(--bs-primary);
+}
+
+.price,
+.pricePrimary {
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.pricePrimary {
+  color: var(--bs-primary);
+}
+
+.offerDescription {
+  margin: 0;
+}
+
+.offerCta {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  width: fit-content;
+  font-weight: 700;
+}
+
+:global(.uc-dark) .hero {
+  background: var(--bs-gray-800);
+}
+
+:global(.uc-dark) .accent,
+:global(.uc-dark) .pricePrimary,
+:global(.uc-dark) .labelPrimary {
+  color: var(--bs-secondary);
+}
+
+:global(.uc-dark) .lead,
+:global(.uc-dark) .offerDescription {
+  color: rgba(255, 255, 255, 0.68);
+}
+
+:global(.uc-dark) .leadStrong {
+  color: #fff;
+}
+
+:global(.uc-dark) .secondaryButton {
+  border-color: rgba(255, 255, 255, 0.22);
+  color: #fff;
+}
+
+:global(.uc-dark) .offer,
+:global(.uc-dark) .offerPrimary {
+  border-color: var(--bs-gray-700);
+  background: var(--bs-gray-900);
+  color: #fff;
+  box-shadow: none;
+}
+
+:global(.uc-dark) .offerPrimary {
+  border-color: var(--bs-secondary);
+}
+
+:global(.uc-dark) .offer:hover {
+  border-color: var(--bs-secondary);
+  color: #fff;
+  box-shadow: 0 16px 38px rgba(var(--bs-black-rgb), 0.2);
+}
+
+:global(.uc-dark) .label {
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.78);
+}
+
+:global(.uc-dark) .labelPrimary {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 991px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero {
+    padding: 96px 0 48px;
+  }
+
+  .offer {
+    padding: 22px;
+  }
+
+  .actions {
+    flex-direction: column;
+  }
+
+  .actions > * {
+    width: 100%;
+  }
+
+  .offer > div:first-child {
+    align-items: flex-start;
+  }
+
+  .price,
+  .pricePrimary {
+    font-size: 0.85rem;
+  }
+}

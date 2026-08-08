@@ -9,6 +9,12 @@ export default function sitemap() {
             priority: 1.0,
         },
         {
+            url: `${baseUrl}/karta-lojalnosciowa`,
+            lastModified: new Date(),
+            changeFrequency: 'monthly',
+            priority: 0.9,
+        },
+        {
             url: `${baseUrl}/funkcjonalnosci`,
             lastModified: new Date(),
             changeFrequency: 'monthly',

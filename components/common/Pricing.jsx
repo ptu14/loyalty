@@ -1,9 +1,8 @@
 "use client";
-import { tiers3 } from "@/data/pricing";
+import { enterpriseTier, tiers3 } from "@/data/pricing";
 import { useState } from "react";
-import Image from "next/image";
-import Link from "next/link";
 import { openContactModal } from "@/utlis/toggleContactModal";
+import styles from "./Pricing.module.css";
 
 export default function Pricing() {
   const [isYearly, setIsYearly] = useState(false);
@@ -20,7 +19,7 @@ export default function Pricing() {
                  <span className="text-primary dark:text-secondary">Prosty</span>, skalowalny cennik
               </h2>
               <p className="fs-6 xl:fs-5 text-dark dark:text-white text-opacity-70">
-                Wygodnie zrezygnuj kiedy chcesz w abonamnecie miesięcznym lub oszczędzaj w abonamencie rocznym.
+                Zacznij bez aplikacji. Dodaj ją, gdy Twój biznes będzie potrzebować więcej możliwości.
               </p>
               <ul
                 className="uc-switcher-nav nav-x gap-0 p-narrow border rounded-2 fs-7 fw-medium"
@@ -51,11 +50,11 @@ export default function Pricing() {
                   data-anime="onview: -100; targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: anime.stagger(100, {start: 400});"
                 >
                   {tiers3.map((tier, index) => (
-                    <div key={index} className="tier-wrapper">
+                    <div key={tier.id || index} id={tier.id} className={`${styles.tierAnchor} tier-wrapper`}>
                       <div className="tier panel vstack gap-2 xl:gap-4 px-3 py-4 sm:p-4 lg:p-6 rounded lg:rounded-2 bg-secondary dark:bg-gray-800">
-                        {tier.isPopular && (
+                        {(tier.label || tier.isPopular) && (
                           <span className="position-absolute top-0 ltr:end-0 rtl:start-0 m-2 d-inline-flex py-narrow px-1 bg-primary rounded-1 text-white fs-7 fw-medium">
-                            Polecany
+                            {tier.label || "Polecany"}
                           </span>
                         )}
                         <div className="panel">
@@ -72,16 +71,14 @@ export default function Pricing() {
                               {isYearly ? tier.yearlyPrice : tier.price}
                             </h5>
                             <span className="fs-7 opacity-70">
-                              {tier.priceDetails}
+                              {isYearly
+                                ? tier.yearlyPriceDetails
+                                : tier.monthlyPriceDetails}
                             </span>
                             <div className="vstack gap-1 justify-center text-center mt-3">
                               <a
                                 onClick={() => openContactModal()}
-                                className={`btn btn-md sm:btn-sm lg:btn-md ${
-                                  tier.title === "Enterprise"
-                                    ? "btn-dark"
-                                    : "btn-primary"
-                                } text-white`}
+                                className="btn btn-md sm:btn-sm lg:btn-md btn-primary text-white"
                               >
                                 {tier.linkText}
                               </a>
@@ -94,13 +91,7 @@ export default function Pricing() {
                         <div className="panel">
                           <div className="panel vstack gap-2">
                             <span className="fs-6 fw-bold dark:text-white">
-                              {tier.title === "Poznajmy się"
-                                ? "Co dostajesz:"
-                                : `Wszystko co w ${
-                                    tier.title === "Premium"
-                                      ? "Poznajmy się"
-                                      : "Premium"
-                                  }, plus:`}
+                              {tier.featureIntro}
                             </span>
                             {tier.features.map((feature, idx) => (
                               <div key={idx} className="hstack gap-1 fs-7">
@@ -114,6 +105,27 @@ export default function Pricing() {
                     </div>
                   ))}
                 </div>
+              </div>
+            </div>
+            <div className={`${styles.enterprise} panel p-4 lg:p-6 mt-3 rounded lg:rounded-2 border dark:bg-gray-800`}>
+              <div className="panel vstack gap-1 max-w-700px">
+                <h3 className="h5 sm:h4 m-0 dark:text-white">
+                  {enterpriseTier.title}
+                </h3>
+                <p className="m-0 opacity-70 dark:opacity-80">
+                  {enterpriseTier.description}
+                </p>
+              </div>
+              <div className={`${styles.enterpriseAction} vstack gap-1 text-center`}>
+                <a
+                  onClick={() => openContactModal()}
+                  className={`${styles.enterpriseButton} btn btn-md btn-dark text-white`}
+                >
+                  {enterpriseTier.linkText}
+                </a>
+                <span className="fs-7 opacity-70">
+                  {enterpriseTier.linkSubtext}
+                </span>
               </div>
             </div>
             <p

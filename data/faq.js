@@ -1,79 +1,85 @@
 export const accordionItems = [
   {
     id: 1,
-    question: "Czy muszę mieć wiedzę o programowaniu?",
+    question: "Czy klienci muszą pobierać aplikację?",
     answer:
-      "Nie, nie musisz mieć wiedzy o programowaniu. Wszystkim zarządzasz z poziomu platformy no-code, która pozwala na budowanie szablonów wiadomości, zarządzanie komunikacją, promocjami oraz kontentem aplikacji. Wszystkimi kwestiami technchnicznymi związanymi z wdrożeniem aplikacji zajmuje się nasz zespół.",
+      "Nie. W pakiecie Mini klienci korzystają z cyfrowej karty zapisanej w Apple Wallet lub Google Wallet. Własna aplikacja jest opcjonalnym rozszerzeniem programu.",
     controls: "uc-accordion-24",
     expanded: true,
   },
   {
     id: 2,
-    question: "Czy rozwiązanie jest zgodne z RODO?",
+    question: "Jak klient dodaje kartę lojalnościową do telefonu?",
     answer:
-      "Tak, nasza platforma jest w pełni zgodna z RODO. Przykładamy dużą wagę do ochrony danych osobowych i zapewniamy wszystkie niezbędne zabezpieczenia oraz funkcje wspierające zgodność z przepisami. Dane hostowane są na serwerach w Europie, a używane narzędzia spełniają wymogi europejskiego prawa o ochronie danych osobowych. Dodatkowo pomagamy w przygotowaniu regulaminu programu lojalnościowego oraz aplikacji, aby zapewnić pełną zgodność formalną i prawną.",
+      "Może otrzymać link e-mailem lub SMS-em albo zeskanować kod QR. Następnie dodaje kartę do odpowiedniego portfela w swoim telefonie.",
     controls: "uc-accordion-25",
     expanded: false,
   },
-  {
-    id: 9,
-    question: "Jak wygląda rozliczenie za usługę?",
-    answer:
-      'Rozliczenie odbywa się w modelu subskrypcyjnym, w ramach jednego z trzech pakietów: „Poznajmy się”, „Podstawowy” lub „Enterprise”. Możesz wybrać cykl miesięczny lub roczny - w zależności od swoich potrzeb. Jedynym dodatkowym kosztem, jaki możesz ponieść, jest opłata za wysyłkę wiadomości SMS, która zależy od liczby wysałnych wiadomości. Nie stosujemy żadnych ukrytych opłat - wszystkie warunki i koszty są jasno określone w umowie.',
-    controls: "uc-accordion-25",
-    expanded: false,
-  },
-
   {
     id: 3,
-    question: "Kiedy mogę zrezygnować z usługi?",
+    question: "Czy karta działa na iPhone i telefonach z Androidem?",
     answer:
-      "Możesz zrezygnować w dowolnym momencie. Dostęp do platformy pozostaje aktywny do końca opłaconego okresu rozliczeniowego. Wszystkie dane mogą być wyeksportowane w dowolnym momencie. Po zrezygnowaniu z usługi, wszystkie dane są usuwane z systemu w ciągu 30 dni od daty wygaśnięcia umowy.",
+      "Tak. Na iPhone karta jest zapisywana w Apple Wallet, a na telefonach z Androidem w Google Wallet.",
     controls: "uc-accordion-26",
     expanded: false,
   },
   {
     id: 4,
-    question: "Czy mogę dostosować wygląd aplikacji do identyfikacji wizualnej mojej marki?",
+    question: "Czym cyfrowa karta różni się od własnej aplikacji?",
     answer:
-      "Tak, aplikację można w pełni dostosować do Twojej marki - od kolorystyki, przez typografię, po logotypy i układ treści. Ustalenia dotyczące identyfikacji wizualnej są jednym z pierwszych etapów procesu wdrożenia.",
+      "Cyfrowa karta to prosty sposób na uruchomienie punktów lub pieczątek i nagród bez własnej aplikacji. Aplikacja daje więcej miejsca na treści, komunikację i rozbudowane doświadczenie marki.",
     controls: "uc-accordion-27",
     expanded: false,
   },
   {
     id: 5,
-    question: "Jakie wsparcie oferujecie w trakcie trwania umowy?",
+    question: "Czy mogę później rozszerzyć program o własną aplikację?",
     answer:
-      "Oferujemy nie tylko wsparcie techniczne, ale także merytoryczne. Nasi specjaliści mają wieloletnie doświadczenie w projektowaniu, wdrażaniu i prowadzeniu programów lojalnościowych dla największych marek w Polsce. Możesz liczyć na nasze wsparcie przez cały okres trwania umowy - bez żadnych dodatkowych opłat.",
+      "Tak. Możesz zacząć od cyfrowej karty, a własną aplikację i kolejne scenariusze dodać wtedy, gdy Twój program będzie ich potrzebował. Wszystkim zarządzasz w platformie Loyster.",
     controls: "uc-accordion-28",
     expanded: false,
   },
   {
     id: 6,
-    question: "Czy mogę samodzielnie zarządzać treściami i promocjami w aplikacji?",
+    question: "Czy karta i aplikacja mogą wyglądać jak część mojej marki?",
     answer:
-      "Tak, otrzymujesz dostęp do intuicyjnej platformy, która pozwala w łatwy sposób zarządzać treściami samodzielnie. Wierzymy, że najlepsze efekty osiągniesz, przejmując ster we własne ręce, dlatego oferujemy serię szkoleń, które przygotują Cię do obsługi systemu. Oczywiście, przez cały czas możesz liczyć na nasze wsparcie, jeśli pojawią się jakiekolwiek trudności.",
-    controls: "uc-accordion-30",
-    expanded: false,
-  },
-  {
-    id: 7,
-    question: "Jak długo trwa wdrożenie aplikacji?",
-    answer:
-      "Czas wdrożenia „do pierwszego pobrania” wynosi zazwyczaj od 3 do 6 tygodni. Obejmuje on przygotowanie założeń programu lojalnościowego, dostosowanie identyfikacji wizualnej aplikacji, przeszkolenie zespołu, przygotowanie treści, regulaminu oraz wdrożenie samej aplikacji wraz z podstawowymi scenariuszami automatyzacji.",
+      "Tak. Cyfrową kartę przygotowujemy z Twoim logo i kolorystyką. Własna aplikacja oferuje jeszcze szersze możliwości dopasowania wyglądu i treści do marki.",
     controls: "uc-accordion-29",
     expanded: false,
   },
   {
-    id: 8,
-    question: "Czy mogę testować platformę przed podpisaniem umowy?",
+    id: 7,
+    question: "Czy mogę samodzielnie zarządzać programem?",
     answer:
-      "Oferujemy możliwość prezentacji demo platformy oraz dostęp do środowiska testowego, dzięki czemu możesz sprawdzić, jak działa nasz system przed podjęciem decyzji.",
+      "Tak. W panelu Loyster zarządzasz punktami, nagrodami, promocjami i komunikacją oraz sprawdzasz wyniki programu. Nie potrzebujesz wiedzy programistycznej, a nasz zespół zapewnia wsparcie.",
+    controls: "uc-accordion-30",
+    expanded: false,
+  },
+  {
+    id: 8,
+    question: "Jak wygląda rozliczenie za usługę?",
+    answer:
+      "Wybierasz jeden z trzech głównych pakietów: Mini, Poznajmy się lub Premium, w rozliczeniu miesięcznym albo rocznym. Opłata za wdrożenie oraz ewentualne koszty dodatkowych kanałów komunikacji są pokazane w cenniku. Rozwiązania dla większych organizacji wyceniamy indywidualnie.",
     controls: "uc-accordion-31",
     expanded: false,
   },
-]
-;
+  {
+    id: 9,
+    question: "Czy rozwiązanie uwzględnia wymagania RODO?",
+    answer:
+      "Tak. Dane są przechowywane na serwerach w Europie, a platforma wspiera prowadzenie programu zgodnie z wymaganiami RODO. Pomagamy również w przygotowaniu regulaminu programu lojalnościowego i aplikacji.",
+    controls: "uc-accordion-32",
+    expanded: false,
+  },
+  {
+    id: 10,
+    question: "Czy mogę zobaczyć Loyster przed podjęciem decyzji?",
+    answer:
+      "Tak. Podczas bezpłatnego demo pokażemy kartę lojalnościową, panel Loyster i możliwości własnej aplikacji oraz pomożemy wybrać pakiet odpowiedni dla Twojego biznesu.",
+    controls: "uc-accordion-33",
+    expanded: false,
+  },
+];
 
 export const accordionItems2 = [
   {

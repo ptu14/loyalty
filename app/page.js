@@ -1,8 +1,8 @@
 import LoyaltyApp from "./loyalty-app/page";
 export const metadata = {
-  title: "Loyster - Profesjonalne aplikacje lojalnościowe dla Twojego biznesu",
-  description: "Loyster - stwórz własną aplikację lojalnościową w 7 dni. System punktowy, nagrody, powiadomienia push i analityka. Zwiększ powracalność klientów o 40%.",
-  keywords: ["aplikacja lojalnościowa", "program lojalnościowy", "system punktowy", "karty lojalnościowe", "nagrody dla klientów", "loyalty app"],
+  title: "Loyster - Program lojalnościowy z kartą Wallet lub własną aplikacją",
+  description: "Uruchom program lojalnościowy z kartą Apple Wallet i Google Wallet bez budowania własnej aplikacji. Zacznij prosto i dodaj aplikację, gdy potrzebujesz więcej możliwości.",
+  keywords: ["program lojalnościowy", "program lojalnościowy bez aplikacji", "Apple Wallet", "Google Wallet", "aplikacja lojalnościowa", "system punktowy", "karta lojalnościowa"],
   icons: {
     icon: 'assets/images/loyster.svg',
   },
@@ -10,8 +10,8 @@ export const metadata = {
     canonical: 'https://www.loyster.pl/',
   },
   openGraph: {
-    title: "Loyster - Profesjonalne aplikacje lojalnościowe dla Twojego biznesu",
-    description: "Loyster - stwórz własną aplikację lojalnościową w 7 dni. System punktowy, nagrody, powiadomienia push i analityka. Zwiększ powracalność klientów o 40%.",
+    title: "Loyster - Program lojalnościowy z kartą Wallet lub własną aplikacją",
+    description: "Uruchom program lojalnościowy z kartą Apple Wallet i Google Wallet bez budowania własnej aplikacji. Zacznij prosto i rozwijaj program razem z firmą.",
     url: 'https://www.loyster.pl/',
     siteName: 'Loyster',
     images: [

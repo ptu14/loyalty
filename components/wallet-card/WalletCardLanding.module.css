@@ -1,0 +1,584 @@
+.hero {
+  padding: 96px 0 88px;
+  background: #f4efeb;
+}
+
+.heroGrid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(420px, 1.1fr);
+  gap: 72px;
+  align-items: center;
+}
+
+.heroCopy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 22px;
+}
+
+.eyebrow {
+  color: var(--bs-primary);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.accent {
+  color: var(--bs-primary);
+}
+
+.heroLead {
+  max-width: 620px;
+  margin: 0;
+  color: rgba(17, 24, 39, 0.7);
+  font-size: 20px;
+  line-height: 1.55;
+}
+
+.heroActions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.secondaryButton {
+  border: 1px solid rgba(17, 24, 39, 0.2);
+  color: var(--bs-gray-900);
+  background: transparent;
+}
+
+.platforms {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.platforms span {
+  padding: 7px 11px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.7);
+  color: rgba(17, 24, 39, 0.72);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.preview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  padding: 52px 44px;
+  border: 1px solid rgba(24, 133, 107, 0.18);
+  border-radius: 32px;
+  background: rgba(255, 255, 255, 0.64);
+}
+
+.walletCard {
+  width: min(100%, 520px);
+  min-height: 330px;
+  padding: 30px;
+  border-radius: 28px;
+  background: linear-gradient(145deg, #247d69, #125d50);
+  color: #fff;
+  box-shadow: 0 28px 60px rgba(20, 78, 66, 0.24);
+}
+
+.cardTop,
+.cardBottom,
+.brand {
+  display: flex;
+  align-items: center;
+}
+
+.cardTop,
+.cardBottom {
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.brand {
+  gap: 10px;
+  font-weight: 700;
+}
+
+.brandMark {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 9px;
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.cardType,
+.rewardLabel {
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 12px;
+}
+
+.balance {
+  display: flex;
+  flex-direction: column;
+  margin: 42px 0 36px;
+}
+
+.balance > span {
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 14px;
+}
+
+.balance strong {
+  font-size: 64px;
+  line-height: 1;
+  letter-spacing: -0.05em;
+}
+
+.balance small {
+  margin-top: 10px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.cardBottom > div:first-child {
+  display: flex;
+  flex-direction: column;
+}
+
+.qr {
+  display: grid;
+  grid-template-columns: repeat(5, 5px);
+  gap: 2px;
+  padding: 8px;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.qr span {
+  width: 5px;
+  height: 5px;
+  background: transparent;
+}
+
+.qr .qrFilled {
+  background: #123f36;
+}
+
+.previewNote {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: rgba(17, 24, 39, 0.66);
+  font-size: 14px;
+}
+
+.previewDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--bs-primary);
+}
+
+.section {
+  padding: 88px 0;
+}
+
+.softSection {
+  background: #f4efeb;
+}
+
+.sectionHeading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 720px;
+  margin: 0 auto 48px;
+  gap: 12px;
+  text-align: center;
+}
+
+.sectionHeading p,
+.step p,
+.benefit p,
+.miniCopy > p,
+.growthBox p {
+  margin: 0;
+  color: rgba(17, 24, 39, 0.66);
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.step {
+  min-height: 230px;
+  padding: 30px;
+  border: 1px solid rgba(17, 24, 39, 0.1);
+  border-radius: 20px;
+  background: #fff;
+}
+
+.stepNumber {
+  display: block;
+  margin-bottom: 34px;
+  color: var(--bs-primary);
+  font-weight: 700;
+}
+
+.step p,
+.benefit p {
+  margin-top: 10px;
+}
+
+.benefits {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.benefit {
+  display: flex;
+  gap: 18px;
+  min-height: 150px;
+  padding: 26px;
+  border: 1px solid rgba(17, 24, 39, 0.08);
+  border-radius: 18px;
+  background: #fff;
+}
+
+.benefitIcon {
+  display: grid;
+  flex: 0 0 auto;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: rgba(24, 133, 107, 0.1);
+  color: var(--bs-primary);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.miniGrid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(340px, 0.75fr);
+  gap: 72px;
+  align-items: start;
+}
+
+.miniCopy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.featureList {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px 24px;
+  width: 100%;
+  margin: 16px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.featureList li {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+}
+
+.featureList i {
+  margin-top: 3px;
+  color: var(--bs-primary);
+}
+
+.priceCard {
+  padding: 32px;
+  border: 1px solid rgba(24, 133, 107, 0.35);
+  border-radius: 22px;
+  background: #fff;
+  box-shadow: 0 20px 50px rgba(17, 24, 39, 0.08);
+}
+
+.priceLabel {
+  color: var(--bs-primary);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.price {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin-top: 18px;
+}
+
+.price strong {
+  font-size: 46px;
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+
+.priceCard > p {
+  margin: 12px 0 0;
+  color: rgba(17, 24, 39, 0.65);
+}
+
+.annualNote {
+  margin: 22px 0;
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: rgba(24, 133, 107, 0.09);
+  color: var(--bs-primary);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.priceLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  margin-top: 18px;
+  color: var(--bs-gray-900);
+  font-weight: 600;
+}
+
+.growthSection {
+  padding-top: 0;
+}
+
+.growthBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 48px;
+  padding: 46px;
+  border: 1px solid rgba(17, 24, 39, 0.14);
+  border-radius: 24px;
+  background: #fff;
+  color: var(--bs-gray-900);
+}
+
+.growthBox > div {
+  display: flex;
+  flex-direction: column;
+  max-width: 760px;
+  gap: 12px;
+}
+
+.growthBox h2 {
+  color: var(--bs-gray-900);
+}
+
+.growthBox p {
+  color: rgba(17, 24, 39, 0.7);
+}
+
+.growthBox .eyebrow {
+  color: var(--bs-primary);
+}
+
+.growthBox :global(.btn) {
+  border-color: var(--bs-gray-900);
+  background: var(--bs-gray-900);
+  color: #fff !important;
+}
+
+.growthBox :global(.btn:hover) {
+  border-color: var(--bs-gray-900);
+  background: var(--bs-gray-900);
+  opacity: 0.9;
+}
+
+:global(.uc-dark) .hero,
+:global(.uc-dark) .softSection {
+  background: var(--bs-gray-800);
+}
+
+:global(.uc-dark) .heroLead,
+:global(.uc-dark) .previewNote,
+:global(.uc-dark) .sectionHeading p,
+:global(.uc-dark) .step p,
+:global(.uc-dark) .benefit p,
+:global(.uc-dark) .miniCopy > p,
+:global(.uc-dark) .priceCard > p {
+  color: rgba(255, 255, 255, 0.68);
+}
+
+:global(.uc-dark) .platforms span,
+:global(.uc-dark) .preview,
+:global(.uc-dark) .step,
+:global(.uc-dark) .benefit,
+:global(.uc-dark) .priceCard {
+  background: var(--bs-gray-900);
+  color: #fff;
+}
+
+:global(.uc-dark) .preview,
+:global(.uc-dark) .step,
+:global(.uc-dark) .benefit,
+:global(.uc-dark) .priceCard {
+  border-color: var(--bs-gray-700);
+}
+
+:global(.uc-dark) .platforms span {
+  color: rgba(255, 255, 255, 0.72);
+}
+
+:global(.uc-dark) .secondaryButton {
+  border-color: rgba(255, 255, 255, 0.22);
+  color: #fff;
+}
+
+:global(.uc-dark) .priceLink {
+  color: #fff;
+}
+
+:global(.uc-dark) .growthBox {
+  border-color: var(--bs-gray-700);
+  background: var(--bs-gray-800);
+}
+
+:global(.uc-dark) .growthBox h2 {
+  color: #fff;
+}
+
+:global(.uc-dark) .growthBox p {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+:global(.uc-dark) .growthBox .eyebrow {
+  color: var(--bs-secondary);
+}
+
+:global(.uc-dark) .growthBox :global(.btn),
+:global(.uc-dark) .growthBox :global(.btn:hover) {
+  border-color: var(--bs-gray-900);
+  background: var(--bs-gray-900);
+  color: #fff !important;
+}
+
+@media (max-width: 991px) {
+  .hero {
+    padding: 72px 0;
+  }
+
+  .heroGrid,
+  .miniGrid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .preview {
+    max-width: 680px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .steps {
+    grid-template-columns: 1fr;
+  }
+
+  .step {
+    min-height: 0;
+  }
+
+  .stepNumber {
+    margin-bottom: 24px;
+  }
+
+  .growthBox {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero,
+  .section {
+    padding: 56px 0;
+  }
+
+  .heroCopy {
+    gap: 18px;
+  }
+
+  .heroLead {
+    font-size: 17px;
+  }
+
+  .heroActions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .heroActions > * {
+    width: 100%;
+  }
+
+  .preview {
+    padding: 24px 18px;
+    border-radius: 22px;
+  }
+
+  .walletCard {
+    min-height: 280px;
+    padding: 22px;
+    border-radius: 22px;
+  }
+
+  .cardType {
+    display: none;
+  }
+
+  .balance {
+    margin: 34px 0 30px;
+  }
+
+  .balance strong {
+    font-size: 52px;
+  }
+
+  .sectionHeading {
+    align-items: flex-start;
+    margin-bottom: 32px;
+    text-align: left;
+  }
+
+  .benefits,
+  .featureList {
+    grid-template-columns: 1fr;
+  }
+
+  .benefit {
+    min-height: 0;
+  }
+
+  .miniGrid {
+    gap: 36px;
+  }
+
+  .priceCard,
+  .growthBox {
+    padding: 26px;
+  }
+
+  .price strong {
+    font-size: 40px;
+  }
+
+  .growthSection {
+    padding-top: 0;
+  }
+
+  .growthBox :global(.btn) {
+    width: 100%;
+  }
+}

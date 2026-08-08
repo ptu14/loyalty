@@ -4,9 +4,9 @@ import Footer from "@/components/common/Footer";
 import Faq from "@/components/common/Faq";
 import Pricing from "@/components/common/Pricing";
 export const metadata = {
-  title: "Cennik | Loyster - Elastyczne plany cenowe dla aplikacji lojalnościowych",
-  description: "Cennik Loyster - pakiety Start, Pro i Enterprise. Bez ukrytych kosztów, bezpłatny okres próbny. Porównaj funkcje i wybierz idealny plan dla swojego biznesu.",
-  keywords: ["cennik aplikacji lojalnościowej", "program lojalnościowy cena", "loyalty app pricing"],
+  title: "Cennik | Loyster - Program lojalnościowy z aplikacją lub bez",
+  description: "Porównaj pakiety Loyster: Mini z kartą Apple Wallet i Google Wallet, Poznajmy się z własną aplikacją oraz Premium dla rozwijających się marek.",
+  keywords: ["cennik programu lojalnościowego", "program lojalnościowy bez aplikacji", "karta lojalnościowa Apple Wallet", "Google Wallet", "aplikacja lojalnościowa cena"],
   icons: {
     icon: 'assets/images/loyster.svg',
   },
@@ -14,8 +14,8 @@ export const metadata = {
     canonical: 'https://www.loyster.pl/cennik',
   },
   openGraph: {
-    title: "Cennik | Loyster - Elastyczne plany cenowe dla aplikacji lojalnościowych",
-    description: "Cennik Loyster - pakiety Start, Pro i Enterprise. Bez ukrytych kosztów, bezpłatny okres próbny. Porównaj funkcje i wybierz idealny plan dla swojego biznesu.",
+    title: "Cennik | Loyster - Program lojalnościowy z aplikacją lub bez",
+    description: "Porównaj pakiety Mini, Poznajmy się i Premium. Zacznij od karty Wallet bez własnej aplikacji i rozwijaj program razem z biznesem.",
     url: 'https://www.loyster.pl/cennik',
     siteName: 'Loyster',
     images: [
