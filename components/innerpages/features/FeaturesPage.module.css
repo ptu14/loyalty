@@ -1,0 +1,520 @@
+.hero {
+  padding: 120px 0 72px;
+  background: var(--bs-secondary);
+}
+
+.heroInner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 860px;
+  margin: 0 auto;
+  gap: 20px;
+  text-align: center;
+}
+
+.eyebrow {
+  color: var(--bs-primary);
+  font-size: 13px;
+  font-weight: 750;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.accent {
+  color: var(--bs-primary);
+}
+
+.heroLead {
+  max-width: 750px;
+  margin: 0;
+  color: rgba(17, 24, 39, 0.68);
+  font-size: 20px;
+  line-height: 1.55;
+}
+
+.heroActions,
+.ctaActions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.secondaryButton {
+  border: 1px solid rgba(17, 24, 39, 0.2);
+  color: var(--bs-gray-900);
+}
+
+.coreSection,
+.ctaSection {
+  padding: 80px 0;
+  background: #fff;
+}
+
+.sectionHeading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 740px;
+  margin: 0 auto 44px;
+  gap: 10px;
+  text-align: center;
+}
+
+.sectionHeading p,
+.featureCopy p,
+.featureCard p,
+.scenariosRow p,
+.channelCard p,
+.editorNote p,
+.growthIntro p,
+.growthCard p,
+.ctaBox p {
+  margin: 0;
+  color: rgba(17, 24, 39, 0.66);
+  line-height: 1.55;
+}
+
+.featureRows {
+  display: flex;
+  flex-direction: column;
+}
+
+.featureRow {
+  display: grid;
+  grid-template-areas: "copy media";
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 64px;
+  align-items: center;
+  padding: 54px 0;
+  border-bottom: 1px solid rgba(17, 24, 39, 0.1);
+  scroll-margin-top: 100px;
+}
+
+.featureRow:first-child {
+  padding-top: 0;
+}
+
+.featureRow:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.featureRowReverse {
+  grid-template-areas: "media copy";
+}
+
+.featureMedia {
+  grid-area: media;
+  display: grid;
+  place-items: center;
+  min-width: 0;
+  padding: 18px;
+  border: 1px solid rgba(17, 24, 39, 0.08);
+  border-radius: 20px;
+  background: var(--bs-secondary);
+  overflow: hidden;
+}
+
+.featureMedia video,
+.featureMedia img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.featureCopy {
+  grid-area: copy;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 13px;
+}
+
+.coreGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.featureCard {
+  min-height: 230px;
+  padding: 26px;
+  border: 1px solid rgba(17, 24, 39, 0.1);
+  border-radius: 18px;
+  background: #fff;
+  scroll-margin-top: 110px;
+}
+
+.featureIcon,
+.growthIcon {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  margin-bottom: 30px;
+  border-radius: 50%;
+  background: rgba(24, 133, 107, 0.1);
+  color: var(--bs-primary);
+}
+
+.featureCard p,
+.growthCard p,
+.editorNote p {
+  margin-top: 9px;
+}
+
+.scenariosRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  margin-top: 24px;
+  padding: 22px 26px;
+  border-radius: 16px;
+  background: var(--bs-secondary);
+}
+
+.textLink,
+.cardLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  width: fit-content;
+  color: var(--bs-primary);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.textLink:hover,
+.cardLink:hover {
+  color: var(--bs-primary);
+  text-decoration: underline;
+}
+
+.channelsSection {
+  padding: 80px 0;
+  background: var(--bs-secondary);
+}
+
+.channelsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.channelCard {
+  display: flex;
+  flex-direction: column;
+  min-height: 350px;
+  padding: 30px;
+  border: 1px solid rgba(17, 24, 39, 0.12);
+  border-radius: 22px;
+  background: #fff;
+  scroll-margin-top: 110px;
+}
+
+.channelCardFeatured {
+  border: 2px solid var(--bs-primary);
+}
+
+.channelLabel,
+.featuredLabel {
+  display: inline-flex;
+  width: fit-content;
+  margin-bottom: 38px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(17, 24, 39, 0.07);
+  color: rgba(17, 24, 39, 0.72);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.featuredLabel {
+  background: rgba(24, 133, 107, 0.11);
+  color: var(--bs-primary);
+}
+
+.channelCard p {
+  margin-top: 12px;
+}
+
+.cardLink {
+  margin-top: auto;
+  padding-top: 28px;
+}
+
+.editorNote {
+  display: grid;
+  grid-template-columns: 44px minmax(0, 1fr);
+  gap: 18px;
+  margin-top: 20px;
+  padding: 24px 28px;
+  border: 1px solid rgba(17, 24, 39, 0.1);
+  border-radius: 18px;
+  background: #fff;
+  scroll-margin-top: 110px;
+}
+
+.editorNote .featureIcon {
+  margin: 0;
+}
+
+.growthSection {
+  padding: 80px 0;
+  background: #fff;
+}
+
+.growthLayout {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.72fr) minmax(0, 1.28fr);
+  gap: 64px;
+  align-items: start;
+}
+
+.growthIntro {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.growthCards {
+  display: grid;
+  gap: 14px;
+}
+
+.growthCard {
+  display: grid;
+  grid-template-columns: 44px minmax(0, 1fr);
+  gap: 18px;
+  padding: 24px;
+  border: 1px solid rgba(17, 24, 39, 0.1);
+  border-radius: 18px;
+  background: #fff;
+  scroll-margin-top: 110px;
+}
+
+.growthIcon {
+  margin: 0;
+}
+
+.ctaSection {
+  padding-top: 0;
+}
+
+.ctaBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 48px;
+  padding: 42px 46px;
+  border-radius: 24px;
+  background: var(--bs-secondary);
+}
+
+.ctaBox > div:first-child {
+  display: flex;
+  flex-direction: column;
+  max-width: 720px;
+  gap: 12px;
+}
+
+.ctaActions {
+  flex: 0 0 auto;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+:global(.uc-dark) .hero,
+:global(.uc-dark) .channelsSection,
+:global(.uc-dark) .scenariosRow,
+:global(.uc-dark) .ctaBox {
+  background: var(--bs-gray-800);
+}
+
+:global(.uc-dark) .coreSection,
+:global(.uc-dark) .growthSection,
+:global(.uc-dark) .ctaSection {
+  background: var(--bs-gray-900);
+}
+
+:global(.uc-dark) .accent,
+:global(.uc-dark) .eyebrow,
+:global(.uc-dark) .textLink,
+:global(.uc-dark) .cardLink,
+:global(.uc-dark) .featuredLabel {
+  color: var(--bs-secondary);
+}
+
+:global(.uc-dark) .heroLead,
+:global(.uc-dark) .sectionHeading p,
+:global(.uc-dark) .featureCopy p,
+:global(.uc-dark) .featureCard p,
+:global(.uc-dark) .scenariosRow p,
+:global(.uc-dark) .channelCard p,
+:global(.uc-dark) .editorNote p,
+:global(.uc-dark) .growthIntro p,
+:global(.uc-dark) .growthCard p,
+:global(.uc-dark) .ctaBox p {
+  color: rgba(255, 255, 255, 0.66);
+}
+
+:global(.uc-dark) .featureRow {
+  border-color: var(--bs-gray-700);
+}
+
+:global(.uc-dark) .featureMedia {
+  border-color: var(--bs-gray-700);
+  background: var(--bs-gray-800);
+}
+
+:global(.uc-dark) .secondaryButton {
+  border-color: rgba(255, 255, 255, 0.22);
+  color: #fff;
+}
+
+:global(.uc-dark) .featureCard,
+:global(.uc-dark) .channelCard,
+:global(.uc-dark) .editorNote,
+:global(.uc-dark) .growthCard {
+  border-color: var(--bs-gray-700);
+  background: var(--bs-gray-800);
+  color: #fff;
+}
+
+:global(.uc-dark) .channelCardFeatured {
+  border-color: var(--bs-secondary);
+}
+
+:global(.uc-dark) .featureIcon,
+:global(.uc-dark) .growthIcon,
+:global(.uc-dark) .featuredLabel {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--bs-secondary);
+}
+
+:global(.uc-dark) .channelLabel {
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.76);
+}
+
+:global(.uc-dark) .textLink:hover,
+:global(.uc-dark) .cardLink:hover {
+  color: var(--bs-secondary);
+}
+
+@media (max-width: 991px) {
+  .featureRow {
+    gap: 40px;
+  }
+
+  .coreGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .growthLayout {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .ctaBox {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 28px;
+  }
+
+  .ctaActions {
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero {
+    padding: 96px 0 48px;
+  }
+
+  .heroInner {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .heroLead {
+    font-size: 17px;
+  }
+
+  .heroActions,
+  .heroActions > *,
+  .ctaActions,
+  .ctaActions > * {
+    width: 100%;
+  }
+
+  .coreSection,
+  .channelsSection,
+  .growthSection,
+  .ctaSection {
+    padding: 56px 0;
+  }
+
+  .sectionHeading {
+    align-items: flex-start;
+    margin-bottom: 30px;
+    text-align: left;
+  }
+
+  .coreGrid,
+  .channelsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .featureRow,
+  .featureRowReverse {
+    grid-template-areas:
+      "media"
+      "copy";
+    grid-template-columns: 1fr;
+    gap: 28px;
+    padding: 42px 0;
+  }
+
+  .featureMedia {
+    padding: 12px;
+  }
+
+  .featureCard {
+    min-height: 0;
+    padding: 24px;
+  }
+
+  .featureIcon {
+    margin-bottom: 24px;
+  }
+
+  .scenariosRow {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .channelCard {
+    min-height: 310px;
+    padding: 24px;
+  }
+
+  .editorNote,
+  .growthCard {
+    grid-template-columns: 42px minmax(0, 1fr);
+    gap: 15px;
+    padding: 22px;
+  }
+
+  .ctaSection {
+    padding-top: 0;
+  }
+
+  .ctaBox {
+    padding: 28px 24px;
+  }
+}
