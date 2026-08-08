@@ -1,170 +1,182 @@
 "use client";
 
-import { howItWorksApplication, howItWorksPOS } from "@/data/features";
-import React, { useState } from "react";
-import Image from "next/image";
+import Link from "next/link";
+import { openContactModal } from "@/utlis/toggleContactModal";
+import styles from "./HowItWorks.module.css";
+
+const customerOptions = [
+  {
+    label: "Prosty start",
+    title: "Cyfrowa karta lojalnościowa",
+    description:
+      "Klient dodaje kartę do Apple Wallet lub Google Wallet i korzysta z programu bez pobierania aplikacji.",
+    href: "/karta-lojalnosciowa",
+    link: "Poznaj cyfrową kartę",
+    featured: true,
+    icon: "unicon-wallet",
+  },
+  {
+    label: "Więcej możliwości",
+    title: "Własna aplikacja",
+    description:
+      "Pełne doświadczenie Twojej marki z większą przestrzenią na komunikację, promocje i zaangażowanie.",
+    href: "/funkcjonalnosci",
+    link: "Zobacz możliwości aplikacji",
+    icon: "unicon-mobile",
+  },
+];
+
+const businessOptions = [
+  {
+    title: "Aplikacja dla obsługi",
+    description:
+      "Pracownik korzysta z prostego narzędzia na telefonie, aby naliczać punkty i realizować nagrody.",
+    note: "Dobry wybór na szybki start",
+    icon: "unicon-user",
+  },
+  {
+    title: "Połączenie z systemem POS",
+    description:
+      "Program działa razem z kasą, dzięki czemu staje się naturalną częścią codziennej obsługi.",
+    note: "Dobre rozwiązanie przy większej skali",
+    icon: "unicon-store",
+  },
+];
+
+const steps = [
+  {
+    number: "01",
+    title: "Klient dołącza",
+    description:
+      "Otrzymuje link e-mailem lub SMS-em albo skanuje kod QR na miejscu.",
+  },
+  {
+    number: "02",
+    title: "Zbiera punkty lub pieczątki",
+    description:
+      "Podczas wizyty klient pokazuje swój kod, a program zapisuje jego postęp.",
+  },
+  {
+    number: "03",
+    title: "Odbiera nagrody",
+    description:
+      "Zgromadzone punkty zamienia na korzyści, które zachęcają do kolejnej wizyty.",
+  },
+];
 
 export default function Features() {
-  const [activeTab, setActiveTab] = useState(1);
-
   return (
-    <div id="main_features" className="main-features section panel">
-      <div className="section-outer panel py-4 xl:py-4">
-        <div className="container sm:max-w-md lg:max-w-lg xl:max-w-xl">
-          <div className="section-inner panel">
-            <div className="panel vstack gap-4 xl:gap-6">
-              <div className="panel px-3 rounded-2 bg-secondary dark:bg-gray-800">
-                <ul
-                  className="main-features-nav hstack text-center overflow-auto"
-                  data-uc-switcher="connect: .main-features-switcher; active: 1; animation: uc-animation-fade;"
-                  role="tablist"
-                >
-                  <li
-                    className={`${activeTab == 1 ? "uc-active" : ""}`}
-                    onClick={() => setActiveTab(1)}
-                    role="presentation"
-                  >
-                    <a className="h6 lg:h5 sm:h7 text-nowrap m-0">Aplikacja dla obsługi</a>
-                  </li>
-                  <li
-                    className={`${activeTab == 2 ? "uc-active" : ""}`}
-                    onClick={() => setActiveTab(2)}
-                    role="presentation"
-                  >
-                    <a className="h6 lg:h5 sm:h7 text-nowrap m-0">Integracja z POS</a>
-                  </li>
-                </ul>
-              </div>
-              <div
-                className="main-features-switcher uc-switcher overflow-hidden"
-                role="presentation"
-                style={{ touchAction: "pan-y pinch-zoom" }}
+    <div id="wybierz-rozwiazanie">
+      <section className={styles.choiceSection}>
+        <div className="container max-w-xl">
+          <div className={styles.sectionHeading}>
+            <span className={styles.choiceNumber}>Decyzja 1</span>
+            <h2 className="h3 lg:h2 m-0">Jak klient korzysta z programu?</h2>
+            <p>Oba warianty działają na tej samej platformie Loyster.</p>
+          </div>
+          <div className={styles.customerGrid}>
+            {customerOptions.map((option) => (
+              <Link
+                key={option.title}
+                href={option.href}
+                className={`${styles.customerCard} ${option.featured ? styles.customerCardFeatured : ""}`}
               >
-                {activeTab == 1 && (
-                  <div className="uc-active">
-                    <div className="panel vstack gap-4 sm:gap-6 lg:gap-8">
-                      {howItWorksApplication.map((feature, i) => (
-                        <React.Fragment key={i}>
-                          <div
-                            className="feature-item panel"
-                            data-anime="onview: -200; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: 100;"
-                          >
-                            <div className="row child-cols col-match justify-between g-4 lg:g-8 xl:g-10">
-                              <div className="col-12 sm:col-6 order-0 lg:order-1">
-                                <div className="panel w-100 d-none sm:d-block">
-                                  <Image
-                                    src={feature.imgSrc}
-                                    width={390}
-                                    height={364}
-                                    alt={feature.altText}
-                                    className="rounded-2"
-                                  />
-                                </div>
-                              </div>
-                              <div className="col-12 sm:col-6 order-1 lg:order-0">
-                                <div className="panel vstack justify-between gap-4 sm:gap-6 h-100">
-                                  <div>
-                                    <div className="panel vstack gap-2">
-                                      <span className="fs-6 fw-bold m-0 text-primary">
-                                        {feature.step}
-                                      </span>
-                                      <h3 className="h4 lg:h3 xl:h2 m-0">
-                                        {feature.title}
-                                      </h3>
-                                      <p className="fs-6 xl:fs-5 opacity-70 dark:opacity-80">
-                                        {feature.description}
-                                      </p>
-                                      {feature.link && (
-                                        <a
-                                          href={feature.link.href}
-                                          className="uc-link fw-bold hstack gap-narrow"
-                                        >
-                                          <span>{feature.link.text}</span>
-                                          <i className="position-relative icon icon-1 unicon-arrow-right rtl:rotate-180 translate-y-px" />
-                                        </a>
-                                      )}
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          {i !== howItWorksApplication.length - 1 && (
-                            <hr
-                              className="border-gray-100 dark:border-opacity-15 m-0 opacity-100"
-                              data-anime="onview: -200; width: [0, '100%']; easing: easeInOutExpo; duration: 750; delay: 100;"
-                            />
-                          )}
-                        </React.Fragment>
-                      ))}
-                    </div>
+                <div className={styles.cardTop}>
+                  <span className={styles.cardIcon} aria-hidden="true">
+                    <i className={`icon icon-2 ${option.icon}`} />
+                  </span>
+                  <span className={option.featured ? styles.featuredLabel : styles.cardLabel}>
+                    {option.label}
+                  </span>
+                </div>
+                <div>
+                  <h3 className="h4 lg:h3 m-0">{option.title}</h3>
+                  <p>{option.description}</p>
+                </div>
+                <span className={styles.cardLink}>
+                  {option.link}
+                  <i className="icon icon-1 unicon-arrow-right" aria-hidden="true" />
+                </span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className={styles.businessSection}>
+        <div className="container max-w-xl">
+          <div className={styles.businessLayout}>
+            <div className={styles.businessIntro}>
+              <span className={styles.choiceNumber}>Decyzja 2</span>
+              <h2 className="h3 lg:h2 m-0">Jak Twój zespół obsługuje program?</h2>
+              <p>
+                Zacznij bez zmian przy kasie albo połącz Loyster z systemem,
+                którego już używasz.
+              </p>
+            </div>
+            <div className={styles.businessOptions}>
+              {businessOptions.map((option) => (
+                <article key={option.title} className={styles.businessCard}>
+                  <span className={styles.businessIcon} aria-hidden="true">
+                    <i className={`icon icon-2 ${option.icon}`} />
+                  </span>
+                  <div>
+                    <h3 className="h5 lg:h4 m-0">{option.title}</h3>
+                    <p>{option.description}</p>
+                    <span className={styles.optionNote}>{option.note}</span>
                   </div>
-                )}
-                {activeTab == 2 && (
-                  <div className="uc-active">
-                    <div className="panel vstack gap-4 sm:gap-6 lg:gap-8">
-                      {howItWorksPOS.map((feature, i) => (
-                        <React.Fragment key={i}>
-                          <div
-                            className="feature-item panel"
-                            data-anime="onview: -200; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: 100;"
-                          >
-                            <div className="row child-cols col-match justify-between g-4 lg:g-8 xl:g-10">
-                              <div className="col-12 sm:col-6 order-0 lg:order-1">
-                                <div className="panel w-100 d-none sm:d-block">
-                                  <Image
-                                    src={feature.imgSrc}
-                                    width={390}
-                                    height={364}
-                                    alt={feature.altText}
-                                    className="rounded-2"
-                                  />
-                                </div>
-                              </div>
-                              <div className="col-12 sm:col-6 order-1 lg:order-0">
-                                <div className="panel vstack justify-between gap-4 sm:gap-6 h-100">
-                                  <div>
-                                    <div className="panel vstack gap-2">
-                                      <span className="fs-6 fw-bold m-0 text-primary">
-                                        {feature.step}
-                                      </span>
-                                      <h3 className="h4 lg:h3 xl:h2 m-0">
-                                        {feature.title}
-                                      </h3>
-                                      <p className="fs-6 xl:fs-5 opacity-70 dark:opacity-80">
-                                        {feature.description}
-                                      </p>
-                                      {feature.link && (
-                                        <a
-                                          href={feature.link.href}
-                                          className="uc-link fw-bold hstack gap-narrow"
-                                        >
-                                          <span>{feature.link.text}</span>
-                                          <i className="position-relative icon icon-1 unicon-arrow-right rtl:rotate-180 translate-y-px" />
-                                        </a>
-                                      )}
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          {i !== howItWorksPOS.length - 1 && (
-                            <hr
-                              className="border-gray-100 dark:border-opacity-15 m-0 opacity-100"
-                              data-anime="onview: -200; width: [0, '100%']; easing: easeInOutExpo; duration: 750; delay: 100;"
-                            />
-                          )}
-                        </React.Fragment>
-                      ))}
-                    </div>
-                  </div>
-                )}
-              </div>
+                </article>
+              ))}
             </div>
           </div>
         </div>
-      </div>
+      </section>
+
+      <section className={styles.stepsSection}>
+        <div className="container max-w-xl">
+          <div className={styles.sectionHeading}>
+            <span className={styles.eyebrow}>Codzienne korzystanie</span>
+            <h2 className="h3 lg:h2 m-0">Od dołączenia do kolejnej nagrody.</h2>
+            <p>
+              Ten sam prosty proces niezależnie od wybranego wariantu.{" "}
+              <Link href="/#scenariusze" className={styles.scenariosLink}>
+                Zobacz przykładowe scenariusze
+                <i className="icon icon-1 unicon-arrow-right" aria-hidden="true" />
+              </Link>
+            </p>
+          </div>
+          <div className={styles.stepsGrid}>
+            {steps.map((step) => (
+              <article key={step.number} className={styles.stepCard}>
+                <span className={styles.stepNumber}>{step.number}</span>
+                <h3 className="h5 lg:h4 m-0">{step.title}</h3>
+                <p>{step.description}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className={styles.ctaSection}>
+        <div className="container max-w-xl">
+          <div className={styles.ctaBox}>
+            <div>
+              <span className={styles.eyebrow}>Nie musisz wybierać samodzielnie</span>
+              <h2 className="h3 lg:h2 m-0">Dobierzmy wariant do Twojego biznesu.</h2>
+              <p>Na krótkim demo pokażemy Ci Loyster i pomożemy wybrać najlepszy sposób startu.</p>
+            </div>
+            <div className={styles.ctaActions}>
+              <button type="button" className="btn btn-primary btn-lg text-white" onClick={openContactModal}>
+                Umów darmowe demo
+              </button>
+              <Link href="/cennik" className={styles.textLink}>
+                Zobacz cennik
+                <i className="icon icon-1 unicon-arrow-right" aria-hidden="true" />
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

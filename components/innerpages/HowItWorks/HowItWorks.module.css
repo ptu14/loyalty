@@ -1,0 +1,451 @@
+.hero {
+  padding: 120px 0 72px;
+  background: var(--bs-secondary);
+}
+
+.heroInner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 820px;
+  margin: 0 auto;
+  gap: 20px;
+  text-align: center;
+}
+
+.eyebrow,
+.choiceNumber {
+  color: var(--bs-primary);
+  font-size: 13px;
+  font-weight: 750;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.accent {
+  color: var(--bs-primary);
+}
+
+.heroLead {
+  max-width: 720px;
+  margin: 0;
+  color: rgba(17, 24, 39, 0.68);
+  font-size: 20px;
+  line-height: 1.55;
+}
+
+.heroActions,
+.ctaActions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.secondaryButton {
+  border: 1px solid rgba(17, 24, 39, 0.2);
+  color: var(--bs-gray-900);
+}
+
+.choiceSection,
+.stepsSection {
+  padding: 80px 0;
+  background: #fff;
+}
+
+.sectionHeading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 720px;
+  margin: 0 auto 44px;
+  gap: 10px;
+  text-align: center;
+}
+
+.sectionHeading p,
+.businessIntro p,
+.customerCard p,
+.businessCard p,
+.stepCard p,
+.ctaBox p {
+  margin: 0;
+  color: rgba(17, 24, 39, 0.66);
+  line-height: 1.55;
+}
+
+.customerGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.customerCard {
+  display: flex;
+  flex-direction: column;
+  min-height: 330px;
+  padding: 30px;
+  border: 1px solid rgba(17, 24, 39, 0.12);
+  border-radius: 22px;
+  background: #fff;
+  color: var(--bs-gray-900);
+  text-decoration: none;
+  transition: transform 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
+}
+
+.customerCardFeatured {
+  border: 2px solid var(--bs-primary);
+  background: var(--bs-secondary);
+}
+
+.customerCard:hover {
+  border-color: var(--bs-primary);
+  color: var(--bs-gray-900);
+  transform: translateY(-2px);
+  box-shadow: 0 16px 38px rgba(17, 24, 39, 0.08);
+}
+
+.cardTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 42px;
+}
+
+.cardIcon,
+.businessIcon {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(24, 133, 107, 0.1);
+  color: var(--bs-primary);
+}
+
+.cardLabel,
+.featuredLabel,
+.optionNote {
+  display: inline-flex;
+  width: fit-content;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(17, 24, 39, 0.07);
+  color: rgba(17, 24, 39, 0.72);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.featuredLabel {
+  background: rgba(24, 133, 107, 0.11);
+  color: var(--bs-primary);
+}
+
+.customerCard p {
+  margin-top: 12px;
+}
+
+.cardLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: auto;
+  padding-top: 28px;
+  color: var(--bs-primary);
+  font-weight: 700;
+}
+
+.businessSection {
+  padding: 80px 0;
+  background: var(--bs-secondary);
+}
+
+.businessLayout {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.72fr) minmax(0, 1.28fr);
+  gap: 64px;
+  align-items: start;
+}
+
+.businessIntro {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.businessOptions {
+  display: grid;
+  gap: 14px;
+}
+
+.businessCard {
+  display: grid;
+  grid-template-columns: 48px minmax(0, 1fr);
+  gap: 20px;
+  padding: 26px;
+  border: 1px solid rgba(17, 24, 39, 0.1);
+  border-radius: 18px;
+  background: #fff;
+}
+
+.businessCard p {
+  margin-top: 8px;
+}
+
+.optionNote {
+  margin-top: 16px;
+  color: var(--bs-primary);
+  background: rgba(24, 133, 107, 0.08);
+}
+
+.stepsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.stepCard {
+  min-height: 225px;
+  padding: 28px;
+  border: 1px solid rgba(17, 24, 39, 0.1);
+  border-radius: 18px;
+  background: #fff;
+}
+
+.stepNumber {
+  display: block;
+  margin-bottom: 38px;
+  color: var(--bs-primary);
+  font-weight: 750;
+}
+
+.stepCard p {
+  margin-top: 10px;
+}
+
+.scenariosLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  margin-left: 4px;
+  color: var(--bs-primary);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.scenariosLink:hover {
+  color: var(--bs-primary);
+  text-decoration: underline;
+}
+
+.ctaSection {
+  padding: 0 0 80px;
+  background: #fff;
+}
+
+.ctaBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 48px;
+  padding: 46px;
+  border: 1px solid rgba(17, 24, 39, 0.14);
+  border-radius: 24px;
+  background: #fff;
+}
+
+.ctaBox > div:first-child {
+  display: flex;
+  flex-direction: column;
+  max-width: 700px;
+  gap: 12px;
+}
+
+.ctaActions {
+  flex: 0 0 auto;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.textLink {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  color: var(--bs-gray-900);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+:global(.uc-dark) .hero,
+:global(.uc-dark) .businessSection {
+  background: var(--bs-gray-800);
+}
+
+:global(.uc-dark) .choiceSection,
+:global(.uc-dark) .stepsSection,
+:global(.uc-dark) .ctaSection {
+  background: var(--bs-gray-900);
+}
+
+:global(.uc-dark) .accent,
+:global(.uc-dark) .eyebrow,
+:global(.uc-dark) .choiceNumber,
+:global(.uc-dark) .cardLink,
+:global(.uc-dark) .scenariosLink,
+:global(.uc-dark) .featuredLabel,
+:global(.uc-dark) .optionNote {
+  color: var(--bs-secondary);
+}
+
+:global(.uc-dark) .scenariosLink:hover {
+  color: var(--bs-secondary);
+}
+
+:global(.uc-dark) .heroLead,
+:global(.uc-dark) .sectionHeading p,
+:global(.uc-dark) .businessIntro p,
+:global(.uc-dark) .customerCard p,
+:global(.uc-dark) .businessCard p,
+:global(.uc-dark) .stepCard p,
+:global(.uc-dark) .ctaBox p {
+  color: rgba(255, 255, 255, 0.66);
+}
+
+:global(.uc-dark) .secondaryButton {
+  border-color: rgba(255, 255, 255, 0.22);
+  color: #fff;
+}
+
+:global(.uc-dark) .customerCard,
+:global(.uc-dark) .businessCard,
+:global(.uc-dark) .stepCard,
+:global(.uc-dark) .ctaBox {
+  border-color: var(--bs-gray-700);
+  background: var(--bs-gray-800);
+  color: #fff;
+}
+
+:global(.uc-dark) .customerCardFeatured {
+  border-color: var(--bs-secondary);
+}
+
+:global(.uc-dark) .customerCard:hover {
+  border-color: var(--bs-secondary);
+  color: #fff;
+  box-shadow: 0 16px 38px rgba(var(--bs-black-rgb), 0.2);
+}
+
+:global(.uc-dark) .cardIcon,
+:global(.uc-dark) .businessIcon,
+:global(.uc-dark) .featuredLabel,
+:global(.uc-dark) .optionNote {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+:global(.uc-dark) .cardLabel {
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.76);
+}
+
+:global(.uc-dark) .cardIcon,
+:global(.uc-dark) .businessIcon {
+  color: var(--bs-secondary);
+}
+
+:global(.uc-dark) .textLink {
+  color: #fff;
+}
+
+@media (max-width: 991px) {
+  .businessLayout {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .ctaBox {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 28px;
+  }
+
+  .ctaActions {
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero {
+    padding: 96px 0 48px;
+  }
+
+  .heroInner {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .heroLead {
+    font-size: 17px;
+  }
+
+  .choiceSection,
+  .businessSection,
+  .stepsSection {
+    padding: 56px 0;
+  }
+
+  .sectionHeading {
+    align-items: flex-start;
+    margin-bottom: 30px;
+    text-align: left;
+  }
+
+  .customerGrid,
+  .stepsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .customerCard {
+    min-height: 285px;
+    padding: 24px;
+  }
+
+  .cardTop {
+    margin-bottom: 30px;
+  }
+
+  .businessCard {
+    grid-template-columns: 42px minmax(0, 1fr);
+    gap: 15px;
+    padding: 22px;
+  }
+
+  .businessIcon {
+    width: 42px;
+    height: 42px;
+  }
+
+  .stepCard {
+    min-height: 0;
+  }
+
+  .stepNumber {
+    margin-bottom: 24px;
+  }
+
+  .ctaSection {
+    padding-bottom: 56px;
+  }
+
+  .ctaBox {
+    padding: 28px 24px;
+  }
+
+  .heroActions,
+  .heroActions > *,
+  .ctaActions,
+  .ctaActions > * {
+    width: 100%;
+  }
+}
