@@ -4,7 +4,7 @@ export const footerLinks = [
       { href: "/karta-lojalnosciowa", label: "Cyfrowa karta lojalnościowa" },
       { href: "/funkcjonalnosci", label: "Funkcjonalności" },
       { href: "/#scenariusze", label: "Scenariusze" },
-      { href: "/#faq", label: "FAQ" },
+      { href: "/faq", label: "FAQ" },
       { href: "/wdrozenie", label: "Wdrożenie" },
       { href: "/jak-to-dziala", label: "Jak to działa" },
       { href: "/cennik", label: "Cennik" },

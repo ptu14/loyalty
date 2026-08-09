@@ -6,40 +6,44 @@ export const menuItems = [
   },
   {
     id: 2,
+    href: "/karta-lojalnosciowa",
+    label: "Cyfrowa karta",
+  },
+  {
+    id: 3,
     href: "/funkcjonalnosci",
     label: "Funkcjonalności",
   },
   {
-    id: 3,
+    id: 4,
     href: "/#scenariusze",
     label: "Scenariusze",
   },
   {
-    id: 3,
-    label: "FAQ",
+    id: 5,
+    label: "Jak to działa",
     subItems: [
-      
-          {
-            href: "/faq",
-            label: "FAQ",
-          },
-          {
-            href: "/wdrozenie",
-            label: "Wdrożenie",
-          },
-          {
-            href: "/jak-to-dziala",
-            label: "Jak to działa",
-          }
+      {
+        href: "/jak-to-dziala",
+        label: "Jak to działa",
+      },
+      {
+        href: "/wdrozenie",
+        label: "Wdrożenie",
+      },
+      {
+        href: "/faq",
+        label: "FAQ",
+      },
     ],
   },
   {
-    id: 4,
+    id: 6,
     href: "/cennik",
     label: "Cennik",
   },
   {
-    id: 5,
+    id: 7,
     href: "/kontakt",
     label: "Kontakt",
   }

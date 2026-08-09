@@ -1,6 +1,7 @@
 "use client";
 import { useContextElement } from "@/context/Context";
 import { icons, menuItems } from "@/data/menu";
+import { openContactModal } from "@/utlis/toggleContactModal";
 import { closeMobileMenu } from "@/utlis/toggleMobileMenu";
 import Image from "next/image";
 import Link from "next/link";
@@ -41,9 +42,8 @@ export default function MobileMenu() {
   const isMenuActive = (menu) => {
     let isActive = false;
     if (menu.href) {
-      if (pathname.split("/")[1] == menu.href?.split("/")[1]) {
-        isActive = true;
-      }
+      if (menu.href === "/") return pathname === "/";
+      if (!menu.href.includes("#")) return pathname === menu.href;
     }
     if (menu.subItems) {
       menu.subItems.forEach((el) => {
@@ -65,6 +65,12 @@ export default function MobileMenu() {
     }
     return isActive;
   };
+
+  const handleDemoClick = () => {
+    closeMobileMenu();
+    openContactModal();
+  };
+
   return (
     <div
       ref={containerRef}
@@ -222,6 +228,13 @@ export default function MobileMenu() {
               </li>
             ))}
           </ul>
+          <button
+            type="button"
+            className="btn btn-primary text-white w-100 mt-4"
+            onClick={handleDemoClick}
+          >
+            Darmowe demo
+          </button>
           <div
             className="py-2 hstack gap-2 mt-4 bg-white dark:bg-gray-900 uc-sticky uc-active uc-sticky-fixed"
             data-uc-sticky="position: bottom"
