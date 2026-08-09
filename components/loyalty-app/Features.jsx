@@ -53,7 +53,7 @@ export default function Features() {
   return (
     <div
       id="funkcje"
-      className="key-features section panel overflow-hidden"
+      className="key-features section panel overflow-hidden bg-gray-25 dark:bg-gray-900"
     >
       <div className="section-outer panel py-6 xl:py-9">
         <div className="container sm:max-w-lg xl:max-w-xl">
@@ -103,7 +103,7 @@ export default function Features() {
                               {feature.linkText && (
                                 <a
                                   href={feature.linkHref}
-                                  className="uc-link fw-bold hstack gap-narrow"
+                                  className="uc-link fw-bold hstack gap-narrow dark:text-secondary"
                                 >
                                   <span>{feature.linkText}</span>
                                   <i className="position-relative icon icon-1 unicon-arrow-right rtl:rotate-180 translate-y-px" />
@@ -119,7 +119,7 @@ export default function Features() {
               ))}
               <Link
                 href={`/funkcjonalnosci#feature-7`}
-                className="uc-link fw-bold d-inline-flex items-center gap-narrow"
+                className="uc-link fw-bold d-inline-flex items-center gap-narrow dark:text-secondary"
                 style={{
                   transform: "translateY(0.0097341px)",
                   opacity: "1",

@@ -18,12 +18,14 @@ export default function Footer2() {
                       <Link href={`/`}>
                         <img
                           className=" text-primary"
-                          alt="Lexend"
+                          alt="Loyster"
                           src="/assets/images/logo-dark.svg"
                         />
                       </Link>
                       <p>
-                      Stwórz program lojalnościowy który zwiększy powracalność Twoich klientów, zbuduje zaangażowanie i pozwoli Ci zarabiać więcej. Prosto, intuicyjnie, bez kodowania.
+                      Stwórz program lojalnościowy, który zwiększa powracalność
+                      klientów, buduje zaangażowanie i wspiera rozwój Twojego
+                      biznesu. Prosto, intuicyjnie i bez kodowania.
                       </p>
                     </div>
                   </div>
@@ -53,7 +55,8 @@ export default function Footer2() {
             <div className="uc-footer-bottom panel vstack lg:hstack gap-4 justify-center lg:justify-between pt-4 lg:pt-6 border-top dark:text-white">
               <div className="vstack sm:hstack justify-center lg:justify-start items-center lg:items-start gap-1 lg:gap-2">
                 <p className="opacity-60">
-                  Loyster© {new Date().getFullYear()}, All rights reserved.
+                  Loyster © {new Date().getFullYear()}. Wszelkie prawa
+                  zastrzeżone.
                 </p>
               </div>
             </div>

@@ -67,7 +67,7 @@ export default function KeyFeatures() {
                       <a
                           href="#scenariusze"
                           onClick={handleToggle}
-                      className="uc-link fw-bold d-inline-flex items-center gap-narrow text-primary hover:text-primary-dark transition-colors"
+                      className="uc-link fw-bold d-inline-flex items-center gap-narrow text-primary hover:text-primary-dark dark:text-secondary dark:hover:text-secondary transition-colors"
                     >
                       <span className={'d-inline-flex items-center gap-1'}>
                         {showAll

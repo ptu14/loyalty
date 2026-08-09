@@ -182,7 +182,7 @@ export const features2 = [
     icon: "unicon-touch-interaction",
     title: "Burn!",
     description:
-      "Wymiaj zebrane punkty na nagrody.",
+      "Wymieniaj zebrane punkty na nagrody.",
     backgroundColor: "bg-white dark:bg-gray-800",
   },
   {
@@ -225,7 +225,7 @@ export const features2 = [
     icon: "unicon-checkmark",
     title: "Nagradzaj za zgody marketingowe",
     description:
-      "Zwiększ ilośc punktów styku z klientem oferując punkty za zgody marketingowe.",
+      "Zwiększ liczbę punktów styku z klientem, oferując punkty za zgody marketingowe.",
     backgroundColor: "bg-white dark:bg-gray-800",
   },
   {

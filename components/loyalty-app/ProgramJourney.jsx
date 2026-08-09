@@ -63,7 +63,10 @@ export default function ProgramJourney() {
         </div>
 
         <div className={styles.cta}>
-          <Link href="/cennik" className="uc-link fw-bold hstack gap-narrow">
+          <Link
+            href="/cennik"
+            className="uc-link fw-bold hstack gap-narrow dark:text-secondary"
+          >
             Zobacz dostępne pakiety
             <i className="icon icon-1 unicon-arrow-right" aria-hidden="true" />
           </Link>
